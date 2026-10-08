@@ -184,7 +184,7 @@
             ],
             "objclass": "StarChallengeZombieDistanceProps",
             "objdata": {
-                "TargetDistance": 1.0
+                "TargetDistance": 3.0
             }
         },
         {
