@@ -281,65 +281,11 @@
                 "DynamicZombies": [
                     {
                         "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale_armor1@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale_armor1@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale_armor1@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
                         "PointIncrementPerWave": 0,
                         "StartingPoints": 1000,
                         "StartingWave": 10,
                         "ZombiePool": [
                             "RTID(fairy_tale_armor2@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale_armor2@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale_armor2@ZombieTypes)"
-                        ]
-                    },
-                                        {
-                        "MaxPoints": 1000,
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(fairy_tale@ZombieTypes)"
                         ]
                     }
                 ],

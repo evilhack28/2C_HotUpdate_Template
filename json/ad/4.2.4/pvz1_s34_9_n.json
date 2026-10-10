@@ -23,7 +23,6 @@
           "RTID(SeedBank@CurrentLevel)",
           "RTID(ZombiesDeadWinCon@LevelModules)",
           "RTID(WaveModule@CurrentLevel)",
-          "RTID(InitialPlants@CurrentLevel)",
           "RTID(SkySun@CurrentLevel)"
         ],
         "ShowZombies": [
@@ -107,28 +106,6 @@
     },
     {
       "aliases": [
-        "InitialPlants"
-      ],
-      "objclass": "InitialPlantProperties",
-      "objdata": {
-        "InitialPlantPlacements": [
-          {
-            "GridX": 0,
-            "GridY": 1,
-            "Level": 1,
-            "TypeName": "sunflower"
-          },
-          {
-            "GridX": 0,
-            "GridY": 3,
-            "Level": 1,
-            "TypeName": "sunflower"
-          }
-        ]
-      }
-    },
-    {
-      "aliases": [
         "SkySun"
       ],
       "objclass": "SunDropperProperties",
@@ -154,7 +131,8 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "JitterOffsets": "RTID(LayoutOffsets1@CurrentLevel)",
+        "FixedOffset": 0
       }
     },
     {
@@ -171,18 +149,18 @@
             "Level": 1
           },
           {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -191,7 +169,8 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets2@CurrentLevel)"
       }
     },
     {
@@ -204,32 +183,7 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "4",
+            "Row": "5",
             "Level": 1
           },
           {
@@ -238,12 +192,38 @@
             "Level": 1
           },
           {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
             "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "4",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets3@CurrentLevel)"
       }
     },
     {
@@ -256,51 +236,52 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "5",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "1",
+            "Row": "4",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "5",
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "5",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "5",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "1",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "5",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "3",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets4@CurrentLevel)"
       }
     },
     {
@@ -313,17 +294,22 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "1",
+            "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
+            "Row": "2",
             "Level": 1
           },
           {
@@ -333,7 +319,7 @@
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "1",
+            "Row": "3",
             "Level": 1
           },
           {
@@ -343,16 +329,12 @@
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "5",
+            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets5@CurrentLevel)"
       }
     },
     {
@@ -365,76 +347,77 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "3",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "4",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "3",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
+            "Row": "1",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets6@CurrentLevel)"
       }
     },
     {
@@ -447,37 +430,47 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "3",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
             "Level": 1
           },
           {
@@ -488,20 +481,11 @@
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "3",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets7@CurrentLevel)"
       }
     },
     {
@@ -514,36 +498,46 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "3",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Row": "2",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "3",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "3",
             "Level": 1
           },
@@ -559,26 +553,26 @@
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
@@ -589,21 +583,12 @@
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets8@CurrentLevel)"
       }
     },
     {
@@ -616,47 +601,62 @@
         "Zombies": [
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(chicken_farmer@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
+            "Row": "3",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "5",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "1",
+            "Row": "3",
             "Level": 1
           },
           {
@@ -665,27 +665,13 @@
             "Level": 1
           },
           {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets9@CurrentLevel)"
       }
     },
     {
@@ -702,13 +688,13 @@
             "Level": 1
           },
           {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
+            "Row": "4",
             "Level": 1
           },
           {
@@ -718,42 +704,47 @@
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(chicken_farmer@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
+            "Row": "3",
             "Level": 1
           },
           {
@@ -762,17 +753,22 @@
             "Level": 1
           },
           {
-            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "3",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Type": "RTID(beghouled_newspaper@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
@@ -782,33 +778,23 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
             "Type": "RTID(ScreenDoor@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "1",
+            "Row": "4",
             "Level": 1
           },
           {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(beghouled_newspaper@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ScreenDoor@ZombieTypes)",
-            "Row": "5",
+            "Row": "3",
             "Level": 1
           },
           {
@@ -817,7 +803,8 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets10@CurrentLevel)"
       }
     },
     {
@@ -885,7 +872,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -904,6 +891,106 @@
         "ZombieCountdownHugeWaveDelay": 4,
         "DescriptionName": "[S34_MEMORY_MODE_009]",
         "Description": "[S34_MEMORY_MODE_DESC_009]"
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets1"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 28,
+        "ZombieSpawningRandomJitter": 10
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets2"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 8,
+        "ZombieSpawningRandomJitter": 35
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets3"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 10,
+        "ZombieSpawningRandomJitter": 46
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets4"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 10,
+        "ZombieSpawningRandomJitter": 49
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets5"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 48
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets6"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 59
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets7"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 52
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets8"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 68
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets9"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 52
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets10"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 84
       }
     }
   ]

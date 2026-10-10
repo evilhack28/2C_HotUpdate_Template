@@ -293,27 +293,6 @@
             "objdata": {
                 "DynamicZombies": [
                     {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
-                    },
-                    {
                         "MaxPoints": 1000,
                         "PointIncrementPerWave": 20,
                         "StartingPoints": 100,
@@ -325,27 +304,6 @@
                         "RTID(future_jetpack@ZombieTypes)",
                         "RTID(explosion_proof@ZombieTypes)"
                       ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                        ]
                     }
                 ],
                 "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"

@@ -248,9 +248,6 @@
       "objclass": "WaveManagerModuleProperties",
       "objdata": {
         "DynamicZombies": [
-          {},
-          {},
-          {},
           {
             "PointIncrementPerWave": 100,
             "StartingPoints": 50,
@@ -260,10 +257,7 @@
               "RTID(renai_worker@ZombieTypes)",              
               "RTID(roman_gargantuar@ZombieTypes)"
             ]
-          },
-          {},
-          {},
-          {}
+          }
         ],
         "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
       }

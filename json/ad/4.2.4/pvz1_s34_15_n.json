@@ -100,7 +100,9 @@
         "SelectionMethod": "chooser",
         "OverrideSeedSlotsCount": 8,
         "GlobalLevel": 1,
-        "PlantBlackList":["gravebuster"],
+        "PlantBlackList": [
+          "gravebuster"
+        ],
         "PresetPlantList": []
       }
     },
@@ -304,7 +306,6 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
           {
             "Type": "RTID(ladder@ZombieTypes)",
@@ -312,7 +313,9 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets1@CurrentLevel)"
       }
     },
     {
@@ -321,40 +324,41 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "3",
             "Level": 1
           },
           {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
             "Type": "RTID(ladder@ZombieTypes)",
             "Row": "3",
             "Level": 1
           },
           {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "3",
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets2@CurrentLevel)"
       }
     },
     {
@@ -363,50 +367,51 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 1,
         "Zombies": [
           {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
             "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "3",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "3",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 1,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets3@CurrentLevel)"
       }
     },
     {
@@ -415,8 +420,17 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
           {
             "Type": "RTID(ladder@ZombieTypes)",
             "Row": "4",
@@ -429,6 +443,16 @@
           },
           {
             "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
@@ -438,37 +462,19 @@
             "Level": 1
           },
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
             "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial@ZombieTypes)",
             "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "2",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets4@CurrentLevel)"
       }
     },
     {
@@ -477,13 +483,7 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
           {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "4",
@@ -491,7 +491,7 @@
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
+            "Row": "4",
             "Level": 1
           },
           {
@@ -505,22 +505,29 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Type": "RTID(ladder@ZombieTypes)",
             "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "2",
             "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets5@CurrentLevel)"
       }
     },
     {
@@ -529,21 +536,15 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -557,6 +558,41 @@
             "Level": 1
           },
           {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "1",
             "Level": 1
@@ -568,37 +604,7 @@
           },
           {
             "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
             "Level": 1
           },
           {
@@ -612,7 +618,9 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets6@CurrentLevel)"
       }
     },
     {
@@ -621,20 +629,24 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 1,
         "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
           {
             "Type": "RTID(ladder@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
           {
-            "Type": "RTID(pogo@ZombieTypes)",
+            "Type": "RTID(ladder@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Type": "RTID(pogo@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
@@ -644,6 +656,11 @@
             "Level": 1
           },
           {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
             "Type": "RTID(ladder@ZombieTypes)",
             "Row": "1",
             "Level": 1
@@ -651,50 +668,42 @@
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 1,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets7@CurrentLevel)"
       }
     },
     {
@@ -703,10 +712,9 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(ladder@ZombieTypes)",
+            "Type": "RTID(pogo@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
@@ -716,8 +724,43 @@
             "Level": 1
           },
           {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -726,18 +769,13 @@
             "Level": 1
           },
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
+            "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "5",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -746,37 +784,12 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
             "Level": 1
           },
@@ -788,15 +801,12 @@
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets8@CurrentLevel)"
       }
     },
     {
@@ -805,21 +815,15 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 0,
         "Zombies": [
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "2",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -828,13 +832,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
+            "Row": "4",
             "Level": 1
           },
           {
@@ -849,6 +848,16 @@
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
             "Row": "1",
             "Level": 1
           },
@@ -858,8 +867,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -868,8 +877,8 @@
             "Level": 1
           },
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
             "Level": 1
           },
           {
@@ -878,7 +887,9 @@
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets9@CurrentLevel)"
       }
     },
     {
@@ -887,21 +898,15 @@
       ],
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
-        "AdditionalPlantfood": 1,
         "Zombies": [
           {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(pogo@ZombieTypes)",
-            "Row": "4",
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
+            "Row": "2",
             "Level": 1
           },
           {
@@ -915,13 +920,63 @@
             "Level": 1
           },
           {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
             "Row": "4",
             "Level": 1
           },
           {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "1",
             "Level": 1
           },
           {
@@ -931,12 +986,27 @@
           },
           {
             "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
+            "Row": "4",
             "Level": 1
           },
           {
             "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "4",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Row": "5",
             "Level": 1
           },
           {
@@ -945,82 +1015,14 @@
             "Level": 1
           },
           {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
             "Type": "RTID(pogo@ZombieTypes)",
             "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(ladder@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "2",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "4",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "5",
-            "Level": 1
-          },
-          {
-            "Type": "RTID(tutorial_armor1@ZombieTypes)",
-            "Row": "1",
             "Level": 1
           }
         ],
-        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
-      }
-    },
-    {
-      "aliases": [
-        "Offsets"
-      ],
-      "objclass": "ZombieJitterOffsets",
-      "objdata": {
-        "ZombieSpawningOffsetIncrement": 28,
-        "ZombieSpawningRandomJitter": 10
+        "AdditionalPlantfood": 1,
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(LayoutOffsets10@CurrentLevel)"
       }
     },
     {
@@ -1084,7 +1086,7 @@
           ]
         ],
         "FlagWaveInterval": 4,
-        "SuppressFlagZombie": true,
+        "SuppressFlagZombie": false,
         "SuppressedDynamicZombieWaves": [
           0,
           1,
@@ -1243,6 +1245,106 @@
             "Level": 1
           }
         ]
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets1"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 35
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets2"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 14,
+        "ZombieSpawningRandomJitter": 42
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets3"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 10,
+        "ZombieSpawningRandomJitter": 52
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets4"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 10,
+        "ZombieSpawningRandomJitter": 53
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets5"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets6"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 62
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets7"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 8,
+        "ZombieSpawningRandomJitter": 60
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets8"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 67
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets9"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 60
+      }
+    },
+    {
+      "aliases": [
+        "LayoutOffsets10"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 5,
+        "ZombieSpawningRandomJitter": 61
       }
     }
   ]

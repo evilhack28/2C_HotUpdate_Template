@@ -495,56 +495,8 @@
                 "DynamicZombies": [
                     {
                         "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
                         "StartingPoints": 600,
                         "StartingWave": 6,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(beach_fisherman@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
                         "ZombiePool": [
                             "RTID(beach_fisherman@ZombieTypes)"
                         ]

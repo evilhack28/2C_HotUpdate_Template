@@ -426,57 +426,9 @@
             "objdata": {
                 "DynamicZombies": [
                     {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
                         "PointIncrementPerWave": 125,
                         "StartingPoints": 750,
                         "StartingWave": 4,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": [
-                            "RTID(roman_healer@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
                         "ZombiePool": [
                             "RTID(roman_healer@ZombieTypes)"
                         ]

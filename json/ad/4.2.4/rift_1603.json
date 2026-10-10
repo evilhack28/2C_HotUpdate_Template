@@ -355,39 +355,6 @@
             "objdata": {
                 "DynamicZombies": [
                     {
-                        "PointIncrementPerWave": -40,
-                        "StartingPoints": -100,
-                        "StartingWave": 3,
-                      "ZombiePool": [
-                        "RTID(roman_ballista@ZombieTypes)",
-                        "RTID(pirate_armor1@ZombieTypes)",
-                        "RTID(pirate_armor2@ZombieTypes)",
-                        "RTID(roman_ballista@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": -25,
-                        "StartingPoints": -100,
-                        "StartingWave": 4,
-                      "ZombiePool": [
-                        "RTID(roman_ballista@ZombieTypes)",
-                        "RTID(pirate_armor1@ZombieTypes)",
-                        "RTID(pirate_armor2@ZombieTypes)",
-                        "RTID(swashbuckler@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": -10,
-                        "StartingPoints": -100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(pirate@ZombieTypes)",
-                            "RTID(pirate_armor1@ZombieTypes)",
-                            "RTID(pirate_armor2@ZombieTypes)",
-                            "RTID(swashbuckler@ZombieTypes)"
-                        ]
-                    },
-                    {
                         "PointIncrementPerWave": 50,
                         "StartingPoints": 100,
                         "StartingWave": 5,
@@ -396,36 +363,6 @@
                         "RTID(pirate_armor1@ZombieTypes)",
                         "RTID(pirate_armor2@ZombieTypes)",
                         "RTID(swashbuckler@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(pirate@ZombieTypes)",
-                            "RTID(pirate_armor1@ZombieTypes)",
-                            "RTID(pirate_armor2@ZombieTypes)",
-                            "RTID(swashbuckler@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 40,
-                        "StartingPoints": 200,
-                        "StartingWave": 4,
-                        "ZombiePool": [
-                            "RTID(pirate_armor1@ZombieTypes)",
-                            "RTID(pirate_armor2@ZombieTypes)",
-                            "RTID(swashbuckler@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 60,
-                        "StartingPoints": 400,
-                        "StartingWave": 3,
-                      "ZombiePool": [
-                        "RTID(roman_ballista@ZombieTypes)",
-                        "RTID(roman_ballista@ZombieTypes)"
                       ]
                     }
                 ],

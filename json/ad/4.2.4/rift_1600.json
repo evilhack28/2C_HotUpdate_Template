@@ -235,9 +235,6 @@
             "objclass": "WaveManagerModuleProperties",
             "objdata": {
                 "DynamicZombies": [
-                    {},
-                    {},
-                    {},
                     {
                         "PointIncrementPerWave": 10,
                         "StartingPoints": 100,
@@ -245,10 +242,7 @@
                         "ZombiePool": [
                             "RTID(heian_gargantuar@ZombieTypes)"
                         ]
-                    },
-                    {},
-                    {},
-                    {}
+                    }
                 ],
                 "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
             }
@@ -261,11 +255,11 @@
 			"objdata": {
 				"DropDelayConditions": [
 					{
-						"Delay": 6,
+						"Delay": 3,
 						"MaxPackets": 0
 					},
 					{
-						"Delay": 6,
+						"Delay": 4,
 						"MaxPackets": 2
 					},
 					{
@@ -285,7 +279,7 @@
 						"Weight": 50
 					},
 					{
-						"MaxCount": 5,
+						"MaxCount": 7,
 						"MaxCountCooldownSeconds": 20,
 						"MaxWeightFactor": 0,
 						"PlantType": "citron",

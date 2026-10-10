@@ -380,45 +380,6 @@
             "objdata": {
                 "DynamicZombies": [
                     {
-                        "PointIncrementPerWave": -40,
-                        "StartingPoints": -100,
-                        "StartingWave": 3,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
-                            "RTID(future@ZombieTypes)",
-                            "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": -25,
-                        "StartingPoints": -100,
-                        "StartingWave": 4,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
-                            "RTID(future@ZombieTypes)",
-                            "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": -10,
-                        "StartingPoints": -100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
-                            "RTID(future@ZombieTypes)",
-                            "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
                         "PointIncrementPerWave": 100,
                         "StartingPoints": 100,
                         "StartingWave": 3,
@@ -426,42 +387,6 @@
                             "RTID(disco_mech@ZombieTypes)",
                             "RTID(future@ZombieTypes)",
                             "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 20,
-                        "StartingPoints": 100,
-                        "StartingWave": 5,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
-                            "RTID(future@ZombieTypes)",
-                            "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 40,
-                        "StartingPoints": 200,
-                        "StartingWave": 4,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
-                            "RTID(future_armor1@ZombieTypes)",
-                            "RTID(future_armor2@ZombieTypes)",
-                            "RTID(future_jetpack@ZombieTypes)",
-                            "RTID(mech_cone@ZombieTypes)"
-                        ]
-                    },
-                    {
-                        "PointIncrementPerWave": 60,
-                        "StartingPoints": 400,
-                        "StartingWave": 3,
-                        "ZombiePool": [
-                            "RTID(disco_mech@ZombieTypes)",
                             "RTID(future_armor2@ZombieTypes)",
                             "RTID(future_jetpack@ZombieTypes)",
                             "RTID(mech_cone@ZombieTypes)"

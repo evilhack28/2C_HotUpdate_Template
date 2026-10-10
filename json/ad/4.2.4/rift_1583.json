@@ -746,9 +746,6 @@
 			"objclass": "WaveManagerModuleProperties",
 			"objdata": {
 				"DynamicZombies": [
-					{},
-					{},
-					{},
 					{
 						"PointIncrementPerWave": 25,
 						"StartingPoints": 0,
@@ -758,10 +755,7 @@
 							"RTID(dino_armor1@ZombieTypes)",
 							"RTID(dino_armor2@ZombieTypes)"
 						]
-					},
-					{},
-					{},
-					{}
+					}
 				],
 				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
 			}
