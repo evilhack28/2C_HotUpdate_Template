@@ -1,0 +1,227 @@
+{
+  "#comment": "PVZ1 S34 W2 9",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W2_DESC_9]",
+        "LevelNumber": 1,
+        "IsArtifactDisabled": true,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(ZombossIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(InitialPlants@CurrentLevel)",
+          "RTID(StartingFood@CurrentLevel)"
+        ],
+        "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_2]",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "ShowZombies": [
+          "zombossmech_cowboy",
+          "cowboy",
+          "cowboy_armor1",
+          "prospector",
+          "piano",
+          "west_bullrider",
+          "poncho_plate",
+          "cowboy_gargantuar",
+          "cowboy_armor2",
+          "chicken_farmer"
+        ],
+        "ZombieMaxLevel": 1
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 2.5,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 4,
+            "MaxPackets": 5
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "repeater",
+            "Weight": 35,
+            "iLevel": 1
+          },
+          {
+            "PlantType": "splitpea",
+            "Weight": 20,
+            "iLevel": 1
+          },
+          {
+            "PlantType": "spikerock",
+            "Weight": 20,
+            "iLevel": 1
+          },
+          {
+            "PlantType": "glaciershroom",
+            "Weight": 15,
+            "iLevel": 1
+          },
+          {
+            "PlantType": "cherry_bomb",
+            "Weight": 10,
+            "iLevel": 1
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossMechType": "zombossmech_cowboy",
+        "ZombossDeathRow": 3,
+        "ZombossDeathColumn": 5,
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 24
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengePlantsSurviveProps",
+      "objdata": {
+        "Count": 14
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengePlantBeforeLineProps",
+      "objdata": {
+        "CannotPlantStartingColumn": 0,
+        "CannotPlantBeforeColumn": 1
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_melee"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "InitialPlants"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": 1,
+            "GridY": 0,
+            "Level": 1,
+            "TypeName": "repeater"
+          },
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "Level": 1,
+            "TypeName": "repeater"
+          },
+          {
+            "GridX": 1,
+            "GridY": 2,
+            "Level": 1,
+            "TypeName": "repeater"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "Level": 1,
+            "TypeName": "repeater"
+          },
+          {
+            "GridX": 1,
+            "GridY": 4,
+            "Level": 1,
+            "TypeName": "repeater"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "Level": 1,
+            "TypeName": "splitpea"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "Level": 1,
+            "TypeName": "splitpea"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "StartingFood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 1
+      }
+    }
+  ],
+  "version": 1
+}

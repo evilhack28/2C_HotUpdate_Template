@@ -1,0 +1,2083 @@
+{
+  "version": 1,
+  "#comment": "PVZ1 S34 W1 5",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W1_DESC_5]",
+        "Name": "[S34_MEMORY_LEVEL_NAME_005]",
+        "LevelNumber": 1,
+        "StartingSun": 250,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "Modules": [
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(WaveModule@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "tutorial",
+          "tutorial_armor1",
+          "pogo",
+          "tutorial_armor2",
+          "Neuropathy",
+          "tutorial_imp"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "zombie_sun"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objdata": {
+        "ZombiesToKill": 18,
+        "Time": 12
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "ApplyZombieConditionsChallengeProps",
+      "objdata": {
+        "NumZombieConditionsToApply": 40,
+        "ConditionToInflict": [
+          "chill"
+        ],
+        "IncludeBurnedToAsh": false,
+        "IncludeElectrified": false
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengePlantBeforeLineProps",
+      "objdata": {
+        "CannotPlantStartingColumn": 6,
+        "CannotPlantBeforeColumn": 9
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "OverrideSeedSlotsCount": 8,
+        "GlobalLevel": 1,
+        "PresetPlantList": [
+          "snowpea",
+          "spikeweed"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SkySun"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 23,
+        "SunCountdownBase": 23,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 23,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor2@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "3"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "2"
+          },
+          {
+            "Type": "RTID(tutorial@ZombieTypes)",
+            "Level": 1,
+            "Row": "4"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "1"
+          },
+          {
+            "Type": "RTID(tutorial_armor1@ZombieTypes)",
+            "Level": 1,
+            "Row": "5"
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(pogo@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(Neuropathy@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "JitterOffsets": "RTID(Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 25,
+        "ZombieSpawningRandomJitter": 10
+      }
+    },
+    {
+      "aliases": [
+        "WaveModule"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)"
+        ],
+        "DynamicZombies": []
+      }
+    },
+    {
+      "aliases": [
+        "Waves"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "WaveCount": 12,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(Barrels2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)",
+            "RTID(Barrels3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Barrels4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Barrels5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Barrels6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Barrels7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Barrels8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Barrels9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Barrels10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)",
+            "RTID(Barrels11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Barrels12@CurrentLevel)"
+          ]
+        ],
+        "FlagWaveInterval": 4,
+        "SuppressFlagZombie": true,
+        "SuppressedDynamicZombieWaves": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "MinNextWaveHealthPercentage": 0.7,
+        "MaxNextWaveHealthPercentage": 0.7,
+        "ZombieCountdownFirstWaveSecs": 8,
+        "ZombieCountdownHugeWaveDelay": 3,
+        "DescriptionName": "[S34_MEMORY_MODE_005]",
+        "Description": "[S34_MEMORY_MODE_DESC_005]"
+      }
+    },
+    {
+      "aliases": [
+        "Barrels2"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels3"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels4"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels5"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels6"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels7"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels8"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels9"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels10"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels11"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Barrels12"
+      ],
+      "objclass": "BarrelWaveActionProps",
+      "objdata": {
+        "Interval": 0.1,
+        "Barrels": [
+          {
+            "Row": 1,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 2,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 3,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 4,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          },
+          {
+            "Row": 5,
+            "Type": "barrelmoster",
+            "Params": {
+              "BarrelHitPoints": 600,
+              "BarrelSpeed": 0.17,
+              "Zombies": [
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                },
+                {
+                  "Level": 1,
+                  "TypeName": "tutorial_imp"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

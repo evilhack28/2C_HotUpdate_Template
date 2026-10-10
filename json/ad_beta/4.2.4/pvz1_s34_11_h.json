@@ -1,0 +1,1783 @@
+{
+    "version": 1,
+    "#comment": "PVZ1 S34 H11",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_HARD_NAME_011]",
+                "Description": "[S34_MEMORY_HARD_DESC_011]",
+                "LevelNumber": 11,
+                "StartingSun": 0,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(AutumnLateStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(Rails@CurrentLevel)",
+                    "RTID(StartPlants@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(RiftThemeDemo@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(StartingPlantfood@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "pirate",
+                    "pirate_armor1",
+                    "pirate_armor2",
+                    "barrelroller",
+                    "s34_h11_chicken_farmer",
+                    "s34_h11_cannon",
+                    "tutorial_gargantuar",
+                    "modern_allstar"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "ConveyorSeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "preset",
+                "GlobalLevel": 1,
+                "InitialPlantList": [
+                    {
+                        "PlantType": "iceburg",
+                        "Weight": 80,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 4,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "PlantType": "melonpult",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "PlantType": "spikeweed",
+                        "Weight": 360,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0.05,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "PlantType": "spikerock",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "PlantType": "cherry_bomb",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "PlantType": "wallnut",
+                        "Weight": 130,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    }
+                ],
+                "DropDelayConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Delay": 2.0
+                    },
+                    {
+                        "MaxPackets": 3,
+                        "Delay": 3.0
+                    },
+                    {
+                        "MaxPackets": 6,
+                        "Delay": 6.0
+                    }
+                ],
+                "SpeedConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Speed": 100
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RiftThemeDemo"
+            ],
+            "objclass": "RiftThemeDemoModuleProperties",
+            "objdata": {
+                "DemoRiftThemeName": [
+                    "plant_melee"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "Goal1"
+            ],
+            "objclass": "StarChallengePlantsSurviveProps",
+            "objdata": {
+                "Count": 8
+            }
+        },
+        {
+            "aliases": [
+                "Goal2"
+            ],
+            "objclass": "StarChallengeKillZombiesInTimeProps",
+            "objdata": {
+                "ZombiesToKill": 24,
+                "Time": 8
+            }
+        },
+        {
+            "aliases": [
+                "Goal3"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 3.0
+            }
+        },
+        {
+            "aliases": [
+                "StartingPlantfood"
+            ],
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 1
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "ManualStartup": false,
+                "DynamicZombies": [],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WaveManagerPropsVector": [
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave01"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 16
+            }
+        },
+        {
+            "aliases": [
+                "Wave02"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 14
+            }
+        },
+        {
+            "aliases": [
+                "Wave03"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 12
+            }
+        },
+        {
+            "aliases": [
+                "Wave04"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "FixedOffset": 10
+            }
+        },
+        {
+            "aliases": [
+                "Wave05"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 12
+            }
+        },
+        {
+            "aliases": [
+                "Wave06"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 10
+            }
+        },
+        {
+            "aliases": [
+                "Wave07"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "FixedOffset": 8
+            }
+        },
+        {
+            "aliases": [
+                "Wave08"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34H11Cannon@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(barrelroller@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(modern_allstar@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(S34ChickenFarmer@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(pirate@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 6
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 8,
+                "FlagWaveInterval": 4,
+                "SuppressFlagZombie": true,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "MinNextWaveHealthPercentage": 0.3,
+                "MaxNextWaveHealthPercentage": 0.3,
+                "ZombieCountdownFirstWaveSecs": 3,
+                "ZombieCountdownHugeWaveDelay": 3,
+                "DescriptionName": "[S34_MEMORY_HARD_MODE_011]",
+                "Description": "[S34_MEMORY_HARD_MODE_DESC_011]",
+                "Waves": [
+                    [
+                        "RTID(Wave01@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave02@CurrentLevel)",
+                        "RTID(RollingBarrels2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave03@CurrentLevel)",
+                        "RTID(RollingBarrels3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply4@CurrentLevel)",
+                        "RTID(Wave04@CurrentLevel)",
+                        "RTID(RollingBarrels4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply5@CurrentLevel)",
+                        "RTID(Wave05@CurrentLevel)",
+                        "RTID(RollingBarrels5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply6@CurrentLevel)",
+                        "RTID(Wave06@CurrentLevel)",
+                        "RTID(RollingBarrels6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply7@CurrentLevel)",
+                        "RTID(Wave07@CurrentLevel)",
+                        "RTID(RollingBarrels7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave08@CurrentLevel)",
+                        "RTID(RollingBarrels8@CurrentLevel)"
+                    ]
+                ],
+                "ZombieCountdownFirstWaveConveyorSecs": 3
+            }
+        },
+        {
+            "aliases": [
+                "Supply4"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Type": "RTID(iceburg@PlantTypes)",
+                        "Weight": 80,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 4,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(melonpult@PlantTypes)",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(spikeweed@PlantTypes)",
+                        "Weight": 300,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0.05,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(spikerock@PlantTypes)",
+                        "Weight": 260,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(cherry_bomb@PlantTypes)",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(wallnut@PlantTypes)",
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 5,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply5"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Type": "RTID(wintermelon@PlantTypes)",
+                        "Weight": 240,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply6"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Type": "RTID(olivepit@PlantTypes)",
+                        "Weight": 160,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 5,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(wintermelon@PlantTypes)",
+                        "Weight": 240,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply7"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Type": "RTID(iceburg@PlantTypes)",
+                        "Weight": 100,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 4,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(melonpult@PlantTypes)",
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(spikeweed@PlantTypes)",
+                        "Weight": 320,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0.05,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(spikerock@PlantTypes)",
+                        "Weight": 300,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(cherry_bomb@PlantTypes)",
+                        "Weight": 20,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(wallnut@PlantTypes)",
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 5,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(olivepit@PlantTypes)",
+                        "Weight": 160,
+                        "MinCount": 1,
+                        "MinWeightFactor": 2,
+                        "MaxCount": 5,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    },
+                    {
+                        "Type": "RTID(wintermelon@PlantTypes)",
+                        "Weight": 240,
+                        "MinCount": 1,
+                        "MinWeightFactor": 3,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Rails"
+            ],
+            "objclass": "RailcartProperties",
+            "objdata": {
+                "RailcartType": "railcart_cowboy",
+                "Rails": [
+                    {
+                        "Column": 1,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    },
+                    {
+                        "Column": 2,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    }
+                ],
+                "Railcarts": [
+                    {
+                        "Column": 1,
+                        "Row": 1
+                    },
+                    {
+                        "Column": 2,
+                        "Row": 3
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StartPlants"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "TypeName": "melonpult",
+                        "GridX": 1,
+                        "GridY": 1,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "melonpult",
+                        "GridX": 2,
+                        "GridY": 3,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "spikeweed",
+                        "GridX": 6,
+                        "GridY": 1,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "spikeweed",
+                        "GridX": 6,
+                        "GridY": 3,
+                        "Level": 1
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "S34ChickenFarmer"
+            ],
+            "objdata": {
+                "TypeName": "s34_h11_chicken_farmer",
+                "ZombieClass": "ZombieChickenFarmer",
+                "Properties": "RTID(ZombieChickenFarmerDefault@PropertySheets)",
+                "ResourceGroups": [
+                    "ZombieWestChickenFarmerGroup"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ChickenFarmer",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FARMER",
+                "BoardAlmanac": false,
+                "RecommendPlants": [
+                    "cherry_bomb"
+                ],
+                "HomeWorld": "cowboy",
+                "DisplayTypeName": "chicken_farmer"
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels3"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.5,
+                "Barrels": [
+                    {
+                        "Row": 1,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels4"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.5,
+                "Barrels": [
+                    {
+                        "Row": 3,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels5"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.8,
+                "Barrels": [
+                    {
+                        "Row": 1,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 4,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels6"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.8,
+                "Barrels": [
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 3,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 1,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels7"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.6,
+                "Barrels": [
+                    {
+                        "Row": 3,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 1,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 4,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels8"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.8,
+                "Barrels": [
+                    {
+                        "Row": 4,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 1,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 5,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 3,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 4,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RollingBarrels2"
+            ],
+            "objclass": "BarrelWaveActionProps",
+            "objdata": {
+                "Interval": 1.5,
+                "Barrels": [
+                    {
+                        "Row": 2,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    },
+                    {
+                        "Row": 4,
+                        "Type": "barrelempty",
+                        "Params": {
+                            "BarrelHitPoints": 1800,
+                            "BarrelSpeed": 0.25,
+                            "Zombies": []
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "S34H11Cannon"
+            ],
+            "objdata": {
+                "TypeName": "s34_h11_cannon",
+                "ZombieClass": "ZombiePirateCannon",
+                "Properties": "RTID(S34H11CannonProps@CurrentLevel)",
+                "ResourceGroups": [
+                    "ZombiePirateCannonGroup",
+                    "ZombiePirateImpGroup"
+                ],
+                "AnimRigClass": "ZombieAnimRig_PirateCannon",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PIRATE_CANNON",
+                "BoardAlmanac": false,
+                "RecommendPlants": [
+                    "bloomerang",
+                    "coconutcannon"
+                ],
+                "HomeWorld": "pirate",
+                "HastyOnStart": false,
+                "DisplayTypeName": "cannon"
+            }
+        },
+        {
+            "objclass": "ZombiePirateCannonProps",
+            "aliases": [
+                "S34H11CannonProps"
+            ],
+            "objdata": {
+                "Speed": 0.185,
+                "Hitpoints": 600,
+                "EatDPS": 100,
+                "CanSpawnPlantFood": true,
+                "ExplodesWhenMowed": true,
+                "IsValidPinchTarget": false,
+                "CanBeLaunchedByPlants": false,
+                "SizeType": "mid",
+                "HeadDropFraction": -1,
+                "ArmDropFraction": -1,
+                "HitRect": {
+                    "mX": -20,
+                    "mY": 10,
+                    "mWidth": 62,
+                    "mHeight": 80
+                },
+                "AttackRect": {
+                    "mX": 15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 80
+                },
+                "Cost": 150,
+                "DiedSun": 100,
+                "FirstWave": 4,
+                "WavePointCost": 800,
+                "Weight": 1500,
+                "StreetSize": {
+                    "x": 3,
+                    "y": 2
+                },
+                "StreetCriticalSize": {
+                    "x": 3,
+                    "y": 1
+                },
+                "StreetOffset": {
+                    "x": -2,
+                    "y": -1
+                },
+                "ArtCenter": {
+                    "x": 120,
+                    "y": 120
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "GroundTrackName": "ground_swatch",
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ],
+                "ZombieLevelStats": [
+                    {
+                        "AttackLevel": 1,
+                        "HitPointsLevel": 1
+                    },
+                    {
+                        "AttackLevel": 2,
+                        "HitPointsLevel": 2
+                    },
+                    {
+                        "AttackLevel": 3,
+                        "HitPointsLevel": 3
+                    },
+                    {
+                        "AttackLevel": 4.5,
+                        "HitPointsLevel": 4.5
+                    },
+                    {
+                        "AttackLevel": 5,
+                        "HitPointsLevel": 5
+                    }
+                ],
+                "Ammo": 5,
+                "InitialShotCooldown": 3,
+                "ShotCooldown": 7.5,
+                "ChanceImpFallsInWater": 0.5,
+                "TimeToWalkInToPosition": 4,
+                "ImpShotHeight": 95,
+                "ImpShotTime": 1,
+                "ExplosionImpSpawnCount": 5,
+                "ExplosionImpTargetColumnMin": 3,
+                "ExplosionImpTargetColumnMax": 5,
+                "ExplosionImpLaunchHeight": 300,
+                "ExplosionImpLaunchTime": 1,
+                "ExplosionImpLaunchTimeVariance": 0.75
+            }
+        }
+    ]
+}

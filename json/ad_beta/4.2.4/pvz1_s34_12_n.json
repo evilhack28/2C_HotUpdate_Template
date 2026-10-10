@@ -1,0 +1,174 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W2_DESC_4]",
+        "IsArtifactDisabled": true,
+        "LevelNumber": 1,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(VaseBreakerArcade@LevelModules)",
+          "RTID(VaseBreakerFlow@LevelModules)",
+          "RTID(VaseBreakerProps@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)"
+        ],
+        "MusicType": "MiniGame_B",
+        "IsVasebreaker": true,
+        "Name": "[S34_MEMORY_LEVEL_NAME_012]",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "ZombieMaxLevel": 1,
+        "ShowZombies": [
+          "tutorial",
+          "tutorial_armor1",
+          "tutorial_armor2",
+          "beghouled_newspaper",
+          "dark_juggler"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "VaseBreakerProps"
+      ],
+      "objclass": "VaseBreakerPresetProperties",
+      "objdata": {
+        "GridSquareBlacklist": [],
+        "MaxColumnIndex": 6,
+        "MinColumnIndex": 2,
+        "NumColoredPlantVases": 8,
+        "NumColoredZombieVases": 2,
+        "Vases": [
+          {
+            "Count": 4,
+            "ZombieTypeName": "tutorial"
+          },
+          {
+            "Count": 2,
+            "ZombieTypeName": "tutorial_armor1"
+          },
+          {
+            "Count": 1,
+            "ZombieTypeName": "tutorial_armor2"
+          },
+          {
+            "Count": 2,
+            "ZombieTypeName": "beghouled_newspaper"
+          },
+          {
+            "Count": 2,
+            "ZombieTypeName": "dark_juggler"
+          },
+          {
+            "Count": 5,
+            "PlantTypeName": "bonkchoy"
+          },
+          {
+            "Count": 4,
+            "PlantTypeName": "splitpea"
+          },
+          {
+            "Count": 3,
+            "PlantTypeName": "wallnut"
+          },
+          {
+            "Count": 2,
+            "PlantTypeName": "cherry_bomb"
+          }
+        ],
+        "PowerUpDisabled": true
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [],
+        "WaveManagerPropsVector": [
+          "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+          "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+          "RTID(WaveManagerPropsWeek1@CurrentLevel)",
+          "RTID(WaveManagerPropsWeek1@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerPropsWeek1"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 0,
+        "WaveCount": 0,
+        "DescriptionName": "[S34_MEMORY_MODE_012]",
+        "Description": "[S34_MEMORY_MODE_DESC_012]",
+        "Waves": []
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "PlantDefeatZombieChallengeProps",
+      "objdata": {
+        "PlantTypeName": "bonkchoy",
+        "NumZombiesToKill": 4,
+        "Description": "[S34_MEMORY_W2_L4_GOAL_1]"
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengePlantsLostProps",
+      "objdata": {
+        "MaximumPlantsLost": 3
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 12
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_melee"
+        ]
+      }
+    }
+  ],
+  "version": 1,
+  "#comment": "PVZ1 S34 W2 4"
+}

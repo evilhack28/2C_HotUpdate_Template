@@ -1,0 +1,1685 @@
+{
+    "version": 1,
+    "#comment": "S34 Hard Level 7",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_HARD_NAME_007]",
+                "Description": "[S34_MEMORY_HARD_DESC_007]",
+                "LevelNumber": 7,
+                "StartingSun": 0,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(NightPlankStage@CurrentLevel)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(MechanismPlank@CurrentLevel)",
+                    "RTID(PlantingMold@CurrentLevel)",
+                    "RTID(StartPlants@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(RiftThemeDemo@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "tutorial",
+                    "tutorial_armor1",
+                    "lostcity_excavator",
+                    "dark_juggler",
+                    "lostcity_jane"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "ConveyorSeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "preset",
+                "GlobalLevel": 1,
+                "InitialPlantList": [
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "cabbagepult"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "kernelpult"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "peashooter"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "torchwood"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "snapdragon"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "wallnut"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "hurrikale"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "lightningreed"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "turkeypult"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "PlantType": "gatlingpea"
+                    }
+                ],
+                "DropDelayConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Delay": 3.5
+                    },
+                    {
+                        "MaxPackets": 3,
+                        "Delay": 4.5
+                    },
+                    {
+                        "MaxPackets": 6,
+                        "Delay": 6.0
+                    }
+                ],
+                "SpeedConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Speed": 100
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RiftThemeDemo"
+            ],
+            "objclass": "RiftThemeDemoModuleProperties",
+            "objdata": {
+                "DemoRiftThemeName": [
+                    "rusher"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "Goal1"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "MustProtectCount": 2,
+                "Plants": [
+                    {
+                        "PlantType": "tallnut",
+                        "GridX": 6,
+                        "GridY": 1
+                    },
+                    {
+                        "PlantType": "tallnut",
+                        "GridX": 6,
+                        "GridY": 3
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Goal2"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 5
+            }
+        },
+        {
+            "aliases": [
+                "Goal3"
+            ],
+            "objclass": "ApplyZombieConditionsChallengeProps",
+            "objdata": {
+                "ConditionToInflict": [
+                    "butter"
+                ],
+                "NumZombieConditionsToApply": 12,
+                "IncludeBurnedToAsh": false,
+                "IncludeElectrified": false
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "ManualStartup": false,
+                "DynamicZombies": [],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WaveManagerPropsVector": [
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NormalOffsets"
+            ],
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 80,
+                "ZombieSpawningRandomJitter": 90
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 8,
+                "FlagWaveInterval": 4,
+                "SuppressFlagZombie": true,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ],
+                "MinNextWaveHealthPercentage": 0.3,
+                "MaxNextWaveHealthPercentage": 0.3,
+                "ZombieCountdownFirstWaveSecs": 5,
+                "ZombieCountdownHugeWaveDelay": 3,
+                "DescriptionName": "[S34_MEMORY_HARD_MODE_007]",
+                "Description": "[S34_MEMORY_HARD_MODE_DESC_007]",
+                "Waves": [
+                    [
+                        "RTID(Wave01@CurrentLevel)",
+                        "RTID(TextRuleNotice@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply2@CurrentLevel)",
+                        "RTID(Wave02@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply3@CurrentLevel)",
+                        "RTID(Wave03@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply4@CurrentLevel)",
+                        "RTID(Wave04@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply5@CurrentLevel)",
+                        "RTID(Wave05@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply6@CurrentLevel)",
+                        "RTID(Wave06@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Supply7@CurrentLevel)",
+                        "RTID(Wave07@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave08@CurrentLevel)"
+                    ]
+                ],
+                "ZombieCountdownFirstWaveConveyorSecs": 5
+            }
+        },
+        {
+            "aliases": [
+                "StartPlants"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": []
+            }
+        },
+        {
+            "aliases": [
+                "CrowdOffsets"
+            ],
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 55,
+                "ZombieSpawningRandomJitter": 100
+            }
+        },
+        {
+            "objclass": "KongFuStageProperties",
+            "aliases": [
+                "NightPlankStage"
+            ],
+            "objdata": {
+                "ResourceGroupNames": [
+                    "Egypt_Gravestone",
+                    "Game_Tombstones_Dynamic",
+                    "Tombstone_Dark_Effects",
+                    "DelayLoad_Background_Night",
+                    "AudioTutorial",
+                    "DelayLoad_Background_KongFu_Compressed"
+                ],
+                "GroupsToUnloadForAds": [
+                    "DelayLoad_Background_Night",
+                    "DelayLoad_Background_KongFu_Compressed"
+                ],
+                "StagePrefix": "night",
+                "BackgroundResourceGroup": "DelayLoad_Background_Night",
+                "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_NIGHT",
+                "LevelPowerupSet": "LevelPowerupsDefault",
+                "BasicZombieTypeName": "tutorial",
+                "FlagZombieTypeName": "tutorial_flag",
+                "Armor1ZombieTypeName": "tutorial_armor1",
+                "Armor2ZombieTypeName": "tutorial_armor2",
+                "MusicSuffix": "Twister",
+                "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+                "RailcartDefaultTypeName": "railcart_tutotial",
+                "GravestoneDefaultTypeName": "gravestone_tutorial",
+                "DisabledStreetCells": [
+                    {
+                        "mX": 0,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 7
+                    }
+                ],
+                "HaveGearBG": false
+            }
+        },
+        {
+            "aliases": [
+                "MechanismPlank"
+            ],
+            "objclass": "MechanismPlankProperties",
+            "objdata": {
+                "MechanismGearsRect": {
+                    "mX": 0,
+                    "mY": 0,
+                    "mWidth": 6,
+                    "mHeight": 5
+                },
+                "MechanismPlankRows": [
+                    1,
+                    3
+                ],
+                "IgnoreType": []
+            }
+        },
+        {
+            "aliases": [
+                "PlantingMold"
+            ],
+            "objclass": "MoldColonyChallengeProps",
+            "objdata": {
+                "Locations": "RTID(PlantingMoldMap@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "PlantingMoldMap"
+            ],
+            "objclass": "BoardGridMapProps",
+            "objdata": {
+                "Values": [
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "OpeningOffsets"
+            ],
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 180,
+                "ZombieSpawningRandomJitter": 65
+            }
+        },
+        {
+            "aliases": [
+                "Wave01"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(OpeningOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave02"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(OpeningOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave03"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_juggler@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(OpeningOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave04"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(CrowdOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave05"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave06"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dark_juggler@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave07"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dark_juggler@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave08"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_jane@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dark_juggler@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(CrowdOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Supply2"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 70,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply5"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 110,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 55,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 110,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 55,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 20,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 70,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 18,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 60,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply7"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 110,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 55,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 110,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 55,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 20,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 80,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 18,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 60,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply3"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 120,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 70,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply4"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 130,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 65,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 130,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 65,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 25,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 85,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 60,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Supply6"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(cabbagepult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(kernelpult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(peashooter@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(torchwood@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(snapdragon@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 3,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(wallnut@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(hurrikale@PlantTypes)"
+                    },
+                    {
+                        "Weight": 0,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 2,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(lightningreed@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(turkeypult@PlantTypes)"
+                    },
+                    {
+                        "Weight": 100,
+                        "MinCount": 0,
+                        "MinWeightFactor": 1,
+                        "MaxCount": 1,
+                        "MaxWeightFactor": 0,
+                        "iLevel": 1,
+                        "iAvatar": -1,
+                        "Type": "RTID(gatlingpea@PlantTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "TextRuleNotice"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "Zombies": [],
+                "GridTypes": [],
+                "SuppressActionIfNoGridItemsFound": false,
+                "ZombieSpawnWaitTime": 0,
+                "WaveStartMessage": "[S34_MEMORY_HARD_SELF_CONSUME_RULE_007]"
+            }
+        }
+    ]
+}

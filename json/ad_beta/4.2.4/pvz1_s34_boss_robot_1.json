@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "#comment": "PVZ1 S34 W1 9",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W1_DESC_9]",
+        "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_1]",
+        "LevelNumber": 1,
+        "StartingSun": 350,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": true,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "Modules": [
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(BossIntro@CurrentLevel)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(StartingFood@CurrentLevel)",
+          "RTID(BossBattle@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "zombossmech_pirate_memo",
+          "pirate",
+          "pirate_armor1",
+          "pirate_armor2",
+          "seagull",
+          "pirate_captain",
+          "tutorial_imp"
+        ],
+        "IsBossFight": true
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "zombie_sun"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "OverrideSeedSlotsCount": 8,
+        "GlobalLevel": 1,
+        "PresetPlantList": [
+          "jalapeno"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SkySun"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 12,
+        "SunCountdownBase": 15,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 20,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "StartingFood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 2
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 20
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "ApplyZombieConditionsChallengeProps",
+      "objdata": {
+        "NumZombieConditionsToApply": 12,
+        "ConditionToInflict": [],
+        "IncludeBurnedToAsh": true,
+        "IncludeElectrified": false
+      }
+    },
+    {
+      "aliases": [
+        "BossIntro"
+      ],
+      "objclass": "ZombossBattleIntroProperties",
+      "objdata": {
+        "PanEndOffset": 486,
+        "PanLeftDuration": 1.5,
+        "PanRightDuration": 0,
+        "PanStartOffset": 78,
+        "SkipShowingStreetBossBattle": true,
+        "ZombossPhaseCount": 3
+      }
+    },
+    {
+      "aliases": [
+        "BossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossDeathColumn": 5,
+        "ZombossDeathRow": 3,
+        "ZombossMechType": "zombossmech_pirate_memo",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        },
+        "ZombossStageCount": 3
+      }
+    },
+    {
+      "objclass": "ZombieZombossMechPirateProps",
+      "aliases": [
+        "ZombieZombossMechPirateMemo"
+      ],
+      "objdata": {
+        "Speed": 0.1,
+        "CanSpawnPlantFood": false,
+        "EnableAutoTest": false,
+        "SizeType": "big",
+        "CanBeLaunchedByPlants": false,
+        "HeadDropFraction": -1,
+        "ArmDropFraction": -1,
+        "HitRect": {
+          "mX": 30,
+          "mY": 10,
+          "mWidth": 115,
+          "mHeight": 340
+        },
+        "GridExtents": {
+          "mX": 2,
+          "mY": 2
+        },
+        "AttackRect": {
+          "mX": 15,
+          "mY": 0,
+          "mWidth": 20,
+          "mHeight": 125
+        },
+        "ArtCenter": {
+          "x": 30,
+          "y": 130
+        },
+        "AlmanacOffset": {
+          "x": 50,
+          "y": 180
+        },
+        "AlmanacScale": 0.55,
+        "ShadowOffset": {
+          "x": 55,
+          "y": -50,
+          "z": 0.8
+        },
+        "ShadowScaling": {
+          "x": 4.5,
+          "y": 4.5
+        },
+        "GroundTrackName": "ground_swatch",
+        "ZombieStats": [
+          {
+            "Type": "toughness",
+            "Value": "toughness8"
+          },
+          {
+            "Type": "speed",
+            "Value": "speed3"
+          }
+        ],
+        "ZombieLevelStats": [
+          {
+            "AttackLevel": 1,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 2,
+            "HitPointsLevel": 2
+          },
+          {
+            "AttackLevel": 3,
+            "HitPointsLevel": 3
+          },
+          {
+            "AttackLevel": 4.5,
+            "HitPointsLevel": 4.5
+          },
+          {
+            "AttackLevel": 5,
+            "HitPointsLevel": 5
+          }
+        ],
+        "CanTriggerZombieWin": false,
+        "IsValidPinchTarget": false,
+        "CanBeFlicked": false,
+        "SquashZombies": true,
+        "SquashGridItems": false,
+        "MinColumn": 5,
+        "MaxColumn": 7,
+        "HideDuringIntro": true,
+        "PowerUpDamageModifier": 0.25,
+        "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_COMMON",
+        "CrosshairAnimation": "missile_lock_reticle",
+        "RocketAnimation": "missile",
+        "RocketExplosionAnimation": "missile_explosion",
+        "Stages": [
+          {
+            "Actions": [
+              "RTID(ZombossPirateSpawn1@CurrentLevel)",
+              "RTID(ZombossPirateImpCannon1@CurrentLevel)",
+              "RTID(ZombossPirateWalk1@ZombieActions)"
+            ],
+            "HitPoints": 6000,
+            "Level": 1,
+            "DamageIndexFull": 0,
+            "DamageIndexHalf": 0,
+            "AnimRateModifier": 1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 1
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 4,
+            "StunDamageScale": 1.5,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(ZombossPirateWalk2@ZombieActions)",
+              "RTID(ZombossPirateSpawn2@CurrentLevel)",
+              "RTID(ZombossPirateRush2@ZombieActions)",
+              "RTID(ZombossPirateImpCannon1@CurrentLevel)"
+            ],
+            "HitPoints": 9000,
+            "Level": 1,
+            "DamageIndexFull": 3,
+            "DamageIndexHalf": 3,
+            "AnimRateModifier": 1.1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 1
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 3,
+            "StunDamageScale": 1.5,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(ZombossPirateSpawn3@CurrentLevel)",
+              "RTID(ZombossPirateRush3@ZombieActions)",
+              "RTID(ZombossPirateImpCannon3@CurrentLevel)"
+            ],
+            "HitPoints": 12000,
+            "Level": 1,
+            "DamageIndexFull": 6,
+            "DamageIndexHalf": 6,
+            "AnimRateModifier": 1.25,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.2,
+              "Max": 0.5
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 2,
+            "StunDamageScale": 1.5,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossPirateSpawn1"
+      ],
+      "objdata": {
+        "Weight": 18,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 700,
+          "Max": 1200
+        },
+        "SpawnZombieTypes": [
+          "pirate",
+          "pirate_armor1"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossPirateSpawn2"
+      ],
+      "objdata": {
+        "Weight": 18,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 1600,
+          "Max": 2400
+        },
+        "SpawnZombieTypes": [
+          "pirate_armor1",
+          "pirate_armor2",
+          "seagull"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossPirateSpawn3"
+      ],
+      "objdata": {
+        "Weight": 18,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 2400,
+          "Max": 3200
+        },
+        "SpawnZombieTypes": [
+          "pirate_armor1",
+          "pirate_armor2",
+          "seagull",
+          "pirate_captain"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.2,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossImpCannonActionDefinition",
+      "aliases": [
+        "ZombossPirateImpCannon1"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "ImpLaunchDelay": 2,
+        "ImpLaunchInterruptDamageAmount": 100,
+        "ImpLaunchCount": 5,
+        "ImpType": "tutorial_imp",
+        "ImpLaunchTime": 1,
+        "ImpLaunchTimeVariance": 0.5,
+        "ImpLaunchHeight": 700,
+        "ImpLaunchMinColumn": 4,
+        "ImpLaunchMaxColumn": 5
+      }
+    },
+    {
+      "objclass": "ZombossImpCannonActionDefinition",
+      "aliases": [
+        "ZombossPirateImpCannon3"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "ImpLaunchDelay": 2,
+        "ImpLaunchInterruptDamageAmount": 100,
+        "ImpLaunchCount": 7,
+        "ImpType": "tutorial_imp",
+        "ImpLaunchTime": 1,
+        "ImpLaunchTimeVariance": 0.5,
+        "ImpLaunchHeight": 700,
+        "ImpLaunchMinColumn": 3,
+        "ImpLaunchMaxColumn": 4
+      }
+    }
+  ]
+}

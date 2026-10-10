@@ -1,0 +1,245 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W4_DESC_4]",
+        "LevelNumber": 1,
+        "IsArtifactDisabled": true,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(BeghouledIntro@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(RandomSpawner@CurrentLevel)",
+          "RTID(BeghouledSeedBank@CurrentLevel)",
+          "RTID(BeghouledArcade@LevelModules)",
+          "RTID(BeghouledProps@CurrentLevel)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)"
+        ],
+        "Name": "[S34_MEMORY_LEVEL_NAME_028]",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(NightStage@LevelModules)",
+        "ShowZombies": [
+          "tutorial",
+          "tutorial_armor1",
+          "ScreenDoor",
+          "ladder"
+        ],
+        "ZombieMaxLevel": 1
+      }
+    },
+    {
+      "objclass": "BeghouledSeedBankProperties",
+      "aliases": [
+        "BeghouledSeedBank"
+      ],
+      "objdata": {
+        "PresetPlantList": [
+          "repeater",
+          "tallnut",
+          "melonpult",
+          "fumeshroom"
+        ],
+        "BeghouledUpgradeList": [
+          "threepeater",
+          "wintermelon"
+        ],
+        "SelectionMethod": "beghouled",
+        "GlobalLevel": 1
+      }
+    },
+    {
+      "objclass": "BeghouledZombieSpawnerProperties",
+      "aliases": [
+        "RandomSpawner"
+      ],
+      "objdata": {
+        "MatchCountsToStageAdvance": [
+          {
+            "MatchCount": 40,
+            "StageNumber": 1
+          },
+          {
+            "MatchCount": 55,
+            "StageNumber": 2
+          },
+          {
+            "MatchCount": 65,
+            "StageNumber": 3
+          }
+        ],
+        "Stages": [
+          {
+            "Types": [
+              {
+                "ZombieType": "tutorial",
+                "Weight": 7
+              },
+              {
+                "ZombieType": "tutorial_armor1",
+                "Weight": 3
+              }
+            ],
+            "SpawnDelay": 4.5
+          },
+          {
+            "Types": [
+              {
+                "ZombieType": "tutorial",
+                "Weight": 4
+              },
+              {
+                "ZombieType": "tutorial_armor1",
+                "Weight": 4
+              },
+              {
+                "ZombieType": "ScreenDoor",
+                "Weight": 4
+              }
+            ],
+            "SpawnDelay": 3.5
+          },
+          {
+            "Types": [
+              {
+                "ZombieType": "tutorial",
+                "Weight": 2
+              },
+              {
+                "ZombieType": "tutorial_armor1",
+                "Weight": 5
+              },
+              {
+                "ZombieType": "ScreenDoor",
+                "Weight": 5
+              }
+            ],
+            "SpawnDelay": 3.0
+          },
+          {
+            "Types": [
+              {
+                "ZombieType": "tutorial",
+                "Weight": 2
+              },
+              {
+                "ZombieType": "tutorial_armor1",
+                "Weight": 4
+              },
+              {
+                "ZombieType": "ScreenDoor",
+                "Weight": 6
+              },
+              {
+                "ZombieType": "ladder",
+                "Weight": 2
+              }
+            ],
+            "SpawnDelay": 2.5
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "BeghouledPresetProperties",
+      "aliases": [
+        "BeghouledProps"
+      ],
+      "objdata": {
+        "MatchesToWin": 75,
+        "InitialPlants": [
+          "peashooter",
+          "wallnut",
+          "cabbagepult",
+          "puffshroom",
+          "magnetshroom"
+        ],
+        "UpgradeMap": [
+          {
+            "BasePlant": "peashooter",
+            "UpgradedPlant": "repeater"
+          },
+          {
+            "BasePlant": "repeater",
+            "UpgradedPlant": "threepeater"
+          },
+          {
+            "BasePlant": "wallnut",
+            "UpgradedPlant": "tallnut"
+          },
+          {
+            "BasePlant": "cabbagepult",
+            "UpgradedPlant": "melonpult"
+          },
+          {
+            "BasePlant": "melonpult",
+            "UpgradedPlant": "wintermelon"
+          },
+          {
+            "BasePlant": "puffshroom",
+            "UpgradedPlant": "fumeshroom"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengePlantsLostProps",
+      "objdata": {
+        "MaximumPlantsLost": 15
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "PlantDefeatZombieChallengeProps",
+      "objdata": {
+        "PlantTypeName": "fumeshroom",
+        "NumZombiesToKill": 8,
+        "Description": "[S34_MEMORY_W4_L4_GOAL_2]"
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": []
+      }
+    }
+  ],
+  "version": 1,
+  "#comment": "PVZ1 S34 W4 4"
+}

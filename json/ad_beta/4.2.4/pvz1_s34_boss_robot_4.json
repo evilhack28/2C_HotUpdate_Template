@@ -1,0 +1,595 @@
+{
+  "#comment": "PVZ1 S34 W4 9",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[S34_MEMORY_W4_DESC_9]",
+        "LevelNumber": 1,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(ZombossIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombossMechBattle@CurrentLevel)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(InitialPlants@CurrentLevel)",
+          "RTID(StartingFood@CurrentLevel)",
+          "RTID(SupplySchedule@CurrentLevel)"
+        ],
+        "MusicType": "MiniGame_A",
+        "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_4]",
+        "NormalPresentTable": "future_normal_01",
+        "ShinyPresentTable": "future_shiny_01",
+        "StageModule": "RTID(AutumnLateStage@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StartingSun": 0,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": true,
+        "ShowZombies": [
+          "zombossmech_future_memo",
+          "future",
+          "future_armor1",
+          "future_armor2",
+          "future_protector",
+          "future_jetpack",
+          "future_imp",
+          "future_gargantuar",
+          "football_mech"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossMechBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossMechType": "zombossmech_future_memo",
+        "ZombossDeathRow": 3,
+        "ZombossDeathColumn": 5,
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        },
+        "ZombossStageCount": 3,
+        "ZombossStartStageIndex": 0
+      }
+    },
+    {
+      "aliases": [
+        "Challenges"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "PlantDefeatZombieChallengeProps",
+      "objdata": {
+        "PlantTypeName": "cherry_bomb",
+        "NumZombiesToKill": 8,
+        "Description": "[S34_MEMORY_W4_L9_GOAL_1]"
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengePlantsLostProps",
+      "objdata": {
+        "MaximumPlantsLost": 12
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "GlobalLevel": 1,
+        "InitialPlantList": [
+          {
+            "PlantType": "cosmicpea",
+            "Weight": 40,
+            "MaxCount": 12,
+            "MaxWeightFactor": 0,
+            "MinCount": 5,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          },
+          {
+            "PlantType": "cosmicmushroom",
+            "Weight": 25,
+            "MaxCount": 7,
+            "MaxWeightFactor": 0,
+            "MinCount": 2,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          },
+          {
+            "PlantType": "nekotail",
+            "Weight": 10,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "MinCount": 1,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          },
+          {
+            "PlantType": "wallnut",
+            "Weight": 18,
+            "MaxCount": 5,
+            "MaxWeightFactor": 0,
+            "MinCount": 2,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          },
+          {
+            "PlantType": "cherry_bomb",
+            "Weight": 10,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "MinCount": 0,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          },
+          {
+            "PlantType": "glaciershroom",
+            "Weight": 0,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "MinCount": 0,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1
+          }
+        ],
+        "DropDelayConditions": [
+          {
+            "MaxPackets": 0,
+            "Delay": 2.5
+          },
+          {
+            "MaxPackets": 4,
+            "Delay": 4
+          },
+          {
+            "MaxPackets": 7,
+            "Delay": 6
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "InitialPlants"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "GridX": 1,
+            "GridY": 1,
+            "Level": 1,
+            "TypeName": "cosmicpea"
+          },
+          {
+            "GridX": 1,
+            "GridY": 2,
+            "Level": 1,
+            "TypeName": "cosmicpea"
+          },
+          {
+            "GridX": 1,
+            "GridY": 3,
+            "Level": 1,
+            "TypeName": "cosmicpea"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "StartingFood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 1
+      }
+    },
+    {
+      "aliases": [
+        "SupplySchedule"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerProps": "RTID(SupplyWaves@CurrentLevel)",
+        "WaveManagerPropsVector": [
+          "RTID(SupplyWaves@CurrentLevel)",
+          "RTID(SupplyWaves@CurrentLevel)",
+          "RTID(SupplyWaves@CurrentLevel)",
+          "RTID(SupplyWaves@CurrentLevel)"
+        ],
+        "DynamicZombies": []
+      }
+    },
+    {
+      "aliases": [
+        "SupplyWaves"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "Description": "[S34_MEMORY_MODE_DESC_BOSS_4]",
+        "DescriptionName": "[S34_MEMORY_MODE_BOSS_4]",
+        "WaveCount": 1,
+        "Waves": [
+          [
+            "RTID(OpenLateSupply@CurrentLevel)"
+          ]
+        ],
+        "FlagWaveInterval": 10,
+        "SuppressFlagZombie": true,
+        "SuppressedDynamicZombieWaves": [
+          0
+        ],
+        "ZombieCountdownFirstWaveSecs": 45,
+        "ZombieCountdownFirstWaveConveyorSecs": 45,
+        "ZombieCountdownHugeWaveDelay": 0
+      }
+    },
+    {
+      "aliases": [
+        "OpenLateSupply"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "Weight": 32,
+            "MaxCount": 7,
+            "MaxWeightFactor": 0,
+            "MinCount": 2,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1,
+            "Type": "RTID(cosmicmushroom@PlantTypes)"
+          },
+          {
+            "Weight": 18,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "MinCount": 0,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1,
+            "Type": "RTID(cherry_bomb@PlantTypes)"
+          },
+          {
+            "Weight": 8,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "MinCount": 0,
+            "MinWeightFactor": 3,
+            "iLevel": 1,
+            "iAvatar": -1,
+            "Type": "RTID(glaciershroom@PlantTypes)"
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossFutureSpawn1"
+      ],
+      "objdata": {
+        "Weight": 12,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 900,
+          "Max": 1500
+        },
+        "SpawnZombieTypes": [
+          "future",
+          "future_armor1"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 3
+        }
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossFutureSpawn2"
+      ],
+      "objdata": {
+        "Weight": 18,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 2800,
+          "Max": 3800
+        },
+        "SpawnZombieTypes": [
+          "future_armor1",
+          "future_armor2",
+          "future_protector",
+          "football_mech"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 3
+        }
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "ZombossFutureSpawn3"
+      ],
+      "objdata": {
+        "Weight": 18,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 4200,
+          "Max": 5400
+        },
+        "SpawnZombieTypes": [
+          "future_armor2",
+          "future_protector",
+          "future_jetpack",
+          "football_mech",
+          "future_gargantuar"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 2,
+          "Max": 3
+        }
+      }
+    },
+    {
+      "objclass": "ZombieZombossMechFutureProps",
+      "aliases": [
+        "ZombieZombossMechFutureMemo"
+      ],
+      "objdata": {
+        "Speed": 0.1,
+        "CanSpawnPlantFood": false,
+        "EnableAutoTest": false,
+        "SizeType": "big",
+        "CanBeLaunchedByPlants": false,
+        "HeadDropFraction": -1,
+        "ArmDropFraction": -1,
+        "HitRect": {
+          "mX": 30,
+          "mY": 10,
+          "mWidth": 115,
+          "mHeight": 340
+        },
+        "GridExtents": {
+          "mX": 2,
+          "mY": 2
+        },
+        "AttackRect": {
+          "mX": 15,
+          "mY": 0,
+          "mWidth": 20,
+          "mHeight": 125
+        },
+        "ArtCenter": {
+          "x": 30,
+          "y": 130
+        },
+        "AlmanacOffset": {
+          "x": 40,
+          "y": 130
+        },
+        "AlmanacScale": 0.7,
+        "ShadowOffset": {
+          "x": 55,
+          "y": -50,
+          "z": 0.8
+        },
+        "ShadowScaling": {
+          "x": 4.5,
+          "y": 4.5
+        },
+        "GroundTrackName": "ground_swatch",
+        "ZombieStats": [
+          {
+            "Type": "toughness",
+            "Value": "toughness8"
+          },
+          {
+            "Type": "speed",
+            "Value": "speed3"
+          }
+        ],
+        "ZombieLevelStats": [
+          {
+            "AttackLevel": 1,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 2,
+            "HitPointsLevel": 2
+          },
+          {
+            "AttackLevel": 3,
+            "HitPointsLevel": 3
+          },
+          {
+            "AttackLevel": 4.5,
+            "HitPointsLevel": 4.5
+          },
+          {
+            "AttackLevel": 5,
+            "HitPointsLevel": 5
+          }
+        ],
+        "CanTriggerZombieWin": false,
+        "IsValidPinchTarget": false,
+        "CanBeFlicked": false,
+        "# Zomboss properties": 0,
+        "SquashZombies": true,
+        "SquashGridItems": false,
+        "MinColumn": 5,
+        "MaxColumn": 7,
+        "HideDuringIntro": false,
+        "PowerUpDamageModifier": 0.25,
+        "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_COMMON",
+        "CrosshairAnimation": "missile_lock_reticle",
+        "RocketAnimation": "missile",
+        "RocketExplosionAnimation": "missile_explosion",
+        "Stages": [
+          {
+            "Actions": [
+              "RTID(ZombossFutureWalk1@ZombieActions)",
+              "RTID(ZombossFutureSpawn1@CurrentLevel)",
+              "RTID(ZombossFutureFire1@ZombieActions)"
+            ],
+            "HitPoints": 13000,
+            "Level": 1,
+            "DamageIndexFull": 0,
+            "DamageIndexHalf": 0,
+            "AnimRateModifier": 1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 1
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 3,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(ZombossFutureWalk2@ZombieActions)",
+              "RTID(ZombossFutureSpawn2@CurrentLevel)",
+              "RTID(ZombossFutureFire2@ZombieActions)",
+              "RTID(ZombossFutureRush2@ZombieActions)"
+            ],
+            "HitPoints": 19000,
+            "Level": 1,
+            "DamageIndexFull": 3,
+            "DamageIndexHalf": 3,
+            "AnimRateModifier": 1.1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 0.5
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 2.5,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(ZombossFutureWalk3@ZombieActions)",
+              "RTID(ZombossFutureSpawn3@CurrentLevel)",
+              "RTID(ZombossFutureFire3@ZombieActions)",
+              "RTID(ZombossFutureRush3@ZombieActions)"
+            ],
+            "HitPoints": 22000,
+            "Level": 1,
+            "DamageIndexFull": 6,
+            "DamageIndexHalf": 6,
+            "AnimRateModifier": 1.25,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.2,
+              "Max": 0.5
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 2,
+            "StunDamageScale": 1.25,
+            "StunDamageColorFlash": {
+              "mRed": 255,
+              "mGreen": 200,
+              "mBlue": 200,
+              "mAlpha": 255
+            },
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

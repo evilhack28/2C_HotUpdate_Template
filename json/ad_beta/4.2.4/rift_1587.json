@@ -337,30 +337,6 @@
             "objdata": {
                 "DynamicZombies": [
                     {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                      "ZombiePool": [
-                        "RTID(camel_onehump@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                      "ZombiePool": [
-                        "RTID(camel_onehump@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                      "ZombiePool": [
-                        "RTID(camel_onehump@ZombieTypes)"
-                      ]
-                    },
-                    {
                         "PointIncrementPerWave": 125,
                         "StartingPoints": 0,
                         "StartingWave": 0,
@@ -369,26 +345,6 @@
                             "RTID(camel_twohump@ZombieTypes)",
                             "RTID(camel_manyhump@ZombieTypes)"
                         ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                      "ZombiePool": [
-                        "RTID(pharaoh@ZombieTypes)"
-                      ]
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": []
-                    },
-                    {
-                        "PointIncrementPerWave": 0,
-                        "StartingPoints": 0,
-                        "StartingWave": 0,
-                        "ZombiePool": []
                     }
                 ],
                 "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
