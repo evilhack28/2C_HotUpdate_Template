@@ -77,7 +77,7 @@
   "files": {
    "displayavataractions.json": "ee27c26c55223542e502bff447a0b514aeb7d3012c123c911dfaf009db80f69d",
    "levelmodules.json": "4027d8fc5b3b812a74d59028e8d2deb4b172dbdffbcd50b08d9512ff3ceefee3",
-   "propertysheets.json": "4e110b1f30509c35a436ad3486f23cd1e761e1e396bee927b61a3033dea41242",
+   "propertysheets.json": "811e96d1f765bc181a5501ecab48ec3c19520c6cd5e5c2adc27ece1fabcecf13",
    "pvz1_s34_10_h.json": "1beebd69b17f4e515b4f3fefe9dab3938dc718474360a69b04ab5e31627c426f",
    "pvz1_s34_11_h.json": "51a4a7cdc69144b289179421b0d66a0047f8e2ecd54956592c56e96fba1a0b07",
    "pvz1_s34_12_h.json": "f0a8f3501edaf4918847bcc75c569a8a9577626cc98c89886f8eb6fdea9ad0ca",
@@ -145,7 +145,7 @@
    "rift_1605.json": "451f055cb7b8850cfe742b22fd0b367082bd360b0f4aba41c69e312a92f89f50",
    "rift_1606.json": "40aa9fb20961e7b7bc563bb962f9e87e99409317ffbab355dc2bef527b92a092"
   },
-  "hash": "5be8929aa05b37d304635819c0c89ae4db81697a9ae5eeff1490a1ead4bb7428"
+  "hash": "1ecc252434eae43e6de5944cbbbc115c08cd9d922c462bf4365650ace21391b3"
  },
  "ad_beta/4.2.4": {
   "files": {
@@ -367,7 +367,7 @@
   "files": {
    "displayavataractions.json": "ee27c26c55223542e502bff447a0b514aeb7d3012c123c911dfaf009db80f69d",
    "levelmodules.json": "4027d8fc5b3b812a74d59028e8d2deb4b172dbdffbcd50b08d9512ff3ceefee3",
-   "propertysheets.json": "2dbeb8b5e3c3360a9cc4e4d48356cf20ae36d4267201c1a39e5a56d346e135ee",
+   "propertysheets.json": "811e96d1f765bc181a5501ecab48ec3c19520c6cd5e5c2adc27ece1fabcecf13",
    "pvz1_s34_10_h.json": "1beebd69b17f4e515b4f3fefe9dab3938dc718474360a69b04ab5e31627c426f",
    "pvz1_s34_11_h.json": "51a4a7cdc69144b289179421b0d66a0047f8e2ecd54956592c56e96fba1a0b07",
    "pvz1_s34_12_h.json": "f0a8f3501edaf4918847bcc75c569a8a9577626cc98c89886f8eb6fdea9ad0ca",
@@ -435,6 +435,6 @@
    "rift_1605.json": "451f055cb7b8850cfe742b22fd0b367082bd360b0f4aba41c69e312a92f89f50",
    "rift_1606.json": "40aa9fb20961e7b7bc563bb962f9e87e99409317ffbab355dc2bef527b92a092"
   },
-  "hash": "db3a10fb2e3db5559ed5d323f4c0dd256c83f62ffd6ecbd4e0e709418fec666c"
+  "hash": "a746b432cd57fed239a1ec0fc098730f3e3a809672d49edd126f892be052bd77"
  }
 }
