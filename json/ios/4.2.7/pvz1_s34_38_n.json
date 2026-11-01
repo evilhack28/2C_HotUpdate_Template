@@ -1,0 +1,1225 @@
+{
+  "version": 1,
+  "#comment": "S34 W5 L6",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Name": "[S34_MEMORY_LEVEL_NAME_038]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_038]",
+        "LevelNumber": 6,
+        "StartingSun": 1500,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "StageModule": "RTID(HalloweenStage@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(FairyTaleMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(StartingPlantfood@CurrentLevel)",
+          "RTID(SunDropper@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "dark",
+          "dark_armor2",
+          "dark_king"
+        ],
+        "FirstIntroNarrative": "",
+        "ReplayIntroNarrative": ""
+      }
+    },
+    {
+      "aliases": [
+        "StartingPlantfood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 0
+      }
+    },
+    {
+      "aliases": [
+        "SunDropper"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 18,
+        "SunCountdownBase": 18,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 18,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          "moonflower",
+          "shadowshroom",
+          "hurrikale",
+          "magnetshroom",
+          "doublesamara",
+          "imitater"
+        ],
+        "OverrideSeedSlotsCount": 6,
+        "GlobalLevel": 1
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "ApplyZombieConditionsChallengeProps",
+      "objdata": {
+        "NumZombieConditionsToApply": 18,
+        "ConditionToInflict": [
+          "shadowpoisoned"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 2000
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "objdata": {
+        "Time": 5,
+        "ZombiesToKill": 6
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "W01Group01"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01Group01OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W01Group02"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01Group02OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W02Group03"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02Group03OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W02Group04"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02Group04OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W03Group05"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03Group05OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W03Group06Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "W03Group06"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03Group06Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W04Group07"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04Group07OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W05Group08"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05Group08OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W05Group09"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05Group09OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W05Group10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05Group10OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W06Group11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06Group11OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W06Group12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06Group12OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W06Group13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06Group13OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W07Group14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_king@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 1
+      }
+    },
+    {
+      "aliases": [
+        "W07Group15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07Group15OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W07Group16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07Group16OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W07Group17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07Group17OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W07Group18Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "W07Group18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07Group18Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W08Group19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_king@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 1
+      }
+    },
+    {
+      "aliases": [
+        "W08Group20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08Group20OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W08Group21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08Group21OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W08Group22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08Group22OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W09Group23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_king@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "FixedOffset": 1
+      }
+    },
+    {
+      "aliases": [
+        "W09Group24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09Group24OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W09Group25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09Group25OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W09Group26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09Group26OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W09Group27Offsets"
+      ],
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 55
+      }
+    },
+    {
+      "aliases": [
+        "W09Group27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09Group27Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W10Group28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10Group28OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W10Group29"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10Group29OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W10Group30"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10Group30OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "W10Group31"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10Group31OffscreenOffsets@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "HintW2"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "[S34_W5_L6_POISON_HINT]",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    },
+    {
+      "aliases": [
+        "HintW4"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    },
+    {
+      "aliases": [
+        "HintW6"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "ManualStartup": false,
+        "DynamicZombies": [],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+        "WaveManagerPropsVector": [
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "Waves": [
+          [
+            "RTID(W01Group01@CurrentLevel)",
+            "RTID(W01Group02@CurrentLevel)",
+            "RTID(HintW1@CurrentLevel)"
+          ],
+          [
+            "RTID(W02Group03@CurrentLevel)",
+            "RTID(W02Group04@CurrentLevel)",
+            "RTID(HintW2@CurrentLevel)"
+          ],
+          [
+            "RTID(W03Group05@CurrentLevel)",
+            "RTID(W03Group06@CurrentLevel)"
+          ],
+          [
+            "RTID(W04Group07@CurrentLevel)",
+            "RTID(HintW4@CurrentLevel)"
+          ],
+          [
+            "RTID(W05Group08@CurrentLevel)",
+            "RTID(W05Group09@CurrentLevel)",
+            "RTID(W05Group10@CurrentLevel)"
+          ],
+          [
+            "RTID(W06Group11@CurrentLevel)",
+            "RTID(W06Group12@CurrentLevel)",
+            "RTID(W06Group13@CurrentLevel)",
+            "RTID(HintW6@CurrentLevel)"
+          ],
+          [
+            "RTID(W07Group14@CurrentLevel)",
+            "RTID(W07Group15@CurrentLevel)",
+            "RTID(W07Group16@CurrentLevel)",
+            "RTID(W07Group17@CurrentLevel)",
+            "RTID(W07Group18@CurrentLevel)"
+          ],
+          [
+            "RTID(W08Group19@CurrentLevel)",
+            "RTID(W08Group20@CurrentLevel)",
+            "RTID(W08Group21@CurrentLevel)",
+            "RTID(W08Group22@CurrentLevel)"
+          ],
+          [
+            "RTID(W09Group23@CurrentLevel)",
+            "RTID(W09Group24@CurrentLevel)",
+            "RTID(W09Group25@CurrentLevel)",
+            "RTID(W09Group26@CurrentLevel)",
+            "RTID(W09Group27@CurrentLevel)"
+          ],
+          [
+            "RTID(W10Group28@CurrentLevel)",
+            "RTID(W10Group29@CurrentLevel)",
+            "RTID(W10Group30@CurrentLevel)",
+            "RTID(W10Group31@CurrentLevel)"
+          ]
+        ],
+        "WaveCount": 10,
+        "FlagWaveInterval": 5,
+        "SuppressFlagZombie": false,
+        "MinNextWaveHealthPercentage": 0,
+        "MaxNextWaveHealthPercentage": 0,
+        "ZombieCountdownFirstWaveSecs": 10,
+        "ZombieCountdownFirstWaveConveyorSecs": 5,
+        "ZombieCountdownHugeWaveDelay": 5,
+        "DescriptionName": "[S34_W5_L6_MODE_NAME]",
+        "Description": "[S34_W5_L6_MODE_DESC]"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01Group01OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01Group02OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02Group03OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02Group04OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03Group05OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04Group07OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05Group08OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 13
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05Group09OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 73
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05Group10OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 73
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06Group11OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06Group12OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06Group13OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07Group15OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07Group16OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07Group17OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08Group20OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08Group21OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08Group22OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09Group24OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 13
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09Group25OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 89
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09Group26OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 89
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10Group28OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10Group29OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10Group30OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10Group31OffscreenOffsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 97
+      }
+    },
+    {
+      "aliases": [
+        "HintW1"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "[S34_W5_L6_PLANTING_HINT]",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    }
+  ]
+}
