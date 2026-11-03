@@ -1,0 +1,2312 @@
+{
+  "version": 1,
+  "#comment": "S34 W5 L7",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Name": "[S34_MEMORY_LEVEL_NAME_039]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_039]",
+        "LevelNumber": 7,
+        "StartingSun": 2000,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "StageModule": "RTID(HalloweenStage@LevelModules)",
+        "Modules": [
+          "RTID(Intro@CurrentLevel)",
+          "RTID(FairyTaleMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(StartingPlantfood@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "journey_to_the_west",
+          "journey_to_the_west_armor1",
+          "journey_to_the_west_armor2",
+          "iceage_hunter",
+          "ladder"
+        ],
+        "FirstIntroNarrative": "",
+        "ReplayIntroNarrative": ""
+      }
+    },
+    {
+      "aliases": [
+        "Intro"
+      ],
+      "objclass": "LastStandMinigameProperties",
+      "objdata": {
+        "StartingSun": 2000,
+        "StartingPlantfood": 0,
+        "DisablePlantTags": []
+      }
+    },
+    {
+      "aliases": [
+        "StartingPlantfood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 0
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          "celerystalker",
+          "wallnut",
+          "stunion",
+          "cherry_bomb",
+          "hotpotato",
+          "primalpotatomine"
+        ],
+        "OverrideSeedSlotsCount": 6,
+        "GlobalLevel": 1
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "ManualStartup": true,
+        "DynamicZombies": [],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+        "WaveManagerPropsVector": [
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)",
+          "RTID(WaveManagerProps@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "aliases": [
+        "Goal1"
+      ],
+      "objdata": {
+        "ZombiesToKill": 8,
+        "Time": 5
+      }
+    },
+    {
+      "objclass": "StarChallengeSaveMowersProps",
+      "aliases": [
+        "Goal2"
+      ],
+      "objdata": {}
+    },
+    {
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "aliases": [
+        "Goal3"
+      ],
+      "objdata": {
+        "MaximumPlants": 25
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01G001Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W01G001"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01G001Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01G002Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W01G002"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01G002Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01G003Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W01G003"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01G003Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W01G004Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W01G004"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01G004Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02G005Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W02G005"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02G005Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02G006Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W02G006"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "JitterOffsets": "RTID(W02G006Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02G007Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W02G007"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02G007Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02G008Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W02G008"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02G008Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W02G009Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W02G009"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02G009Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "aliases": [
+        "HintW2"
+      ],
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03G010Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W03G010"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03G010Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03G011Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W03G011"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03G011Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03G012Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W03G012"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03G012Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03G013Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W03G013"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03G013Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W03G014Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W03G014"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03G014Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G015Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G015"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G015Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G016Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G016"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G016Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G017Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G017"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G017Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G018Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G018"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G018Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G019Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G019"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G019Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W04G020Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W04G020"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04G020Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "aliases": [
+        "HintW4"
+      ],
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G021Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G021"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G021Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G022Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 41,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G022"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G022Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G023Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G023"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G023Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G024Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G024"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G024Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G025Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G025"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G025Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G026Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G026"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W05G026Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W05G027Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W05G027"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "JitterOffsets": "RTID(W05G027Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G028Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G028"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G028Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G029Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 20,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G029"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G029Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G030Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 41,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G030"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G030Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G031Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G031"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G031Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G032Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G032"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G032Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G033Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G033"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G033Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W06G034Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W06G034"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06G034Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G035Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G035"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G035Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G036Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 41,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G036"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G036Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G037Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 57,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G037"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G037Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G038Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G038"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G038Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G039Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G039"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G039Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G040Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G040"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G040Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G041Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G041"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G041Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W07G042Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W07G042"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07G042Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G043Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G043"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G043Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G044Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 20,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G044"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G044Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G045Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G045"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G045Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G046Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G046"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G046Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G047Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G047"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G047Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G048Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G048"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08G048Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W08G049Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W08G049"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "JitterOffsets": "RTID(W08G049Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G050Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G050"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G050Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G051Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 20,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G051"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G051Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G052Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 41,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G052"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G052Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G053Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 57,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G053"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G053Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G054Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G054"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G054Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G055Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G055"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G055Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G056Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G056"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G056Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G057Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G057"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G057Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W09G058Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W09G058"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09G058Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G059Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 16,
+        "ZombieSpawningRandomJitter": 25
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G059"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G059Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G060Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 20,
+        "ZombieSpawningRandomJitter": 29
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G060"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(iceage_hunter@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G060Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G061Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 41,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G061"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G061Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G062Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 57,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G062"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(ladder@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G062Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G063Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G063"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G063Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G064Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G064"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G064Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G065Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G065"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G065Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G066Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G066"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west_armor2@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G066Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W10G067Offsets"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 99
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10G067"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(journey_to_the_west@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10G067Offsets@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "WaveManagerProperties",
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objdata": {
+        "Waves": [
+          [
+            "RTID(W01G001@CurrentLevel)",
+            "RTID(W01G002@CurrentLevel)",
+            "RTID(W01G003@CurrentLevel)",
+            "RTID(W01G004@CurrentLevel)"
+          ],
+          [
+            "RTID(W02G005@CurrentLevel)",
+            "RTID(W02G006@CurrentLevel)",
+            "RTID(W02G007@CurrentLevel)",
+            "RTID(W02G008@CurrentLevel)",
+            "RTID(W02G009@CurrentLevel)",
+            "RTID(HintW2@CurrentLevel)"
+          ],
+          [
+            "RTID(W03G010@CurrentLevel)",
+            "RTID(W03G011@CurrentLevel)",
+            "RTID(W03G012@CurrentLevel)",
+            "RTID(W03G013@CurrentLevel)",
+            "RTID(W03G014@CurrentLevel)"
+          ],
+          [
+            "RTID(W04G015@CurrentLevel)",
+            "RTID(W04G016@CurrentLevel)",
+            "RTID(W04G017@CurrentLevel)",
+            "RTID(W04G018@CurrentLevel)",
+            "RTID(W04G019@CurrentLevel)",
+            "RTID(W04G020@CurrentLevel)",
+            "RTID(HintW4@CurrentLevel)"
+          ],
+          [
+            "RTID(W05G021@CurrentLevel)",
+            "RTID(W05G022@CurrentLevel)",
+            "RTID(W05G023@CurrentLevel)",
+            "RTID(W05G024@CurrentLevel)",
+            "RTID(W05G025@CurrentLevel)",
+            "RTID(W05G026@CurrentLevel)",
+            "RTID(W05G027@CurrentLevel)"
+          ],
+          [
+            "RTID(W06G028@CurrentLevel)",
+            "RTID(W06G029@CurrentLevel)",
+            "RTID(W06G030@CurrentLevel)",
+            "RTID(W06G031@CurrentLevel)",
+            "RTID(W06G032@CurrentLevel)",
+            "RTID(W06G033@CurrentLevel)",
+            "RTID(W06G034@CurrentLevel)"
+          ],
+          [
+            "RTID(W07G035@CurrentLevel)",
+            "RTID(W07G036@CurrentLevel)",
+            "RTID(W07G037@CurrentLevel)",
+            "RTID(W07G038@CurrentLevel)",
+            "RTID(W07G039@CurrentLevel)",
+            "RTID(W07G040@CurrentLevel)",
+            "RTID(W07G041@CurrentLevel)",
+            "RTID(W07G042@CurrentLevel)"
+          ],
+          [
+            "RTID(W08G043@CurrentLevel)",
+            "RTID(W08G044@CurrentLevel)",
+            "RTID(W08G045@CurrentLevel)",
+            "RTID(W08G046@CurrentLevel)",
+            "RTID(W08G047@CurrentLevel)",
+            "RTID(W08G048@CurrentLevel)",
+            "RTID(W08G049@CurrentLevel)"
+          ],
+          [
+            "RTID(W09G050@CurrentLevel)",
+            "RTID(W09G051@CurrentLevel)",
+            "RTID(W09G052@CurrentLevel)",
+            "RTID(W09G053@CurrentLevel)",
+            "RTID(W09G054@CurrentLevel)",
+            "RTID(W09G055@CurrentLevel)",
+            "RTID(W09G056@CurrentLevel)",
+            "RTID(W09G057@CurrentLevel)",
+            "RTID(W09G058@CurrentLevel)"
+          ],
+          [
+            "RTID(W10G059@CurrentLevel)",
+            "RTID(W10G060@CurrentLevel)",
+            "RTID(W10G061@CurrentLevel)",
+            "RTID(W10G062@CurrentLevel)",
+            "RTID(W10G063@CurrentLevel)",
+            "RTID(W10G064@CurrentLevel)",
+            "RTID(W10G065@CurrentLevel)",
+            "RTID(W10G066@CurrentLevel)",
+            "RTID(W10G067@CurrentLevel)"
+          ]
+        ],
+        "WaveCount": 10,
+        "FlagWaveInterval": 5,
+        "SuppressFlagZombie": false,
+        "MinNextWaveHealthPercentage": 0,
+        "MaxNextWaveHealthPercentage": 0,
+        "ZombieCountdownFirstWaveSecs": 2,
+        "ZombieCountdownFirstWaveConveyorSecs": 8,
+        "ZombieCountdownHugeWaveDelay": 5,
+        "DescriptionName": "[S34_W5_L7_MODE_NAME]",
+        "Description": "[S34_W5_L7_MODE_DESC]"
+      }
+    }
+  ]
+}

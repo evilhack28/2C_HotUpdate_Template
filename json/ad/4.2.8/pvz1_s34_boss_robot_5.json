@@ -1,0 +1,599 @@
+{
+  "version": 1,
+  "#comment": "S34 W5 L9",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_5]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_BOSS_5]",
+        "LevelNumber": 9,
+        "StartingSun": 1800,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "StageModule": "RTID(HalloweenStage@LevelModules)",
+        "Modules": [
+          "RTID(ZombossIntro@LevelModules)",
+          "RTID(FairyTaleMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(StartingPlantfood@CurrentLevel)",
+          "RTID(SunDropper@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(InitialGridItems@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "mummy",
+          "mummy_armor1",
+          "mummy_armor2",
+          "zombossmech_egypt_memo"
+        ],
+        "FirstIntroNarrative": "",
+        "ReplayIntroNarrative": ""
+      }
+    },
+    {
+      "aliases": [
+        "StartingPlantfood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 1
+      }
+    },
+    {
+      "aliases": [
+        "SunDropper"
+      ],
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 12,
+        "SunCountdownBase": 12,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 12,
+        "SunCountdownIncreasePerSun": 0
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          "melonpult",
+          "sunflower",
+          "gravebuster",
+          "intensivecarrot",
+          "iceburg",
+          "jalapeno"
+        ],
+        "OverrideSeedSlotsCount": 6,
+        "GlobalLevel": 1
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "objclass": "ZombossWalkActionDefinition",
+      "aliases": [
+        "S34W5Walk1"
+      ],
+      "objdata": {
+        "Weight": 3,
+        "RepeatMin": 1,
+        "RepeatMax": 2,
+        "WalkVerticalChance": 0.5,
+        "WalkPreferSquashChance": 1
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "S34W5Spawn1"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 400,
+          "Max": 600
+        },
+        "SpawnZombieTypes": [
+          "mummy",
+          "mummy_armor1"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 1,
+          "Max": 1
+        }
+      }
+    },
+    {
+      "objclass": "ZombossRushActionDefinition",
+      "aliases": [
+        "S34W5Rush1"
+      ],
+      "objdata": {
+        "Weight": 0,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "RushTime": 1.6,
+        "RushDamageToInterrupt": 100,
+        "RushLeadupTime": 1.5,
+        "RushLeadupStartRate": 1,
+        "RushLeadupEndRate": 1,
+        "RushLeadupBackup": 60,
+        "RushStartRate": 1.5,
+        "RushEndRate": 4,
+        "RushOvershoot": 80,
+        "RushSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush"
+      }
+    },
+    {
+      "objclass": "ZombossFireActionDefinition",
+      "aliases": [
+        "S34W5Fire1"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "FireMinColumn": 0,
+        "FireMaxColumn": 7,
+        "FireRowRange": 3,
+        "FireTargetPlantWeight": 2,
+        "FireTargetEmptyWeight": 1,
+        "FireRocketHitTime": 0.75,
+        "FireRocketSpeed": 500,
+        "FireRocketDropSound": "Play_Zomb_Egypt_Zomboss_Attack_Projectile_Impact_Whistle",
+        "FireRocketCount": {
+          "Min": 1,
+          "Max": 1
+        }
+      }
+    },
+    {
+      "objclass": "ZombossWalkActionDefinition",
+      "aliases": [
+        "S34W5Walk2"
+      ],
+      "objdata": {
+        "Weight": 2,
+        "RepeatMin": 1,
+        "RepeatMax": 2,
+        "WalkVerticalChance": 0.75,
+        "WalkPreferSquashChance": 1
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "S34W5Spawn2"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 700,
+          "Max": 1000
+        },
+        "SpawnZombieTypes": [
+          "mummy",
+          "mummy_armor1",
+          "mummy_armor2"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 1,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossRushActionDefinition",
+      "aliases": [
+        "S34W5Rush2"
+      ],
+      "objdata": {
+        "Weight": 0,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "RushTime": 1.6,
+        "RushDamageToInterrupt": 100,
+        "RushLeadupTime": 1.5,
+        "RushLeadupStartRate": 1,
+        "RushLeadupEndRate": 1,
+        "RushLeadupBackup": 60,
+        "RushStartRate": 1.5,
+        "RushEndRate": 6,
+        "RushOvershoot": 80,
+        "RushSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush"
+      }
+    },
+    {
+      "objclass": "ZombossFireActionDefinition",
+      "aliases": [
+        "S34W5Fire2"
+      ],
+      "objdata": {
+        "Weight": 14,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "FireMinColumn": 0,
+        "FireMaxColumn": 7,
+        "FireRowRange": 3,
+        "FireTargetPlantWeight": 3,
+        "FireTargetEmptyWeight": 1,
+        "FireRocketHitTime": 0.75,
+        "FireRocketSpeed": 500,
+        "FireRocketDropSound": "Play_Zomb_Egypt_Zomboss_Attack_Projectile_Impact_Whistle",
+        "FireRocketCount": {
+          "Min": 2,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossWalkActionDefinition",
+      "aliases": [
+        "S34W5Walk3"
+      ],
+      "objdata": {
+        "Weight": 0,
+        "RepeatMin": 1,
+        "RepeatMax": 2,
+        "WalkVerticalChance": 0.75,
+        "WalkPreferSquashChance": 1
+      }
+    },
+    {
+      "objclass": "ZombossSpawnActionDefinition",
+      "aliases": [
+        "S34W5Spawn3"
+      ],
+      "objdata": {
+        "Weight": 10,
+        "RepeatMin": 1,
+        "RepeatMax": 1,
+        "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+        "SpawnZombieWavePointRange": {
+          "Min": 900,
+          "Max": 1200
+        },
+        "SpawnZombieTypes": [
+          "mummy",
+          "mummy_armor1",
+          "mummy_armor2"
+        ],
+        "SpawnChargeTime": 0.5,
+        "SpawnCooldownTime": 0.5,
+        "SpawnWavesBetweenPlantFood": {
+          "Min": 1,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombossRushActionDefinition",
+      "aliases": [
+        "S34W5Rush3"
+      ],
+      "objdata": {
+        "Weight": 8,
+        "RepeatMin": 0,
+        "RepeatMax": 0,
+        "RushTime": 1.6,
+        "RushDamageToInterrupt": 100,
+        "RushLeadupTime": 1.5,
+        "RushLeadupStartRate": 1,
+        "RushLeadupEndRate": 1,
+        "RushLeadupBackup": 60,
+        "RushStartRate": 1.5,
+        "RushEndRate": 8,
+        "RushOvershoot": 80,
+        "RushSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush"
+      }
+    },
+    {
+      "objclass": "ZombossFireActionDefinition",
+      "aliases": [
+        "S34W5Fire3"
+      ],
+      "objdata": {
+        "Weight": 12,
+        "RepeatMin": 0,
+        "RepeatMax": 1,
+        "FireMinColumn": 0,
+        "FireMaxColumn": 7,
+        "FireRowRange": 3,
+        "FireTargetPlantWeight": 4,
+        "FireTargetEmptyWeight": 1,
+        "FireRocketHitTime": 0.75,
+        "FireRocketSpeed": 500,
+        "FireRocketDropSound": "Play_Zomb_Egypt_Zomboss_Attack_Projectile_Impact_Whistle",
+        "FireRocketCount": {
+          "Min": 1,
+          "Max": 2
+        }
+      }
+    },
+    {
+      "objclass": "ZombieZombossMechEgyptProps",
+      "aliases": [
+        "ZombieZombossMechEgyptMemo"
+      ],
+      "objdata": {
+        "Speed": 0.1,
+        "CanSpawnPlantFood": false,
+        "EnableAutoTest": false,
+        "SizeType": "big",
+        "CanBeLaunchedByPlants": false,
+        "HeadDropFraction": -1,
+        "ArmDropFraction": -1,
+        "HitRect": {
+          "mX": 30,
+          "mY": 10,
+          "mWidth": 115,
+          "mHeight": 340
+        },
+        "GridExtents": {
+          "mX": 3,
+          "mY": 2
+        },
+        "AttackRect": {
+          "mX": 15,
+          "mY": 0,
+          "mWidth": 20,
+          "mHeight": 125
+        },
+        "ArtCenter": {
+          "x": 30,
+          "y": 100
+        },
+        "AlmanacOffset": {
+          "x": 50,
+          "y": 16
+        },
+        "AlmanacScale": 0.7,
+        "ShadowOffset": {
+          "x": 55,
+          "y": -50,
+          "z": 0.8
+        },
+        "ShadowScaling": {
+          "x": 4.5,
+          "y": 4.5
+        },
+        "GroundTrackName": "ground_swatch",
+        "ZombieStats": [
+          {
+            "Type": "toughness",
+            "Value": "toughness8"
+          },
+          {
+            "Type": "speed",
+            "Value": "speed3"
+          }
+        ],
+        "ZombieLevelStats": [
+          {
+            "AttackLevel": 1,
+            "HitPointsLevel": 1
+          },
+          {
+            "AttackLevel": 2,
+            "HitPointsLevel": 2
+          },
+          {
+            "AttackLevel": 3,
+            "HitPointsLevel": 3
+          },
+          {
+            "AttackLevel": 4.5,
+            "HitPointsLevel": 4.5
+          },
+          {
+            "AttackLevel": 5,
+            "HitPointsLevel": 5
+          }
+        ],
+        "CanTriggerZombieWin": false,
+        "IsValidPinchTarget": false,
+        "CanBeFlicked": false,
+        "SquashZombies": true,
+        "SquashGridItems": false,
+        "HideDuringIntro": true,
+        "PowerUpDamageModifier": 0.25,
+        "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_COMMON",
+        "CrosshairAnimation": "missile_lock_reticle",
+        "RocketAnimation": "missile",
+        "RocketExplosionAnimation": "missile_explosion",
+        "NumRocketGravestones": 2,
+        "BoneProjectileType": "RTID(ZombieBoneDefault@ProjectileTypes)",
+        "Stages": [
+          {
+            "Actions": [
+              "RTID(S34W5Walk1@CurrentLevel)",
+              "RTID(S34W5Spawn1@CurrentLevel)",
+              "RTID(S34W5Rush1@CurrentLevel)",
+              "RTID(S34W5Fire1@CurrentLevel)"
+            ],
+            "HitPoints": 4500,
+            "DamageIndexFull": 0,
+            "DamageIndexHalf": 0,
+            "AnimRateModifier": 1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 1
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 4,
+            "StunDamageScale": 1.5,
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(S34W5Walk2@CurrentLevel)",
+              "RTID(S34W5Spawn2@CurrentLevel)",
+              "RTID(S34W5Rush2@CurrentLevel)",
+              "RTID(S34W5Fire2@CurrentLevel)"
+            ],
+            "HitPoints": 6000,
+            "DamageIndexFull": 3,
+            "DamageIndexHalf": 3,
+            "AnimRateModifier": 1.1,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.5,
+              "Max": 0.5
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 3.5,
+            "StunDamageScale": 1.5,
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          },
+          {
+            "Actions": [
+              "RTID(S34W5Walk3@CurrentLevel)",
+              "RTID(S34W5Spawn3@CurrentLevel)",
+              "RTID(S34W5Rush3@CurrentLevel)",
+              "RTID(S34W5Fire3@CurrentLevel)"
+            ],
+            "HitPoints": 4500,
+            "DamageIndexFull": 6,
+            "DamageIndexHalf": 6,
+            "AnimRateModifier": 1.25,
+            "ChilledDurationFromFrozen": 10,
+            "IdleTime": {
+              "Min": 0.2,
+              "Max": 0.5
+            },
+            "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+            "StunTime": 3,
+            "StunDamageScale": 1.5,
+            "StunStaggerBackMovement": 80,
+            "StunStaggerBackTime": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossMechType": "zombossmech_egypt_memo",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        },
+        "ZombossDeathRow": 3,
+        "ZombossDeathColumn": 5,
+        "ZombossStartStageIndex": 0,
+        "ZombossStageCount": 3
+      }
+    },
+    {
+      "objclass": "StarChallengeSunProducedProps",
+      "aliases": [
+        "Goal1"
+      ],
+      "objdata": {
+        "TargetSun": 3000
+      }
+    },
+    {
+      "objclass": "PlantDefeatZombieChallengeProps",
+      "aliases": [
+        "Goal2"
+      ],
+      "objdata": {
+        "PlantTypeName": "melonpult",
+        "NumZombiesToKill": 10,
+        "Description": "[S34_W5_L9_KILL]"
+      }
+    },
+    {
+      "objclass": "StarChallengeSaveMowersProps",
+      "aliases": [
+        "Goal3"
+      ],
+      "objdata": {}
+    },
+    {
+      "objclass": "InitialGridItemProperties",
+      "aliases": [
+        "InitialGridItems"
+      ],
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "gravestone_egypt"
+          },
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "gravestone_egypt"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "gravestone_egypt"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "gravestone_egypt"
+          }
+        ]
+      }
+    }
+  ]
+}

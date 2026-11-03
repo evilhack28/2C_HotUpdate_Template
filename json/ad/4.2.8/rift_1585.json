@@ -1,0 +1,606 @@
+{
+    "#comment": "LOD 190",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_RIFT]",
+        "LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+        "LevelNumber": 4,
+        "Loot": "",
+        "Modules": [
+          "RTID(FutureMowers@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Gravestones@CurrentLevel)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(StandardRiftIntro@LevelModules)",
+          "RTID(PerkActivator@CurrentLevel)"
+        ],
+        "Name": "[RIFT_LEVEL_NAME]",
+        "NormalPresentTable": "egypt_normal_01",
+
+        "PerksDisabledInLevel": [
+          "moarscore",
+          "sunbreak",
+          "applyconditionsuncarrier50",
+          "sunbank",
+          "bossbustercannon",
+          "heavywatering",
+          "zombieinhibitorballista"
+        ],
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(RiftStage@LevelModules)",
+        "VictoryModule": "RTID(RiftOutro@LevelModules)"
+      }
+    },
+
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MaxNextWaveHealthPercentage": 0.9,
+        "MinNextWaveHealthPercentage": 0.8,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(Wave1ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4StormEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6StormEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Wave7StormEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9StormEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10StormEvent0@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave1" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave2" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave3" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave4" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": []
+      }
+    },
+    {
+      "aliases": [ "Wave5" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave6" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": []
+      }
+    },
+    {
+      "aliases": [ "Wave7" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": []
+      }
+    },
+    {
+      "aliases": [ "Wave8" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave9" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(roman_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Gravestones"
+      ],
+      "objclass": "GravestoneProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 50,
+            "StartingWave": 1,
+            "ZombiePool": [
+              "RTID(roman_healer@ZombieTypes)",
+              "RTID(renai_worker@ZombieTypes)",              
+              "RTID(roman_gargantuar@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 3,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 3,
+            "MaxPackets": 2
+          },
+          {
+            "Delay": 9,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 12,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "MaxCount": 4,
+            "MaxWeightFactor": 0,
+            "MinCount": 2,
+            "MinWeightFactor": 5,
+            "PlantType": "sweetpotato",
+            "Weight": 40
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [ "Wave10" ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(roman_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 4,
+            "MaxWeightFactor": 0.5,
+            "Type": "RTID(bonkchoy@PlantTypes)",
+            "Weight": 40
+          },
+          {
+            "Type": "RTID(snowpea@PlantTypes)",
+            "Weight": 30
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "PerkActivator"
+      ],
+      "objclass": "PerkHandlerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "LevelMutator"
+      ],
+      "objclass": "LevelMutatorModuleProperties",
+      "objdata": {
+        "MutatorTables": [
+          "RTID(MutatorPropsRiftConveyor@LevelMutatorTables)",
+          "RTID(LocalChallengeMutator@CurrentLevel)",
+          "RTID(LocalMainChallengeMutator@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "LocalMainChallengeMutator"
+      ],
+      "objclass": "LevelMutatorTableProps",
+      "objdata": {
+        "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    }
+                ]
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "[STARCHALLENGE_RIFT_NORMAL]",
+        "DescriptiveName": "[STARCHALLENGE_RIFT_NORMAL_NAME]"
+      }
+    },
+
+    {
+      "aliases": [
+        "LocalChallengeMutator"
+      ],
+      "objclass": "LevelMutatorTableProps",
+      "objdata": {
+        "Tables": [
+          {
+            "Level": 0,
+            "ModuleType": "bonuschallenge",
+            "Modules": [
+              "RTID(ZombieDistance1@CurrentLevel)"
+            ]
+          },
+          {
+            "Level": 1,
+            "ModuleType": "bonuschallenge",
+            "Modules": [
+              "RTID(ZombieDistance2@CurrentLevel)",
+              "RTID(SimultaneousPlants2@CurrentLevel)"
+            ]
+          },
+          {
+            "Level": 2,
+            "ModuleType": "bonuschallenge",
+            "Modules": [
+              "RTID(ZombieDistance3@CurrentLevel)",
+              "RTID(SimultaneousPlants3@CurrentLevel)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance1"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 2
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance2"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 3
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance3"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 4
+      }
+    },
+    {
+      "aliases": [
+        "SimultaneousPlants2"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 18
+      }
+    },
+    {
+      "aliases": [
+        "SimultaneousPlants3"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 15
+      }
+    },
+    {
+      "aliases": [
+        "Wave4StormEvent0"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 6,
+        "ColumnStart": 4,
+        "GroupSize": "2",
+        "TimeBetweenGroups": "3",
+        "Type": "sandstorm",
+        "Zombies": [
+          {
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6StormEvent0"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 6,
+        "ColumnStart": 4,
+        "GroupSize": 4,
+        "TimeBetweenGroups": "3",
+        "Type": "sandstorm",
+        "Zombies": [
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(renai_worker@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7StormEvent0"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 5,
+        "ColumnStart": 3,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "3",
+        "Type": "sandstorm",
+        "Zombies": [
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9StormEvent0"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 5,
+        "ColumnStart": 3,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "3",
+        "Type": "sandstorm",
+        "Zombies": [
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10StormEvent0"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 5,
+        "ColumnStart": 3,
+        "GroupSize": 2,
+        "TimeBetweenGroups": "3",
+        "Type": "sandstorm",
+        "Zombies": [
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(roman_healer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 2,
+            "MaxWeightFactor": 0.1,
+            "MinCount": 1,
+            "MinWeightFactor": 10,
+            "Type": "RTID(banana@PlantTypes)",
+            "Weight": 30
+          }
+        ],
+        "Remove": []
+      }
+    }
+  ],
+    "version": 1
+}

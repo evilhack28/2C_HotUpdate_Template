@@ -1,0 +1,637 @@
+{
+    "version": 1,
+    "#comment": "PVZ1 S34 H17",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_HARD_NAME_017]",
+                "Description": "[S34_MEMORY_HARD_DESC_017]",
+                "LevelNumber": 17,
+                "StartingSun": 500,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(NightStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "Modules": [
+                    "RTID(ZombossIntro@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(RiftThemeDemo@CurrentLevel)",
+                    "RTID(BossBattle@CurrentLevel)",
+                    "RTID(Rails@CurrentLevel)",
+                    "RTID(StartingPlantfood@CurrentLevel)",
+                    "RTID(StartingDefense@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "future",
+                    "future_armor1",
+                    "future_jetpack",
+                    "future_protector",
+                    "football_mech",
+                    "disco_mech"
+                ],
+                "IsBossFight": true
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "preset",
+                "OverrideSeedSlotsCount": 6,
+                "GlobalLevel": 1,
+                "PresetPlantList": [
+                    "sunflower",
+                    "repeater",
+                    "laser_bean",
+                    "wallnut",
+                    "blover",
+                    "cherry_bomb"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RiftThemeDemo"
+            ],
+            "objclass": "RiftThemeDemoModuleProperties",
+            "objdata": {
+                "DemoRiftThemeName": []
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "Goal1"
+            ],
+            "objclass": "StarChallengeSaveMowersProps",
+            "objdata": {}
+        },
+        {
+            "aliases": [
+                "Goal2"
+            ],
+            "objclass": "StarChallengeSimultaneousPlantsProps",
+            "objdata": {
+                "MaximumPlants": 14
+            }
+        },
+        {
+            "aliases": [
+                "Goal3"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 10
+            }
+        },
+        {
+            "aliases": [
+                "BossBattle"
+            ],
+            "objclass": "ZombossBattleModuleProperties",
+            "objdata": {
+                "ReservedColumnCount": 2,
+                "ZombossMechType": "zombossmech_future_memo",
+                "ZombossStageCount": 3,
+                "ZombossDeathRow": 3,
+                "ZombossDeathColumn": 5,
+                "ZombossSpawnGridPosition": {
+                    "mX": 6,
+                    "mY": 3
+                }
+            }
+        },
+        {
+            "objclass": "ZombossWalkActionDefinition",
+            "aliases": [
+                "BossWalk1"
+            ],
+            "objdata": {
+                "Weight": 3,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "WalkVerticalChance": 0.5,
+                "WalkPreferSquashChance": 1
+            }
+        },
+        {
+            "objclass": "ZombossSpawnActionDefinition",
+            "aliases": [
+                "BossSpawn1"
+            ],
+            "objdata": {
+                "Weight": 12,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+                "SpawnZombieWavePointRange": {
+                    "Min": 350,
+                    "Max": 550
+                },
+                "SpawnZombieTypes": [
+                    "future",
+                    "future_armor1",
+                    "future_jetpack"
+                ],
+                "SpawnChargeTime": 0.5,
+                "SpawnCooldownTime": 0.5,
+                "SpawnWavesBetweenPlantFood": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "Cdtime": 14
+            }
+        },
+        {
+            "objclass": "ZombossFireActionDefinition",
+            "aliases": [
+                "BossFire1"
+            ],
+            "objdata": {
+                "Weight": 8,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "FireMinColumn": 0,
+                "FireMaxColumn": 4,
+                "FireRowRange": 5,
+                "FireTargetPlantWeight": 0,
+                "FireTargetEmptyWeight": 0,
+                "FireTargetRailsWeight": 8,
+                "FireRocketHitTime": 3,
+                "FireRocketSpeed": 500,
+                "FireRocketDropSound": "Play_Zomb_Future_Zomboss_Attack_Projectile_Impact_Whistle",
+                "FireRocketCount": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "Cdtime": 18,
+                "FireTargetTilesWeight": 0
+            }
+        },
+        {
+            "objclass": "ZombossWalkActionDefinition",
+            "aliases": [
+                "BossWalk2"
+            ],
+            "objdata": {
+                "Weight": 3,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "WalkVerticalChance": 0.75,
+                "WalkPreferSquashChance": 1
+            }
+        },
+        {
+            "objclass": "ZombossSpawnActionDefinition",
+            "aliases": [
+                "BossSpawn2"
+            ],
+            "objdata": {
+                "Weight": 14,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+                "SpawnZombieWavePointRange": {
+                    "Min": 1500,
+                    "Max": 1900
+                },
+                "SpawnZombieTypes": [
+                    "future_armor1",
+                    "future_jetpack",
+                    "future_protector",
+                    "football_mech"
+                ],
+                "SpawnChargeTime": 0.5,
+                "SpawnCooldownTime": 0.5,
+                "SpawnWavesBetweenPlantFood": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "Cdtime": 12
+            }
+        },
+        {
+            "objclass": "ZombossFireActionDefinition",
+            "aliases": [
+                "BossFire2"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "FireMinColumn": 0,
+                "FireMaxColumn": 4,
+                "FireRowRange": 5,
+                "FireTargetPlantWeight": 1,
+                "FireTargetEmptyWeight": 0,
+                "FireTargetRailsWeight": 8,
+                "FireRocketHitTime": 2.8,
+                "FireRocketSpeed": 500,
+                "FireRocketDropSound": "Play_Zomb_Future_Zomboss_Attack_Projectile_Impact_Whistle",
+                "FireRocketCount": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "Cdtime": 15,
+                "FireTargetTilesWeight": 0
+            }
+        },
+        {
+            "objclass": "ZombossRushActionDefinition",
+            "aliases": [
+                "BossRush2"
+            ],
+            "objdata": {
+                "Weight": 7,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "RushTime": 2,
+                "RushDamageToInterrupt": 100,
+                "RushLeadupTime": 2.2,
+                "RushLeadupStartRate": 1,
+                "RushLeadupEndRate": 1,
+                "RushLeadupBackup": 60,
+                "RushStartRate": 1.5,
+                "RushEndRate": 6,
+                "RushOvershoot": 80,
+                "RushSound": "Play_Zomb_Future_Zomboss_Attack_Rush",
+                "Cdtime": 22
+            }
+        },
+        {
+            "objclass": "ZombossWalkActionDefinition",
+            "aliases": [
+                "BossWalk3"
+            ],
+            "objdata": {
+                "Weight": 3,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "WalkVerticalChance": 0.75,
+                "WalkPreferSquashChance": 1
+            }
+        },
+        {
+            "objclass": "ZombossSpawnActionDefinition",
+            "aliases": [
+                "BossSpawn3"
+            ],
+            "objdata": {
+                "Weight": 16,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "SpawnJumpAction": "RTID(ZombossSpawnJump@ZombieActions)",
+                "SpawnZombieWavePointRange": {
+                    "Min": 1900,
+                    "Max": 2500
+                },
+                "SpawnZombieTypes": [
+                    "future_jetpack",
+                    "future_protector",
+                    "football_mech",
+                    "disco_mech"
+                ],
+                "SpawnChargeTime": 0.5,
+                "SpawnCooldownTime": 0.5,
+                "SpawnWavesBetweenPlantFood": {
+                    "Min": 1,
+                    "Max": 1
+                },
+                "Cdtime": 10
+            }
+        },
+        {
+            "objclass": "ZombossFireActionDefinition",
+            "aliases": [
+                "BossFire3"
+            ],
+            "objdata": {
+                "Weight": 12,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "FireMinColumn": 0,
+                "FireMaxColumn": 4,
+                "FireRowRange": 5,
+                "FireTargetPlantWeight": 2,
+                "FireTargetEmptyWeight": 0,
+                "FireTargetRailsWeight": 8,
+                "FireRocketHitTime": 2.5,
+                "FireRocketSpeed": 500,
+                "FireRocketDropSound": "Play_Zomb_Future_Zomboss_Attack_Projectile_Impact_Whistle",
+                "FireRocketCount": {
+                    "Min": 1,
+                    "Max": 2
+                },
+                "Cdtime": 12,
+                "FireTargetTilesWeight": 0
+            }
+        },
+        {
+            "objclass": "ZombossRushActionDefinition",
+            "aliases": [
+                "BossRush3"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "RushTime": 2,
+                "RushDamageToInterrupt": 100,
+                "RushLeadupTime": 2.2,
+                "RushLeadupStartRate": 1,
+                "RushLeadupEndRate": 1,
+                "RushLeadupBackup": 60,
+                "RushStartRate": 1.5,
+                "RushEndRate": 8,
+                "RushOvershoot": 80,
+                "RushSound": "Play_Zomb_Future_Zomboss_Attack_Rush",
+                "Cdtime": 18
+            }
+        },
+        {
+            "objclass": "ZombieZombossMechFutureProps",
+            "aliases": [
+                "ZombieZombossMechFutureMemo"
+            ],
+            "objdata": {
+                "Speed": 0.1,
+                "CanSpawnPlantFood": false,
+                "EnableAutoTest": false,
+                "SizeType": "big",
+                "CanBeLaunchedByPlants": false,
+                "HeadDropFraction": -1,
+                "ArmDropFraction": -1,
+                "HitRect": {
+                    "mX": 30,
+                    "mY": 10,
+                    "mWidth": 115,
+                    "mHeight": 340
+                },
+                "GridExtents": {
+                    "mX": 2,
+                    "mY": 2
+                },
+                "AttackRect": {
+                    "mX": 15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 125
+                },
+                "ArtCenter": {
+                    "x": 30,
+                    "y": 130
+                },
+                "AlmanacOffset": {
+                    "x": 40,
+                    "y": 130
+                },
+                "AlmanacScale": 0.7,
+                "ShadowOffset": {
+                    "x": 55,
+                    "y": -50,
+                    "z": 0.8
+                },
+                "ShadowScaling": {
+                    "x": 4.5,
+                    "y": 4.5
+                },
+                "GroundTrackName": "ground_swatch",
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness8"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ],
+                "ZombieLevelStats": [
+                    {
+                        "AttackLevel": 1,
+                        "HitPointsLevel": 1
+                    },
+                    {
+                        "AttackLevel": 2,
+                        "HitPointsLevel": 2
+                    },
+                    {
+                        "AttackLevel": 3,
+                        "HitPointsLevel": 3
+                    },
+                    {
+                        "AttackLevel": 4.5,
+                        "HitPointsLevel": 4.5
+                    },
+                    {
+                        "AttackLevel": 5,
+                        "HitPointsLevel": 5
+                    }
+                ],
+                "CanTriggerZombieWin": false,
+                "IsValidPinchTarget": false,
+                "CanBeFlicked": false,
+                "SquashZombies": true,
+                "SquashGridItems": false,
+                "HideDuringIntro": false,
+                "PowerUpDamageModifier": 0.25,
+                "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_COMMON",
+                "CrosshairAnimation": "missile_lock_reticle",
+                "RocketAnimation": "missile",
+                "RocketExplosionAnimation": "missile_explosion",
+                "Stages": [
+                    {
+                        "Actions": [
+                            "RTID(BossWalk1@CurrentLevel)",
+                            "RTID(BossSpawn1@CurrentLevel)",
+                            "RTID(BossFire1@CurrentLevel)"
+                        ],
+                        "HitPoints": 4500,
+                        "Level": 1,
+                        "DamageIndexFull": 0,
+                        "DamageIndexHalf": 0,
+                        "AnimRateModifier": 1,
+                        "ChilledDurationFromFrozen": 10,
+                        "IdleTime": {
+                            "Min": 0.5,
+                            "Max": 1
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunTime": 3.5,
+                        "StunDamageScale": 1.5,
+                        "StunDamageColorFlash": {
+                            "mRed": 255,
+                            "mGreen": 200,
+                            "mBlue": 200,
+                            "mAlpha": 255
+                        },
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "MinColumn": 5,
+                        "MaxColumn": 7
+                    },
+                    {
+                        "Actions": [
+                            "RTID(BossWalk2@CurrentLevel)",
+                            "RTID(BossSpawn2@CurrentLevel)",
+                            "RTID(BossFire2@CurrentLevel)",
+                            "RTID(BossRush2@CurrentLevel)"
+                        ],
+                        "HitPoints": 6500,
+                        "Level": 1,
+                        "DamageIndexFull": 3,
+                        "DamageIndexHalf": 3,
+                        "AnimRateModifier": 1.1,
+                        "ChilledDurationFromFrozen": 10,
+                        "IdleTime": {
+                            "Min": 0.5,
+                            "Max": 0.5
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunTime": 4,
+                        "StunDamageScale": 1.5,
+                        "StunDamageColorFlash": {
+                            "mRed": 255,
+                            "mGreen": 200,
+                            "mBlue": 200,
+                            "mAlpha": 255
+                        },
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "MinColumn": 5,
+                        "MaxColumn": 7
+                    },
+                    {
+                        "Actions": [
+                            "RTID(BossWalk3@CurrentLevel)",
+                            "RTID(BossSpawn3@CurrentLevel)",
+                            "RTID(BossFire3@CurrentLevel)",
+                            "RTID(BossRush3@CurrentLevel)"
+                        ],
+                        "HitPoints": 8500,
+                        "Level": 1,
+                        "DamageIndexFull": 6,
+                        "DamageIndexHalf": 6,
+                        "AnimRateModifier": 1.25,
+                        "ChilledDurationFromFrozen": 10,
+                        "IdleTime": {
+                            "Min": 0.2,
+                            "Max": 0.5
+                        },
+                        "RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+                        "StunTime": 4,
+                        "StunDamageScale": 1.5,
+                        "StunDamageColorFlash": {
+                            "mRed": 255,
+                            "mGreen": 200,
+                            "mBlue": 200,
+                            "mAlpha": 255
+                        },
+                        "StunStaggerBackMovement": 80,
+                        "StunStaggerBackTime": 0.4,
+                        "MinColumn": 5,
+                        "MaxColumn": 7
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "StartingPlantfood"
+            ],
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 3
+            }
+        },
+        {
+            "aliases": [
+                "StartingDefense"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "TypeName": "repeater",
+                        "GridX": 1,
+                        "GridY": 1,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "repeater",
+                        "GridX": 3,
+                        "GridY": 3,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 0,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 4,
+                        "Level": 1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Rails"
+            ],
+            "objclass": "RailcartProperties",
+            "objdata": {
+                "RailcartType": "railcart_cowboy",
+                "Rails": [
+                    {
+                        "Column": 1,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    },
+                    {
+                        "Column": 3,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    }
+                ],
+                "Railcarts": [
+                    {
+                        "Column": 1,
+                        "Row": 1
+                    },
+                    {
+                        "Column": 3,
+                        "Row": 3
+                    }
+                ]
+            }
+        }
+    ]
+}
