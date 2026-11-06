@@ -1,0 +1,970 @@
+{
+    "#comment": "renai_perfumer 27 v1",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_TRIP_TO_RIFT]",
+                "LevelNumber": 3,
+                "DisablePlantBoosts": false,
+                "Loot": "",
+                "Modules": [
+                    "RTID(ZombiesDeadWinCon@LevelModules)",                    
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(PerkActivator@CurrentLevel)",
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(RenaiMowers@LevelModules)",
+                    "RTID(RenaiModule@CurrentLevel)"                    
+                ],
+                "MusicType": "MiniGame_A",
+                "Name": "[RIFT_LEVEL_NAME]",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "VictoryModule": "RTID(RiftOutro@LevelModules)",
+                "StageModule": "RTID(SteamStage@LevelModules)",
+				"LevelMutator": "RTID(LevelMutator@CurrentLevel)",
+                "PerksDisabledInLevel":
+                [
+                    "moarscore",
+                    "bossbustercannon"
+                ],
+                "PerksDisabledPerDifficulty":
+                [
+                    [
+                        "zombieinhibitorgargantuar"
+                    ],
+                    [
+                    
+                    ],
+                    [
+                    
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [ "WaveDistributor" ],
+            "objclass": "WaveDistributorModuleProperties",
+            "objdata": {
+                "WavesToDistribute" : [ "RTID(DynamicZombies@CurrentLevel)" ],
+                "Count" : 35,
+                "Pattern" : "scattered"
+            }
+        },
+        {
+            "aliases": ["DynamicZombies"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingPlantfood": 0,
+                "StartingSun": 1750,
+                "PreSeedchooserFlow": "rift"
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "BlackListSunProducers" : true,
+                "PlantBlackList": [
+                    "iceburg",
+                    "goldbloom",
+                    "puffshroom",
+                    "melonpult",
+                    "toadstool",
+                    "goldleaf",
+                    "stallia"
+                ],
+                "PresetPlantList": [
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+			"aliases": [
+                "RenaiModule"
+            ],
+            "objclass": "RenaiModuleProperties",
+            "objdata": {
+				"NightStartWaveNum": 3,
+				"StatueInfos": [
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"WaveNumber": 8,
+						"TypeName": "renai_statue_zombie_armor1"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"WaveNumber": 8,
+						"TypeName": "renai_statue_zombie_armor1"
+                    },
+                    {
+						"GridX": 4,
+						"GridY": 2,
+						"WaveNumber": 8,
+						"TypeName": "renai_statue_zombie_armor1"
+					},
+                    {
+						"GridX": 5,
+						"GridY": 3,
+						"WaveNumber": 8,
+						"TypeName": "renai_statue_zombie_armor1"
+					},
+                    {
+						"GridX": 6,
+						"GridY": 4,
+						"WaveNumber": 8,
+						"TypeName": "renai_statue_zombie_armor1"
+					}					
+                ],
+                "StatueNightInfos": [
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"WaveNumber": 4,
+						"TypeName": "renai_statue_zombie1"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"WaveNumber": 4,
+						"TypeName": "renai_statue_zombie1"
+                    },
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"WaveNumber": 6,
+						"TypeName": "renai_statue_zombie_perfumer"
+                    },
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"WaveNumber": 4,
+						"TypeName": "renai_statue_zombie1"
+                    }		
+				]
+            }
+		},		
+        {
+            "aliases": [ "PerkActivator" ],
+            "objclass": "PerkHandlerModuleProperties",
+            "objdata": {}
+        },
+        {
+            "aliases": [ "LevelMutator" ],
+            "objclass": "LevelMutatorModuleProperties",
+            "objdata": {
+                
+                "MutatorTables" : [ "RTID(MutatorPropsRiftLastStand@LevelMutatorTables)", "RTID(LocalChallengeMutator@CurrentLevel)", "RTID(LocalMainChallengeMutator@CurrentLevel)" ]
+                
+            }
+        },
+        {
+            "aliases" : [ "LocalMainChallengeMutator" ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [ "RTID(BeatTheLevel@CurrentLevel)"],
+                        "ModuleType": "mainchallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Description": "[STARCHALLENGE_LASTSTAND_MINIGAME]",
+                "DescriptiveName": "[STARCHALLENGE_LASTSTAND_MINIGAME_NAME]"
+            }
+        },
+        {
+            "aliases" : [ "LocalChallengeMutator" ],
+            "objclass": "LevelMutatorTableProps",
+            "objdata": {
+                "Tables": [
+                    {
+                        "Level": 0,
+                        "Modules": [ 
+                            "RTID(DestroyGridItems1@CurrentLevel)"
+                         ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 1,
+                        "Modules": [ 
+                            "RTID(DestroyGridItems2@CurrentLevel)" 
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    },
+                    {
+                        "Level": 2,
+                        "Modules": [ 
+                            "RTID(DestroyGridItems3@CurrentLevel)" 
+                        ],
+                        "ModuleType": "bonuschallenge"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [ "DestroyGridItems1" ],
+            "objclass": "DestroyGridItemsChallengeProps",
+            "objdata": {
+                "GridItemType": "renai_statue_zombie_armor1",
+                "GridItemsToDestroy": 1,
+                "ChallengeDescription": "[CHALLENGE_DESTROY_STATUEZOMBIE]"
+            }
+        },
+        {
+            "aliases": [ "DestroyGridItems2" ],
+            "objclass": "DestroyGridItemsChallengeProps",
+            "objdata": {
+                "GridItemType": "renai_statue_zombie_armor1",
+                "GridItemsToDestroy": 3,
+                "ChallengeDescription": "[CHALLENGE_DESTROY_STATUEZOMBIE]"
+            }
+        },
+        {
+            "aliases": [ "DestroyGridItems3" ],
+            "objclass": "DestroyGridItemsChallengeProps",
+            "objdata": {
+                "GridItemType": "renai_statue_zombie_armor1",
+                "GridItemsToDestroy": 5,
+                "ChallengeDescription": "[CHALLENGE_DESTROY_STATUEZOMBIE]"
+            }
+        },
+        {
+            "aliases": [
+                "LevelDifficultyScaling"
+            ],
+            "objclass": "LevelDifficultyScalingModuleProperties",
+            "objdata": {
+                "DifficultyRulesType": "RiftDifficulty",
+                "ZombieLevelSwaps": [
+                    {
+                        "Level": 0,
+                        "Swaps": [
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_imp@ZombieTypes)",
+                                    "RTID(roman@ZombieTypes)",
+                                    "RTID(dino_imp@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman@ZombieTypes)",
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)"
+                                ]
+                            },                            
+                            {
+                                "From": "RTID(dino_armor3@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 4,
+                        "Swaps": [
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_imp@ZombieTypes)",
+                                    "RTID(roman@ZombieTypes)",
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_imp@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(roman@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)"
+                                ]
+                            },                            
+                            {
+                                "From": "RTID(dino_armor3@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino_bully@ZombieTypes)",
+                                "To": [
+                                    "RTID(dino_bully@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Level": 7,
+                        "Swaps": [
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(renai_perfumer@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor1@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(renai_perfumer@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)",
+                                    "RTID(dino_armor2@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino_armor2@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)",
+                                    "RTID(roman_shield_triad@ZombieTypes)"
+                                ]
+                            },                            
+                            {
+                                "From": "RTID(dino_armor3@ZombieTypes)",
+                                "To": [
+                                    "RTID(roman_armor2@ZombieTypes)",
+                                    "RTID(dino_bully@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)"
+                                ]
+                            },
+                            {
+                                "From": "RTID(dino_bully@ZombieTypes)",
+                                "To": [
+                                    "RTID(dino_bully@ZombieTypes)",
+                                    "RTID(dino_armor3@ZombieTypes)",
+                                    "RTID(roman_gargantuar@ZombieTypes)"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": 125,
+                        "StartingPoints": 150,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(roman_shield_triad@ZombieTypes)",
+                            "RTID(renai_perfumer@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 9,
+                "WaveCount": 9,
+                "WaveSpendingPointIncrement": 50,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)",
+                        "RTID(Wave3DinoTimeEvent0@CurrentLevel)",
+                        "RTID(Wave3DinoTimeEvent1@CurrentLevel)",
+                        "RTID(Wave3DinoTimeEvent2@CurrentLevel)",
+                        "RTID(Wave3DinoTimeEvent3@CurrentLevel)",
+                        "RTID(Wave3DinoTimeEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)",
+                        "RTID(Wave8DinoTimeEvent0@CurrentLevel)",
+                        "RTID(Wave8DinoTimeEvent1@CurrentLevel)",
+                        "RTID(Wave8DinoTimeEvent2@CurrentLevel)",
+                        "RTID(Wave8DinoTimeEvent3@CurrentLevel)",
+                        "RTID(Wave8DinoTimeEvent4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ]
+                ],
+                "WavesAlwaysRandomized": true
+            }
+        },
+        {
+            "aliases": ["Wave1"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave2"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave3"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(renai_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave4"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(renai_gliding@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(renai_gliding@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_gliding@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_gliding@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave5"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(renai_worker@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(renai_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(renai_carver@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave6"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(steam_stove@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(steam_stove@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave7"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(steam_coal_miner@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(zombie_gatlingpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_armor3@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_armor3@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave8"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": ["Wave9"],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(zombie_snowpea@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(renai_perfumer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3DinoTimeEvent0"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 0,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave3DinoTimeEvent1"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 1,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave3DinoTimeEvent2"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": "2",
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave3DinoTimeEvent3"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 3,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave3DinoTimeEvent4"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 4,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave8DinoTimeEvent0"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 0,
+                "DinoType": "ankylo",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave8DinoTimeEvent1"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 1,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave8DinoTimeEvent2"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": "2",
+                "DinoType": "ankylo",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave8DinoTimeEvent3"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 3,
+                "DinoType": "ptero",
+                "DinoWaveDuration": "0"
+            }
+        },
+        {
+            "aliases": [
+                "Wave8DinoTimeEvent4"
+            ],
+            "objclass": "DinoWaveActionProps",
+            "objdata": {
+                "DinoRow": 4,
+                "DinoType": "ankylo",
+                "DinoWaveDuration": "0"
+            }
+        }
+    ],
+    "version": 1
+}
