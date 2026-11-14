@@ -1,0 +1,1482 @@
+{
+  "version": 1,
+  "#comment": "S34 W6 L3",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Name": "[S34_MEMORY_LEVEL_NAME_043]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_043]",
+        "LevelNumber": 3,
+        "StartingSun": 100,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "StageModule": "RTID(SnowModernStage@LevelModules)",
+        "FirstIntroNarrative": "",
+        "ReplayIntroNarrative": "",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(StartingPlantfood@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(ArmrackInitial@CurrentLevel)",
+          "RTID(InitialPlants@CurrentLevel)",
+          "RTID(WaveModule@CurrentLevel)"
+        ],
+        "ShowZombies": [
+          "kongfu_basic",
+          "kongfu_monk_basic",
+          "kongfu_basic_armor1",
+          "renai_ballet"
+        ]
+      }
+    },
+    {
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "aliases": [
+        "StartingPlantfood"
+      ],
+      "objdata": {
+        "StartingPlantfoodOverride": 1
+      }
+    },
+    {
+      "objclass": "StarChallengeModuleProperties",
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "objclass": "StarChallengeSaveMowersProps",
+      "aliases": [
+        "Goal1"
+      ],
+      "objdata": {}
+    },
+    {
+      "objclass": "StarChallengeKillZombiesInTimeProps",
+      "aliases": [
+        "Goal3"
+      ],
+      "objdata": {
+        "Time": 5,
+        "ZombiesToKill": 8
+      }
+    },
+    {
+      "objclass": "RiftThemeDemoModuleProperties",
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      }
+    },
+    {
+      "objclass": "WaveManagerModuleProperties",
+      "aliases": [
+        "WaveModule"
+      ],
+      "objdata": {
+        "ManualStartup": false,
+        "DynamicZombies": [],
+        "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+        "WaveManagerPropsVector": [
+          "RTID(WaveManager@CurrentLevel)",
+          "RTID(WaveManager@CurrentLevel)",
+          "RTID(WaveManager@CurrentLevel)",
+          "RTID(WaveManager@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          "sunflower",
+          "olive",
+          "intensivecarrot",
+          "jalapeno",
+          "garlic",
+          "potatomine",
+          "cherry_bomb"
+        ],
+        "OverrideSeedSlotsCount": 7,
+        "GlobalLevel": 1
+      },
+      "aliases": [
+        "SeedBank"
+      ]
+    },
+    {
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 3000
+      },
+      "aliases": [
+        "Goal2"
+      ]
+    },
+    {
+      "objclass": "ArmrackProperties",
+      "objdata": {
+        "Overrides": [
+          {
+            "wave": 1,
+            "itemList": [
+              {
+                "mX": 6,
+                "mY": 1,
+                "level": 1
+              },
+              {
+                "mX": 6,
+                "mY": 3,
+                "level": 1
+              }
+            ]
+          }
+        ]
+      },
+      "aliases": [
+        "ArmrackInitial"
+      ]
+    },
+    {
+      "objclass": "InitialPlantEntryProperties",
+      "objdata": {
+        "Plants": [
+          {
+            "PlantTypes": [
+              "firegourd"
+            ],
+            "GridX": 3,
+            "GridY": 0,
+            "Level": 1,
+            "Avatar": false
+          },
+          {
+            "PlantTypes": [
+              "firegourd"
+            ],
+            "GridX": 3,
+            "GridY": 1,
+            "Level": 1,
+            "Avatar": false
+          },
+          {
+            "PlantTypes": [
+              "firegourd"
+            ],
+            "GridX": 3,
+            "GridY": 2,
+            "Level": 1,
+            "Avatar": false
+          },
+          {
+            "PlantTypes": [
+              "firegourd"
+            ],
+            "GridX": 3,
+            "GridY": 3,
+            "Level": 1,
+            "Avatar": false
+          },
+          {
+            "PlantTypes": [
+              "firegourd"
+            ],
+            "GridX": 3,
+            "GridY": 4,
+            "Level": 1,
+            "Avatar": false
+          }
+        ]
+      },
+      "aliases": [
+        "InitialPlants"
+      ]
+    },
+    {
+      "objclass": "GridItemType",
+      "objdata": {
+        "TypeName": "armrack",
+        "GridItemClass": "GridItemArmrack",
+        "Properties": "RTID(GridItemArmrackDefault@PropertySheets)",
+        "ResourceGroups": [
+          "KONGFU_ARMRACK"
+        ]
+      },
+      "aliases": [
+        "armrack"
+      ]
+    },
+    {
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "Waves": [
+          [
+            "RTID(W01Spawn@CurrentLevel)",
+            "RTID(CoreHint@CurrentLevel)"
+          ],
+          [
+            "RTID(W02Spawn@CurrentLevel)",
+            "RTID(RackHint@CurrentLevel)"
+          ],
+          [
+            "RTID(W03Spawn@CurrentLevel)",
+            "RTID(RackW03R1C7@CurrentLevel)"
+          ],
+          [
+            "RTID(W04Spawn@CurrentLevel)",
+            "RTID(W04Ballet@CurrentLevel)"
+          ],
+          [
+            "RTID(W05Spawn@CurrentLevel)",
+            "RTID(RackW05R5C7@CurrentLevel)"
+          ],
+          [
+            "RTID(W06Spawn@CurrentLevel)",
+            "RTID(RackW06R3C7@CurrentLevel)"
+          ],
+          [
+            "RTID(W07Spawn@CurrentLevel)",
+            "RTID(W07Ballet@CurrentLevel)"
+          ],
+          [
+            "RTID(W08Spawn@CurrentLevel)",
+            "RTID(RackW08R2C6@CurrentLevel)",
+            "RTID(RackW08R4C6@CurrentLevel)"
+          ],
+          [
+            "RTID(W09Spawn@CurrentLevel)",
+            "RTID(W09Ballet@CurrentLevel)"
+          ],
+          [
+            "RTID(W10Spawn@CurrentLevel)",
+            "RTID(RackW10R3C6@CurrentLevel)"
+          ],
+          [
+            "RTID(W11Spawn@CurrentLevel)",
+            "RTID(W11Ballet@CurrentLevel)",
+            "RTID(RackW11R1C6@CurrentLevel)",
+            "RTID(RackW11R5C6@CurrentLevel)"
+          ],
+          [
+            "RTID(W12Spawn@CurrentLevel)",
+            "RTID(W12Ballet@CurrentLevel)"
+          ]
+        ],
+        "WaveCount": 12,
+        "FlagWaveInterval": 6,
+        "SuppressFlagZombie": false,
+        "MinNextWaveHealthPercentage": 0.6,
+        "MaxNextWaveHealthPercentage": 0.6,
+        "ZombieCountdownFirstWaveSecs": 6,
+        "ZombieCountdownFirstWaveConveyorSecs": 6,
+        "ZombieCountdownHugeWaveDelay": 5,
+        "DescriptionName": "[S34_W6_L3_MODE_NAME]",
+        "Description": "[S34_W6_L3_MODE_DESC]"
+      },
+      "aliases": [
+        "WaveManager"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "[S34_W6_L3_HINT]",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      },
+      "aliases": [
+        "CoreHint"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "Zombies": [],
+        "AdditionalPlantfood": 0,
+        "GridTypes": [],
+        "WaveStartMessage": "[S34_W6_L3_ARMRACK_HINT]",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false
+      },
+      "aliases": [
+        "RackHint"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 9,
+        "ZombieSpawningRandomJitter": 88
+      },
+      "aliases": [
+        "W01SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W01SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W01Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 13,
+        "ZombieSpawningRandomJitter": 104
+      },
+      "aliases": [
+        "W02SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W02SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W02Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 92
+      },
+      "aliases": [
+        "W03SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W03SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W03Spawn"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 6,
+            "mY": 0
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW03R1C7"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 96
+      },
+      "aliases": [
+        "W04SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W04Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 41
+      },
+      "aliases": [
+        "W04BalletOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W04BalletOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W04Ballet"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 15,
+        "ZombieSpawningRandomJitter": 108
+      },
+      "aliases": [
+        "W05SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 2,
+        "JitterOffsets": "RTID(W05SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W05Spawn"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 6,
+            "mY": 4
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW05R5C7"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 80
+      },
+      "aliases": [
+        "W06SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W06SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W06Spawn"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 6,
+            "mY": 2
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW06R3C7"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 13,
+        "ZombieSpawningRandomJitter": 100
+      },
+      "aliases": [
+        "W07SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "JitterOffsets": "RTID(W07SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W07Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 41
+      },
+      "aliases": [
+        "W07BalletOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W07BalletOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W07Ballet"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 9,
+        "ZombieSpawningRandomJitter": 112
+      },
+      "aliases": [
+        "W08SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W08SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W08Spawn"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 1
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW08R2C6"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 3
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW08R4C6"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 11,
+        "ZombieSpawningRandomJitter": 98
+      },
+      "aliases": [
+        "W09SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "JitterOffsets": "RTID(W09SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W09Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 41
+      },
+      "aliases": [
+        "W09BalletOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W09BalletOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W09Ballet"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 7,
+        "ZombieSpawningRandomJitter": 106
+      },
+      "aliases": [
+        "W10SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W10SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W10Spawn"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 2
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW10R3C6"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 13,
+        "ZombieSpawningRandomJitter": 104
+      },
+      "aliases": [
+        "W11SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 2,
+        "JitterOffsets": "RTID(W11SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W11Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 41
+      },
+      "aliases": [
+        "W11BalletOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W11BalletOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W11Ballet"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 0
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW11R1C6"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1,
+            "Type": "RTID(armrack@CurrentLevel)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 4
+          }
+        ],
+        "IgnoreGraveStone": true,
+        "DisplacePlants": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "RackW11R5C6"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 9,
+        "ZombieSpawningRandomJitter": 90
+      },
+      "aliases": [
+        "W12SpawnOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic_armor1@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_monk_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(kongfu_basic@ZombieTypes)",
+            "Row": "4",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 2,
+        "JitterOffsets": "RTID(W12SpawnOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W12Spawn"
+      ]
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 41
+      },
+      "aliases": [
+        "W12BalletOffsets"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(renai_ballet@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "JitterOffsets": "RTID(W12BalletOffsets@CurrentLevel)"
+      },
+      "aliases": [
+        "W12Ballet"
+      ]
+    }
+  ]
+}

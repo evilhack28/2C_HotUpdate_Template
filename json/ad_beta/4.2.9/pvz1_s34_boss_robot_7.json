@@ -1,0 +1,197 @@
+{
+  "#comment": "PVZ1 S34 Week 7 Boss",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_7]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_BOSS_7]",
+        "LevelNumber": 9,
+        "StartingSun": 4200,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "StageModule": "RTID(SnowModernStage@LevelModules)",
+        "FirstIntroNarrative": "",
+        "ReplayIntroNarrative": "",
+        "Modules": [
+          "RTID(Intro@CurrentLevel)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(StartingPlantfood@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)",
+          "RTID(BossBattle@CurrentLevel)",
+          "RTID(BossDamageBase@CurrentLevel)",
+          "RTID(BossDamageTarget@CurrentLevel)"
+        ],
+        "IsBossFight": true,
+        "ShowZombies": [
+          "zombossmech_dino_vacation",
+          "dino",
+          "dino_armor1",
+          "dino_armor2",
+          "dino_armor3",
+          "dino_imp",
+          "dino_bully",
+          "dino_gargantuar"
+        ]
+      }
+    },
+    {
+      "objclass": "ZombossMechLastStandIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "StartingSun": 4200,
+        "StartingPlantfood": 4,
+        "DisablePlantTags": [],
+        "PanStartOffset": 78,
+        "PanEndOffset": 468,
+        "PanRightDuration": 1.5,
+        "PanLeftDuration": 1.5
+      }
+    },
+    {
+      "aliases": [
+        "StartingPlantfood"
+      ],
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 4
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          "primalsunflower",
+          "repeater",
+          "threepeater",
+          "primalwallnut",
+          "perfumeshroom",
+          "cherry_bomb"
+        ],
+        "OverrideSeedSlotsCount": 6,
+        "GlobalLevel": 1
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "WeekTheme"
+      ],
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": []
+      }
+    },
+    {
+      "aliases": [
+        "BossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 3,
+        "ZombossDeathColumn": 5,
+        "ZombossDeathRow": 3,
+        "ZombossMechType": "zombossmech_dino_vacation",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 4
+        },
+        "ZombossStageCount": 3,
+        "ZombossStartStageIndex": 0
+      }
+    },
+    {
+      "aliases": [
+        "Goal1"
+      ],
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "Goal2"
+      ],
+      "objclass": "PlantDefeatZombieChallengeProps",
+      "objdata": {
+        "PlantTypeName": "cherry_bomb",
+        "NumZombiesToKill": 4,
+        "Description": "[S34_W7_L9_CHERRY_KILL]"
+      }
+    },
+    {
+      "aliases": [
+        "Goal3"
+      ],
+      "objclass": "StarChallengePlantsSurviveProps",
+      "objdata": {
+        "Count": 14
+      }
+    },
+    {
+      "objclass": "LevelBasedModifier_PlantDamageReducedProps",
+      "aliases": [
+        "BossDamageBase"
+      ],
+      "objdata": {
+        "Level": 1,
+        "Values": [
+          [
+            -0.5
+          ],
+          [
+            -0.5
+          ]
+        ]
+      }
+    },
+    {
+      "objclass": "LevelBasedModifier_PlantDamageReducedForTypeProps",
+      "aliases": [
+        "BossDamageTarget"
+      ],
+      "objdata": {
+        "Level": 1,
+        "Values": [
+          [
+            -0.5
+          ],
+          [
+            -0.5
+          ]
+        ],
+        "ZombieNames": [
+          "zombossmech_dino_vacation"
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,1558 @@
+{
+  "#comment": "PVZ1 S34 Level 51",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Name": "[S34_MEMORY_051_TERRACOTTA_NAME]",
+        "Description": "[S34_MEMORY_051_TERRACOTTA_DESC]",
+        "LevelNumber": 3,
+        "StartingSun": 400,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": false,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "StageModule": "RTID(SnowModernStageLocal@CurrentLevel)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(SkySun@CurrentLevel)",
+          "RTID(InitialPlantfood@CurrentLevel)",
+          "RTID(InitialGridItems@CurrentLevel)",
+          "RTID(WaveModule@CurrentLevel)",
+          "RTID(WeekTheme@CurrentLevel)"
+        ],
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "ShowZombies": [
+          "mausoleum_basic",
+          "mausoleum_armor1",
+          "mausoleum_armor2",
+          "mausoleum_archer",
+          "mausoleum_vendor",
+          "qin_taoist",
+          "tutorial_flag"
+        ]
+      }
+    },
+    {
+      "objclass": "StageModuleProperties",
+      "aliases": [
+        "SnowModernStageLocal"
+      ],
+      "objdata": {
+        "ResourceGroupNames": [
+          "Egypt_Gravestone",
+          "Game_Tombstones_Dynamic",
+          "Tombstone_Dark_Effects",
+          "DelayLoad_Background_Snow_Modern",
+          "AudioTutorial",
+          "ZombieTutorialGroup"
+        ],
+        "GroupsToUnloadForAds": [
+          "DelayLoad_Background_Snow_Modern"
+        ],
+        "StagePrefix": "snow_modern",
+        "BackgroundResourceGroup": "DelayLoad_Background_Snow_Modern",
+        "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SNOW_MODERN",
+        "LevelPowerupSet": "LevelPowerupsDefault",
+        "BasicZombieTypeName": "tutorial",
+        "FlagZombieTypeName": "tutorial_flag",
+        "Armor1ZombieTypeName": "tutorial_armor1",
+        "Armor2ZombieTypeName": "tutorial_armor2",
+        "MusicSuffix": "Modern",
+        "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+        "RailcartDefaultTypeName": "railcart_tutotial",
+        "GravestoneDefaultTypeName": "gravestone_tutorial",
+        "DisabledStreetCells": [
+          {
+            "mX": 0,
+            "mY": 0
+          },
+          {
+            "mX": 0,
+            "mY": 1
+          },
+          {
+            "mX": 0,
+            "mY": 2
+          },
+          {
+            "mX": 0,
+            "mY": 3
+          },
+          {
+            "mX": 0,
+            "mY": 4
+          },
+          {
+            "mX": 0,
+            "mY": 5
+          },
+          {
+            "mX": 0,
+            "mY": 6
+          },
+          {
+            "mX": 0,
+            "mY": 7
+          },
+          {
+            "mX": 0,
+            "mY": 8
+          },
+          {
+            "mX": 0,
+            "mY": 9
+          },
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 1,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 3
+          },
+          {
+            "mX": 1,
+            "mY": 4
+          },
+          {
+            "mX": 1,
+            "mY": 5
+          },
+          {
+            "mX": 1,
+            "mY": 6
+          },
+          {
+            "mX": 1,
+            "mY": 7
+          },
+          {
+            "mX": 1,
+            "mY": 8
+          },
+          {
+            "mX": 1,
+            "mY": 9
+          },
+          {
+            "mX": 2,
+            "mY": 0
+          },
+          {
+            "mX": 2,
+            "mY": 1
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 2,
+            "mY": 3
+          },
+          {
+            "mX": 2,
+            "mY": 4
+          },
+          {
+            "mX": 2,
+            "mY": 5
+          },
+          {
+            "mX": 2,
+            "mY": 6
+          },
+          {
+            "mX": 2,
+            "mY": 7
+          },
+          {
+            "mX": 2,
+            "mY": 8
+          },
+          {
+            "mX": 2,
+            "mY": 9
+          },
+          {
+            "mX": 3,
+            "mY": 9
+          },
+          {
+            "mX": 5,
+            "mY": 9
+          },
+          {
+            "mX": 7,
+            "mY": 9
+          },
+          {
+            "mX": 7,
+            "mY": 8
+          },
+          {
+            "mX": 7,
+            "mY": 7
+          },
+          {
+            "mX": 8,
+            "mY": 9
+          },
+          {
+            "mX": 8,
+            "mY": 8
+          },
+          {
+            "mX": 8,
+            "mY": 7
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(Goal1@CurrentLevel)",
+            "RTID(Goal2@CurrentLevel)",
+            "RTID(Goal3@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      },
+      "aliases": [
+        "Challenges"
+      ]
+    },
+    {
+      "objclass": "StarChallengeSaveMowersProps",
+      "objdata": {},
+      "aliases": [
+        "Goal1"
+      ]
+    },
+    {
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 20
+      },
+      "aliases": [
+        "Goal2"
+      ]
+    },
+    {
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 1200
+      },
+      "aliases": [
+        "Goal3"
+      ]
+    },
+    {
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "OverrideSeedSlotsCount": 8,
+        "GlobalLevel": 1,
+        "PresetPlantList": [],
+        "PlantBlackList": []
+      },
+      "aliases": [
+        "SeedBank"
+      ]
+    },
+    {
+      "objclass": "SunDropperProperties",
+      "objdata": {
+        "InitialSunDropDelay": 10,
+        "SunCountdownBase": 15,
+        "SunCountdownRange": 0,
+        "SunCountdownMax": 15,
+        "SunCountdownIncreasePerSun": 0
+      },
+      "aliases": [
+        "SkySun"
+      ]
+    },
+    {
+      "objclass": "LevelMutatorStartingPlantfoodProps",
+      "objdata": {
+        "StartingPlantfoodOverride": 1
+      },
+      "aliases": [
+        "InitialPlantfood"
+      ]
+    },
+    {
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 7,
+            "GridY": 0,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 7,
+            "GridY": 4,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 7,
+            "GridY": 2,
+            "TypeName": "terracottaArmy"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "terracottaArmy"
+          }
+        ]
+      },
+      "aliases": [
+        "InitialGridItems"
+      ]
+    },
+    {
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "WaveManagerPropsVector": [
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)",
+          "RTID(Waves@CurrentLevel)"
+        ],
+        "ManualStartup": false,
+        "DynamicZombies": []
+      },
+      "aliases": [
+        "WaveModule"
+      ]
+    },
+    {
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "WaveCount": 10,
+        "FlagWaveInterval": 5,
+        "SuppressFlagZombie": false,
+        "SuppressedDynamicZombieWaves": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "MinNextWaveHealthPercentage": 0.6,
+        "MaxNextWaveHealthPercentage": 0.6,
+        "ZombieCountdownFirstWaveSecs": 8,
+        "ZombieCountdownHugeWaveDelay": 5,
+        "DescriptionName": "[S34_MEMORY_051_TERRACOTTA_MODE]",
+        "Description": "[S34_MEMORY_051_TERRACOTTA_RULES]",
+        "Waves": [
+          [
+            "RTID(W1Spawn1@CurrentLevel)",
+            "RTID(W1Spawn2@CurrentLevel)"
+          ],
+          [
+            "RTID(W2Spawn1@CurrentLevel)",
+            "RTID(W2Spawn2@CurrentLevel)"
+          ],
+          [
+            "RTID(W3Spawn1@CurrentLevel)",
+            "RTID(W3Spawn2@CurrentLevel)",
+            "RTID(W3Spawn3@CurrentLevel)",
+            "RTID(W3Spawn4@CurrentLevel)"
+          ],
+          [
+            "RTID(W4Ground@CurrentLevel)",
+            "RTID(W4Spawn1@CurrentLevel)",
+            "RTID(W4Spawn2@CurrentLevel)",
+            "RTID(W4Spawn3@CurrentLevel)"
+          ],
+          [
+            "RTID(W5Ground@CurrentLevel)",
+            "RTID(W5Spawn1@CurrentLevel)",
+            "RTID(W5Spawn2@CurrentLevel)",
+            "RTID(W5Spawn3@CurrentLevel)"
+          ],
+          [
+            "RTID(W6Ground@CurrentLevel)",
+            "RTID(W6Spawn1@CurrentLevel)",
+            "RTID(W6Spawn2@CurrentLevel)"
+          ],
+          [
+            "RTID(W7Terracotta@CurrentLevel)",
+            "RTID(W7Ground@CurrentLevel)",
+            "RTID(W7Spawn1@CurrentLevel)",
+            "RTID(W7Spawn2@CurrentLevel)"
+          ],
+          [
+            "RTID(W8Ground@CurrentLevel)",
+            "RTID(W8Spawn1@CurrentLevel)",
+            "RTID(W8Spawn2@CurrentLevel)",
+            "RTID(W8Spawn3@CurrentLevel)",
+            "RTID(W8Spawn4@CurrentLevel)"
+          ],
+          [
+            "RTID(W9Spawn1@CurrentLevel)",
+            "RTID(W9Spawn2@CurrentLevel)",
+            "RTID(W9Spawn3@CurrentLevel)",
+            "RTID(W9Spawn4@CurrentLevel)"
+          ],
+          [
+            "RTID(W10Ground@CurrentLevel)",
+            "RTID(W10Spawn1@CurrentLevel)",
+            "RTID(W10Spawn2@CurrentLevel)"
+          ]
+        ]
+      },
+      "aliases": [
+        "Waves"
+      ]
+    },
+    {
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 2,
+            "Type": "RTID(terracottaArmy@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 5,
+            "mY": 0
+          },
+          {
+            "mX": 6,
+            "mY": 1
+          },
+          {
+            "mX": 5,
+            "mY": 2
+          },
+          {
+            "mX": 6,
+            "mY": 4
+          }
+        ],
+        "DisplacePlants": false,
+        "IgnoreGraveStone": false,
+        "SpawnEffectAnimID": "",
+        "SpawnSoundID": ""
+      },
+      "aliases": [
+        "W7Terracotta"
+      ]
+    },
+    {
+      "objclass": "RiftThemeDemoModuleProperties",
+      "objdata": {
+        "DemoRiftThemeName": [
+          "plant_fastcd"
+        ]
+      },
+      "aliases": [
+        "WeekTheme"
+      ]
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W1Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "2",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 29
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W1Offsets2"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 47
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W1Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W1Offsets2@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W2Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "1",
+            "Column": "9",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 37
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W2Offsets2"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 31
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W2Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "4",
+            "Column": "7",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W2Offsets2@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W3Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "3",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 21
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W3Offsets2"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 26
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W3Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "3",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W3Offsets2@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W3Offsets3"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 42
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W3Spawn3"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W3Offsets3@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W3Offsets4"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 16
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W3Spawn4"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W3Offsets4@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W4Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "2",
+            "Column": "9",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 43
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W4Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_archer@ZombieTypes)",
+            "Row": "3",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 17
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W4Offsets3"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 27
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W4Spawn3"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W4Offsets3@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W5Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W5Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor2@ZombieTypes)",
+            "Row": "5",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 29
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W5Offsets2"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 24
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W5Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "1",
+            "Column": "10",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W5Offsets2@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W5Offsets3"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 31
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W5Spawn3"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W5Offsets3@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W6Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "2",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_vendor@ZombieTypes)",
+            "Row": "5",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 33
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W6Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "9",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 19
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W7Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W7Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor2@ZombieTypes)",
+            "Row": "2",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "3",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 39
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W7Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 13
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W8Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor2@ZombieTypes)",
+            "Row": "2",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_archer@ZombieTypes)",
+            "Row": "5",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 23
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W8Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 41
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W8Offsets3"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 19
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W8Spawn3"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W8Offsets3@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W8Offsets4"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 46
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W8Spawn4"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "2",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W8Offsets4@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W9Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor2@ZombieTypes)",
+            "Row": "2",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "2",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 17
+      }
+    },
+    {
+      "objclass": "ZombieJitterOffsets",
+      "aliases": [
+        "W9Offsets2"
+      ],
+      "objdata": {
+        "ZombieSpawningOffsetIncrement": 0,
+        "ZombieSpawningRandomJitter": 21
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W9Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "2",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 0,
+        "JitterOffsets": "RTID(W9Offsets2@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W9Spawn3"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_vendor@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 33
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W9Spawn4"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "9",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 29
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W10Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "1",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "2",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "4",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_basic@ZombieTypes)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10Spawn1"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "7",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "5",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "2",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 27
+      }
+    },
+    {
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "aliases": [
+        "W10Spawn2"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "1",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "3",
+            "Column": "8",
+            "Level": 1
+          },
+          {
+            "Type": "RTID(mausoleum_armor1@ZombieTypes)",
+            "Row": "4",
+            "Column": "9",
+            "Level": 1
+          }
+        ],
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": [],
+        "FixedOffset": 39
+      }
+    },
+    {
+      "objclass": "ZombieType",
+      "aliases": [
+        "qin_taoist_s34_51"
+      ],
+      "objdata": {
+        "TypeName": "qin_taoist",
+        "ZombieClass": "ZombieQinTaoist",
+        "Properties": "RTID(ZombieQinTaoistS3451@CurrentLevel)",
+        "ResourceGroups": [
+          "ZombieQinTaoistGroup",
+          "ZombieQinTerracottaGroup"
+        ],
+        "AudioGroups": [
+          "ZombieQinTaoistAudio"
+        ],
+        "AnimRigClass": "ZombieAnimRig_QinTaoist",
+        "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_QIN_TAOIST",
+        "BoardAlmanac": false,
+        "HomeWorld": "mausoleum",
+        "AlmanacBackdropName": "warp",
+        "Placeable": false
+      }
+    },
+    {
+      "aliases": [
+        "ZombieQinTaoistS3451"
+      ],
+      "objclass": "ZombieQinTaoistProps",
+      "objdata": {
+        "CanSpawnPlantFood": true,
+        "StartAttackCloumn": 8,
+        "ActionCoolDown": 8,
+        "TransFromZombies": [
+          "mausoleum_basic"
+        ],
+        "TransToZombie": "qin_taoist",
+        "ArtCenter": {
+          "x": 90,
+          "y": 125
+        },
+        "AttackRect": {
+          "mHeight": 125,
+          "mWidth": 20,
+          "mX": 15,
+          "mY": 0
+        },
+        "Cost": 150,
+        "DropArmOnSignDrop": true,
+        "EatDPS": 100,
+        "GroundTrackName": "ground_swatch",
+        "HitRect": {
+          "mHeight": 130,
+          "mWidth": 52,
+          "mX": -10,
+          "mY": 10
+        },
+        "Hitpoints": 1100,
+        "ScaledProps": [
+          {
+            "Arg1": 1.3,
+            "Arg2": 0.05,
+            "Formula": "standard",
+            "Key": "Hitpoints"
+          },
+          {
+            "Arg1": 1.3,
+            "Arg2": 0.05,
+            "Formula": "standard",
+            "Key": "EatDPS"
+          },
+          {
+            "Formula": "constant",
+            "Key": "Speed"
+          },
+          {
+            "Formula": "constant",
+            "Key": "WavePointCost"
+          }
+        ],
+        "ShadowOffset": {
+          "x": 5,
+          "y": 0,
+          "z": 1.4
+        },
+        "Speed": 0.175,
+        "SpeedVariance": 0,
+        "StreetCriticalSize": {
+          "x": 5,
+          "y": 1
+        },
+        "StreetSize": {
+          "x": 5,
+          "y": 2
+        },
+        "WavePointCost": 600,
+        "Weight": 4000,
+        "ZombieStats": [
+          {
+            "Type": "toughness",
+            "Value": "toughness1"
+          },
+          {
+            "Type": "speed",
+            "Value": "speed2"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W4Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "5",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W6Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "1",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    },
+    {
+      "objclass": "SpawnZombiesFromGroundSpawnerProps",
+      "aliases": [
+        "W8Ground"
+      ],
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(qin_taoist_s34_51@CurrentLevel)",
+            "Row": "3",
+            "Level": 1
+          }
+        ],
+        "ColumnStart": 4,
+        "ColumnEnd": 5,
+        "AdditionalPlantfood": 0,
+        "DynamicPlantfood": []
+      }
+    }
+  ],
+  "version": 1
+}
