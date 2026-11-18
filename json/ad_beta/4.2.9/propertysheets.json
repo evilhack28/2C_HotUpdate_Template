@@ -66031,7 +66031,7 @@
           "MaxColumn": 8,
           "Stages": [
             {			  
-              "Hitpoints": 6000,
+              "Hitpoints": 1500,
 			        "IdleTime": {
                 "Min": 5,
                 "Max": 5
@@ -66106,7 +66106,7 @@
                 }
             },
             {				
-              "Hitpoints": 15600,            
+              "Hitpoints": 3900,            
               "IdleTime": {
                 "Min": 6.5,
                 "Max": 8.5
@@ -66201,7 +66201,7 @@
 			        }
             },
 			      {				
-              "Hitpoints": 30000,   
+              "Hitpoints": 7500,   
 			        "IdleTime": {
                 "Min": 6.5,
                 "Max": 8
@@ -120675,37 +120675,37 @@
                 {
                   "UnlockedTurn": 6,
                   "Level": 5,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 9,
                   "Level": 6,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 12,
                   "Level": 7,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 15,
                   "Level": 8,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 18,
                   "Level": 9,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 19,
                   "Level": 10,
-                  "Cost": 300,
+                  "Cost": 275,
                   "CostAddValue": 1
                 }
               ]
@@ -121245,43 +121245,43 @@
                 {
                   "UnlockedTurn": 5,
                   "Level": 3,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 6,
                   "Level": 5,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 9,
                   "Level": 6,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 12,
                   "Level": 7,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 15,
                   "Level": 8,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 18,
                   "Level": 9,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 },
                 {
                   "UnlockedTurn": 19,
                   "Level": 10,
-                  "Cost": 150,
+                  "Cost": 120,
                   "CostAddValue": 1
                 }
               ]
@@ -122125,43 +122125,43 @@
                     {
                       "UnlockedTurn": 2,
                       "Level": 3,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 6,
                       "Level": 5,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 9,
                       "Level": 6,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 12,
                       "Level": 7,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 15,
                       "Level": 8,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 18,
                       "Level": 9,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 19,
                       "Level": 10,
-                      "Cost": 120,
+                      "Cost": 90,
                       "CostAddValue": 1
                     }
                   ]
@@ -123401,49 +123401,49 @@
                     {
                       "UnlockedTurn": 0,
                       "Level": 1,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 2,
                       "Level": 3,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 6,
                       "Level": 5,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 9,
                       "Level": 6,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 12,
                       "Level": 7,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 15,
                       "Level": 8,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 18,
                       "Level": 9,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 19,
                       "Level": 10,
-                      "Cost": 60,
+                      "Cost": 50,
                       "CostAddValue": 1
                     }
                   ]
@@ -123918,49 +123918,49 @@
                     {
                       "UnlockedTurn": 0,
                       "Level": 1,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 2,
                       "Level": 3,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 6,
                       "Level": 5,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 9,
                       "Level": 6,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 12,
                       "Level": 7,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 15,
                       "Level": 8,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 18,
                       "Level": 9,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 19,
                       "Level": 10,
-                      "Cost": 15,
+                      "Cost": 25,
                       "CostAddValue": 1
                     }
                   ]
@@ -123971,43 +123971,43 @@
                     {
                       "UnlockedTurn": 4,
                       "Level": 3,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 6,
                       "Level": 5,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 9,
                       "Level": 6,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 12,
                       "Level": 7,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 15,
                       "Level": 8,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 18,
                       "Level": 9,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     },
                     {
                       "UnlockedTurn": 19,
                       "Level": 10,
-                      "Cost": 110,
+                      "Cost": 80,
                       "CostAddValue": 1
                     }
                   ]
@@ -124200,111 +124200,224 @@
               }
             ]
           },
-          "ChooserPlantBlacklist": [
-            1002,
-            1008,
-            1013,
-            1017,
-            1018,
-            1023,
-            1025,
-            1026,
-            1034,
-            1037,
-            1040,
-            1041,
-            1042,
-            1045,
-            1047,
-            1052,
-            1053,
-            1055,
-            1060,
-            1062,
-            1063,
-            1064,
-            1065,
-            1066,
-            1067,
-            1069,
-            1072,
-            1079,
-            1083,
-            1093,
-            1099,
-            111002,
-            111006,
-            111011,
-            111012,
-            111017,
-            111019,
-            111022,
-            111023,
-            111024,
-            111026,
-            111028,
-            111030,
-            111032,
-            111037,
-            111038,
-            111041,
-            111044,
-            111046,
-            111047,
-            111048,
-            111050,
-            111052,
-            111062,
-            111064,
-            111065,
-            111071,
-            111072,
-            111075,
-            111081,
-            111082,
-            111087,
-            200005,
-            200015,
-            200016,
-            200019,
-            200027,
-            200030,
-            200032,
-            200033,
-            200035,
-            200043,
-            200046,
-            200052,
-            200054,
-            200057,
-            200058,
-            200059,
-            200060,
-            200061,
-            200062,
-            200064,
-            200065,
-            200066,
-            200067,
-            200099,
-            200100,
-            200101,
-            200102,
-            200126,
-            200127,
-            200128,
-            200133,
-            200134,
-            200135,
-            200136,
-            200137,
-            200138,
-            200139,
-            200140,
-            200142,
-            200143,
-			200158,
-            200191
+          "ChooserPlantWhitelist": [
+            1001,
+            1003,
+            1004,
+            1005,
+            1006,
+            1007,
+            1009,
+            1010,
+            1011,
+            1012,
+            1014,
+            1015,
+            1016,
+            1019,
+            1020,
+            1021,
+            1022,
+            1024,
+            1027,
+            1028,
+            1029,
+            1030,
+            1031,
+            1032,
+            1033,
+            1035,
+            1036,
+            1038,
+            1039,
+            1043,
+            1044,
+            1049,
+            1050,
+            1051,
+            1054,
+            1056,
+            1057,
+            1058,
+            1059,
+            1061,
+            1068,
+            1070,
+            1071,
+            1073,
+            1074,
+            1075,
+            1076,
+            1077,
+            1078,
+            1080,
+            1081,
+            1082,
+            1084,
+            1085,
+            1086,
+            1088,
+            1089,
+            1090,
+            1091,
+            1092,
+            1094,
+            1095,
+            1097,
+            1098,
+            111001,
+            111003,
+            111004,
+            111008,
+            111009,
+            111010,
+            111013,
+            111014,
+            111015,
+            111016,
+            111018,
+            111020,
+            111021,
+            111025,
+            111027,
+            111029,
+            111031,
+            111033,
+            111034,
+            111035,
+            111036,
+            111039,
+            111040,
+            111042,
+            111043,
+            111045,
+            111049,
+            111051,
+            111053,
+            111054,
+            111055,
+            111056,
+            111058,
+            111060,
+            111061,
+            111063,
+            111066,
+            111067,
+            111068,
+            111069,
+            111070,
+            111073,
+            111074,
+            111076,
+            111078,
+            111079,
+            111084,
+            111085,
+            111086,
+            111088,
+            111089,
+            111090,
+            111091,
+            200000,
+            200001,
+            200002,
+            200003,
+            200004,
+            200006,
+            200007,
+            200008,
+            200009,
+            200010,
+            200011,
+            200012,
+            200013,
+            200014,
+            200017,
+            200018,
+            200020,
+            200021,
+            200022,
+            200023,
+            200024,
+            200025,
+            200026,
+            200028,
+            200029,
+            200031,
+            200034,
+            200037,
+            200038,
+            200039,
+            200041,
+            200044,
+            200045,
+            200047,
+            200048,
+            200049,
+            200050,
+            200051,
+            200053,
+            200055,
+            200056,
+            200063,
+            200068,
+            200069,
+            200070,
+            200071,
+            200072,
+            200073,
+            200074,
+            200075,
+            200076,
+            200077,
+            200078,
+            200079,
+            200080,
+            200082,
+            200083,
+            200084,
+            200085,
+            200086,
+            200088,
+            200090,
+            200091,
+            200092,
+            200093,
+            200094,
+            200095,
+            200096,
+            200097,
+            200098,
+            200157,
+            200159,
+            200160,
+            200161,
+            200162,
+            200163,
+            200164,
+            200165,
+            200167,
+            200169,
+            200170,
+            200171,
+            200172,
+            200175,
+            200176,
+            200177,
+            200178,
+            200179,
+            200180,
+            200181,
+            200182,
+            200183,
+            200184,
+            200185,
+            200186,
+            200187,
+            200188,
+            200189,
+            200190,
+            200192
           ],
           "UnsyncPlantBlacklist": [
             111053,
@@ -125119,12 +125232,6 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 300,
-                    "Hitpoints": 3600.0,
-                    "DPS": 1750.0,
-                    "Speed": 0.18
-                  },
-                  {
                     "Cost": 275,
                     "Hitpoints": 3600.0,
                     "DPS": 1750.0,
@@ -125138,6 +125245,12 @@
                   },
                   {
                     "Cost": 225,
+                    "Hitpoints": 3600.0,
+                    "DPS": 1750.0,
+                    "Speed": 0.18
+                  },
+                  {
+                    "Cost": 200,
                     "Hitpoints": 3600.0,
                     "DPS": 1750.0,
                     "Speed": 0.18
@@ -125803,52 +125916,52 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 150,
+                    "Cost": 120,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 148,
+                    "Cost": 118,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 146,
+                    "Cost": 116,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 144,
+                    "Cost": 114,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 142,
+                    "Cost": 112,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 140,
+                    "Cost": 110,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 138,
+                    "Cost": 108,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   },
                   {
-                    "Cost": 136,
+                    "Cost": 106,
                     "Hitpoints": 270.0,
                     "DPS": 1000.0,
-                    "Speed": 0.1
+                    "Speed": 0.14
                   }
                 ]
               },
@@ -126330,49 +126443,49 @@
                 "ValueDatas": [
                   {
                     "Cost": 100,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 98,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 96,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 94,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 92,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 90,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 88,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   },
                   {
                     "Cost": 86,
-                    "Hitpoints": 1800.0,
+                    "Hitpoints": 2000.0,
                     "DPS": 400.0,
                     "Speed": 0.18
                   }
@@ -126733,61 +126846,61 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 100.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 105.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 110.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 115.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 120.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 125.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 130.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 135.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 140.0,
                     "Speed": 0.16
                   },
                   {
-                    "Cost": 120,
+                    "Cost": 90,
                     "Hitpoints": 2500.0,
                     "DPS": 145.0,
                     "Speed": 0.16
@@ -127231,25 +127344,25 @@
                     "Cost": 40,
                     "Hitpoints": 500.0,
                     "DPS": 100.0,
-                    "Speed": 0.25
+                    "Speed": 0.40
                   },
                   {
                     "Cost": 40,
                     "Hitpoints": 650.0,
                     "DPS": 100.0,
-                    "Speed": 0.25
+                    "Speed": 0.40
                   },
                   {
                     "Cost": 40,
                     "Hitpoints": 800.0,
                     "DPS": 100.0,
-                    "Speed": 0.25
+                    "Speed": 0.40
                   },
                   {
                     "Cost": 40,
                     "Hitpoints": 950.0,
                     "DPS": 100.0,
-                    "Speed": 0.25
+                    "Speed": 0.40
                   }
                 ]
               },
@@ -128115,52 +128228,52 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 600.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 640.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 680.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 720.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 760.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 800.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 840.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   },
                   {
-                    "Cost": 60,
+                    "Cost": 50,
                     "Hitpoints": 880.0,
                     "DPS": 200.0,
-                    "Speed": 0.25
+                    "Speed": 0.30
                   }
                 ]
               },
@@ -128696,49 +128809,49 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 270.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 310.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 350.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 390.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 430.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 470.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 510.0,
                     "DPS": 100.0,
                     "Speed": 0.22
                   },
                   {
-                    "Cost": 15,
+                    "Cost": 25,
                     "Hitpoints": 550.0,
                     "DPS": 100.0,
                     "Speed": 0.22
@@ -128751,49 +128864,49 @@
                 "Description": "",
                 "ValueDatas": [
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 900.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 940.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 980.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 1020.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 1060.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 1100.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 1140.0,
                     "DPS": 100.0,
                     "Speed": 0.18
                   },
                   {
-                    "Cost": 110,
+                    "Cost": 80,
                     "Hitpoints": 1180.0,
                     "DPS": 100.0,
                     "Speed": 0.18
@@ -186180,7 +186293,7 @@
           "Cost": 150,
           "FirstWave": 5,
           "WavePointCost": 1500,
-          "Weight": 3000,
+          "Weight": 3500,
           "ImpType": "mausoleum_imp",
           "MinPosXThrowImp": 400,
           "ThrowImpDuration": 1,
@@ -186198,7 +186311,7 @@
           "ArtScale": 0.55,
           "HealthThresholdToImpAmmoLayers": [
             {
-              "HealthPercentThrowImp": 0.01,
+              "HealthPercentThrowImp": 0.02,
               "ProjectileLayersToHide": [
                 "zombie_imp_skull",
                 "zombie_imp_jaw",

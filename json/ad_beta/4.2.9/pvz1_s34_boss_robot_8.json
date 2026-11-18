@@ -1,0 +1,765 @@
+{
+    "version": 1,
+    "#comment": "PVZ1 S34 W7 BOSS",
+    "objects": [
+      {
+        "objclass": "LevelDefinition",
+        "objdata": {
+          "Description": "[S34_MEMORY_W7_DESC_9]",
+          "LevelNumber": 7,
+          "IsArtifactDisabled": false,
+          "Loot": "RTID(DefaultLoot@LevelModules)",
+          "Modules": [
+            "RTID(BossIntro@CurrentLevel)",
+            "RTID(ModernMowers@LevelModules)",
+            "RTID(SeedBank@CurrentLevel)",
+            "RTID(DefaultSunDropper@LevelModules)",
+            "RTID(Challenges@CurrentLevel)",
+            "RTID(GlacierModule@CurrentLevel)",
+            "RTID(ZombossBattle@CurrentLevel)",
+            "RTID(DefaultZombieWinCondition@LevelModules)"
+          ],
+          "ZombieMaxLevel": 1,
+          "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_7]",
+          "NormalPresentTable": "egypt_normal_01",
+          "ShinyPresentTable": "egypt_shiny_01",
+          "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+          "StageModule": "RTID(SnowModernStageLocal@CurrentLevel)",
+          "ShowZombies": [
+            "iceage",
+            "iceage_armor1",
+            "iceage_armor2",
+            "iceage_armor3",
+            "iceage_imp",
+            "iceage_hunter",
+            "iceage_dodo"
+          ],
+          "StartingSun": 3500,
+          "IsBossFight": true
+        }
+      },
+      {
+        "objclass": "StageModuleProperties",
+        "aliases": [
+          "SnowModernStageLocal"
+        ],
+        "objdata": {
+          "ResourceGroupNames": [
+            "Egypt_Gravestone",
+            "Game_Tombstones_Dynamic",
+            "Tombstone_Dark_Effects",
+            "DelayLoad_Background_Snow_Modern",
+            "AudioTutorial",
+            "ZombieTutorialGroup",
+            "FrostbiteIceBlockPlantGroup",
+            "FrostbiteIceBlockZombieGroup",
+            "FrostbiteHeatGroup",
+            "IceAgeFrostWindGroup"
+          ],
+          "GroupsToUnloadForAds": [
+            "DelayLoad_Background_Snow_Modern"
+          ],
+          "StagePrefix": "snow_modern",
+          "BackgroundResourceGroup": "DelayLoad_Background_Snow_Modern",
+          "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SNOW_MODERN",
+          "LevelPowerupSet": "LevelPowerupsDefault",
+          "BasicZombieTypeName": "tutorial",
+          "FlagZombieTypeName": "tutorial_flag",
+          "Armor1ZombieTypeName": "tutorial_armor1",
+          "Armor2ZombieTypeName": "tutorial_armor2",
+          "MusicSuffix": "Modern",
+          "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+          "RailcartDefaultTypeName": "railcart_tutotial",
+          "GravestoneDefaultTypeName": "gravestone_tutorial",
+          "DisabledStreetCells": [
+            {
+              "mX": 0,
+              "mY": 0
+            },
+            {
+              "mX": 0,
+              "mY": 1
+            },
+            {
+              "mX": 0,
+              "mY": 2
+            },
+            {
+              "mX": 0,
+              "mY": 3
+            },
+            {
+              "mX": 0,
+              "mY": 4
+            },
+            {
+              "mX": 0,
+              "mY": 5
+            },
+            {
+              "mX": 0,
+              "mY": 6
+            },
+            {
+              "mX": 0,
+              "mY": 7
+            },
+            {
+              "mX": 0,
+              "mY": 8
+            },
+            {
+              "mX": 0,
+              "mY": 9
+            },
+            {
+              "mX": 1,
+              "mY": 0
+            },
+            {
+              "mX": 1,
+              "mY": 1
+            },
+            {
+              "mX": 1,
+              "mY": 2
+            },
+            {
+              "mX": 1,
+              "mY": 3
+            },
+            {
+              "mX": 1,
+              "mY": 4
+            },
+            {
+              "mX": 1,
+              "mY": 5
+            },
+            {
+              "mX": 1,
+              "mY": 6
+            },
+            {
+              "mX": 1,
+              "mY": 7
+            },
+            {
+              "mX": 1,
+              "mY": 8
+            },
+            {
+              "mX": 1,
+              "mY": 9
+            },
+            {
+              "mX": 2,
+              "mY": 0
+            },
+            {
+              "mX": 2,
+              "mY": 1
+            },
+            {
+              "mX": 2,
+              "mY": 2
+            },
+            {
+              "mX": 2,
+              "mY": 3
+            },
+            {
+              "mX": 2,
+              "mY": 4
+            },
+            {
+              "mX": 2,
+              "mY": 5
+            },
+            {
+              "mX": 2,
+              "mY": 6
+            },
+            {
+              "mX": 2,
+              "mY": 7
+            },
+            {
+              "mX": 2,
+              "mY": 8
+            },
+            {
+              "mX": 2,
+              "mY": 9
+            },
+            {
+              "mX": 3,
+              "mY": 9
+            },
+            {
+              "mX": 5,
+              "mY": 9
+            },
+            {
+              "mX": 7,
+              "mY": 9
+            },
+            {
+              "mX": 7,
+              "mY": 8
+            },
+            {
+              "mX": 7,
+              "mY": 7
+            },
+            {
+              "mX": 8,
+              "mY": 9
+            },
+            {
+              "mX": 8,
+              "mY": 8
+            },
+            {
+              "mX": 8,
+              "mY": 7
+            }
+          ]
+        }
+      },
+      {
+        "aliases": [
+          "BossIntro"
+        ],
+        "objclass": "ZombossMechLastStandIntroProperties",
+        "objdata": {
+          "PanEndOffset": 468,
+          "PanLeftDuration": 1.5,
+          "PanRightDuration": 1.5,
+          "PanStartOffset": 78,
+          "ResourceGroupNames": [],
+          "StartingPlantfood": 2,
+          "StartingSun": 3500
+        }
+      },
+      {
+        "aliases": [
+          "SeedBank"
+        ],
+        "objclass": "SeedBankProperties",
+        "objdata": {
+          "SelectionMethod": "chooser",
+          "OverrideSeedSlotsCount": 8,
+          "GlobalLevel": 1,
+          "PresetPlantList": [
+            "hotpotato",
+            "firepeashooter"
+          ],
+          "PlantBlackList": []
+        }
+      },
+      {
+        "aliases": [
+          "ZombossBattle"
+        ],
+        "objclass": "ZombossBattleModuleProperties",
+        "objdata": {
+          "ReservedColumnCount": 3,
+          "ZombossDeathColumn": 5,
+          "ZombossDeathRow": 3,
+          "ZombossMechType": "zombossmech_iceage_memo",
+          "ZombossSpawnGridPosition": {
+            "mX": 6,
+            "mY": 3
+          },
+          "ZombossStageCount": 3,
+          "ZombossStartStageIndex": 0
+        }
+      },
+      {
+        "aliases": [
+          "Challenges"
+        ],
+        "objclass": "StarChallengeModuleProperties",
+        "objdata": {
+          "Challenges": [
+            [
+              "RTID(PlantLimit@CurrentLevel)",
+              "RTID(PlantSurvival@CurrentLevel)",
+              "RTID(BurstKills@CurrentLevel)"
+            ]
+          ],
+          "ChallengesAlwaysAvailable": true
+        }
+      },
+      {
+        "aliases": [
+          "PlantLimit"
+        ],
+        "objclass": "StarChallengeSimultaneousPlantsProps",
+        "objdata": {
+          "MaximumPlants": 25
+        }
+      },
+      {
+        "aliases": [
+          "PlantSurvival"
+        ],
+        "objclass": "StarChallengePlantsSurviveProps",
+        "objdata": {
+          "Count": 10
+        }
+      },
+      {
+        "aliases": [
+          "BurstKills"
+        ],
+        "objclass": "StarChallengeKillZombiesInTimeProps",
+        "objdata": {
+          "ZombiesToKill": 5,
+          "Time": 20
+        }
+      },
+      {
+        "aliases": [
+          "GlacierModule"
+        ],
+        "objclass": "GlacierModuleProperties",
+        "objdata": {
+          "ZombieSpawnData": [
+            {
+              "Entries": [
+                {
+                  "TypeName": "",
+                  "Weight": 10
+                }
+              ]
+            },
+            {
+              "Entries": [
+                {
+                  "TypeName": "",
+                  "Weight": 5
+                },
+                {
+                  "TypeName": "iceage",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_imp",
+                  "Weight": 2
+                }
+              ]
+            },
+            {
+              "Entries": [
+                {
+                  "TypeName": "",
+                  "Weight": 2
+                },
+                {
+                  "TypeName": "iceage",
+                  "Weight": 5
+                },
+                {
+                  "TypeName": "iceage_imp",
+                  "Weight": 3
+                }
+              ]
+            },
+            {
+              "Entries": [
+                {
+                  "TypeName": "",
+                  "Weight": 1
+                },
+                {
+                  "TypeName": "iceage",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_armor1",
+                  "Weight": 4
+                },
+                {
+                  "TypeName": "iceage_hunter",
+                  "Weight": 2
+                }
+              ]
+            },
+            {
+              "Entries": [
+                {
+                  "TypeName": "iceage_armor1",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_armor2",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_hunter",
+                  "Weight": 2
+                },
+                {
+                  "TypeName": "iceage_dodo",
+                  "Weight": 2
+                }
+              ]
+            },
+            {
+              "Entries": [
+                {
+                  "TypeName": "iceage_armor2",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_armor3",
+                  "Weight": 2
+                },
+                {
+                  "TypeName": "iceage_hunter",
+                  "Weight": 3
+                },
+                {
+                  "TypeName": "iceage_dodo",
+                  "Weight": 2
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "objclass": "ZombieZombossMechIceAgeProps",
+        "aliases": [
+          "ZombieZombossMechIceAgeMemo"
+        ],
+        "objdata": {
+          "Speed": 0.1,
+          "CanSpawnPlantFood": false,
+          "EnableAutoTest": false,
+          "SizeType": "big",
+          "HeadDropFraction": -1,
+          "ArmDropFraction": -1,
+          "HitRect": {
+            "mX": 30,
+            "mY": 10,
+            "mWidth": 115,
+            "mHeight": 340
+          },
+          "AttackRect": {
+            "mX": 15,
+            "mY": 0,
+            "mWidth": 20,
+            "mHeight": 195
+          },
+          "ArtCenter": {
+            "x": 50,
+            "y": 250
+          },
+          "AlmanacOffset": {
+            "x": 50,
+            "y": 150
+          },
+          "AlmanacScale": 0.65,
+          "ShadowOffset": {
+            "x": 55,
+            "y": -50,
+            "z": 0.8
+          },
+          "ShadowScaling": {
+            "x": 4.5,
+            "y": 4.5
+          },
+          "GroundTrackName": "ground_swatch",
+          "ZombieStats": [
+            {
+              "Type": "toughness",
+              "Value": "toughness8"
+            },
+            {
+              "Type": "speed",
+              "Value": "speed3"
+            }
+          ],
+          "ZombieLevelStats": [
+            {
+              "AttackLevel": 1,
+              "HitPointsLevel": 1
+            },
+            {
+              "AttackLevel": 2,
+              "HitPointsLevel": 1
+            },
+            {
+              "AttackLevel": 3,
+              "HitPointsLevel": 1
+            },
+            {
+              "AttackLevel": 4.5,
+              "HitPointsLevel": 1
+            },
+            {
+              "AttackLevel": 5,
+              "HitPointsLevel": 1
+            }
+          ],
+          "GridExtents": {
+            "mX": 3,
+            "mY": 3
+          },
+          "CanTriggerZombieWin": false,
+          "IsValidPinchTarget": false,
+          "CanBeFlicked": false,
+          "CanBeLaunchedByPlants": false,
+          "SquashZombies": true,
+          "SquashGridItems": false,
+          "MinColumn": 5,
+          "MaxColumn": 7,
+          "IceCrustHealth": 1750,
+          "HideDuringIntro": true,
+          "PowerUpDamageModifier": 0.25,
+          "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_ICEAGE",
+          "CrosshairAnimation": "missile_lock_reticle",
+          "RocketAnimation": "missile",
+          "RocketExplosionAnimation": "missile_explosion",
+          "RevealAction": "RTID(IceReveal@CurrentLevel)",
+          "CoverUpAction": "RTID(IceCoverUp@CurrentLevel)",
+          "Stages": [
+            {
+              "Actions": [
+                "RTID(Glacier1@CurrentLevel)",
+                "RTID(Wind1@CurrentLevel)",
+                "RTID(Fire1@CurrentLevel)"
+              ],
+              "HitPoints": 12000,
+              "DamageIndexFull": 0,
+              "Level": 1,
+              "DamageIndexHalf": 2,
+              "AnimRateModifier": 1,
+              "IdleTime": {
+                "Min": 3.5,
+                "Max": 4.5
+              },
+              "RetreatAction": "RTID(IceCoverUp@CurrentLevel)",
+              "ChilledDurationFromFrozen": 10,
+              "StunTime": 3.5,
+              "StunDamageScale": 1.25,
+              "StunStaggerBackMovement": 80,
+              "StunStaggerBackTime": 0.4
+            },
+            {
+              "Actions": [
+                "RTID(Glacier2@CurrentLevel)",
+                "RTID(Wind2@CurrentLevel)",
+                "RTID(Fire2@CurrentLevel)"
+              ],
+              "HitPoints": 16000,
+              "DamageIndexFull": 3,
+              "Level": 1,
+              "DamageIndexHalf": 4,
+              "AnimRateModifier": 1.1,
+              "IdleTime": {
+                "Min": 2.5,
+                "Max": 3.5
+              },
+              "RetreatAction": "RTID(IceCoverUp@CurrentLevel)",
+              "ChilledDurationFromFrozen": 10,
+              "StunTime": 3,
+              "StunDamageScale": 1.25,
+              "StunStaggerBackMovement": 80,
+              "StunStaggerBackTime": 0.4
+            },
+            {
+              "Actions": [
+                "RTID(Glacier3@CurrentLevel)",
+                "RTID(Wind3@CurrentLevel)",
+                "RTID(Fire3@CurrentLevel)"
+              ],
+              "HitPoints": 22000,
+              "DamageIndexFull": 5,
+              "Level": 1,
+              "DamageIndexHalf": 6,
+              "AnimRateModifier": 1.15,
+              "IdleTime": {
+                "Min": 1.5,
+                "Max": 2.5
+              },
+              "RetreatAction": "RTID(IceCoverUp@CurrentLevel)",
+              "ChilledDurationFromFrozen": 10,
+              "StunTime": 2.5,
+              "StunDamageScale": 1.25,
+              "StunStaggerBackMovement": 80,
+              "StunStaggerBackTime": 0.4
+            }
+          ]
+        }
+      },
+      {
+        "objclass": "ZombossSpawnGlacierColumnActionDefinition",
+        "aliases": [
+          "Glacier1"
+        ],
+        "objdata": {
+          "Weight": 5,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFreezingWindRowActionDefinition",
+        "aliases": [
+          "Wind1"
+        ],
+        "objdata": {
+          "Weight": 3,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFireActionDefinition",
+        "aliases": [
+          "Fire1"
+        ],
+        "objdata": {
+          "Weight": 6,
+          "RepeatMin": 0,
+          "RepeatMax": 0,
+          "FireMinColumn": 0,
+          "FireMaxColumn": 6,
+          "FireRowRange": 3,
+          "FireTargetPlantWeight": 5,
+          "FireTargetEmptyWeight": 1,
+          "FireTargetRailsWeight": 0,
+          "FireRocketHitTime": 0.75,
+          "FireRocketSpeed": 500,
+          "FireRocketDropSound": "",
+          "FireRocketCount": {
+            "Min": 1,
+            "Max": 1
+          },
+          "FireTargetTilesWeight": 0
+        }
+      },
+      {
+        "objclass": "ZombossSpawnGlacierColumnActionDefinition",
+        "aliases": [
+          "Glacier2"
+        ],
+        "objdata": {
+          "Weight": 5,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFreezingWindRowActionDefinition",
+        "aliases": [
+          "Wind2"
+        ],
+        "objdata": {
+          "Weight": 6,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFireActionDefinition",
+        "aliases": [
+          "Fire2"
+        ],
+        "objdata": {
+          "Weight": 8,
+          "RepeatMin": 0,
+          "RepeatMax": 0,
+          "FireMinColumn": 0,
+          "FireMaxColumn": 6,
+          "FireRowRange": 3,
+          "FireTargetPlantWeight": 5,
+          "FireTargetEmptyWeight": 1,
+          "FireTargetRailsWeight": 0,
+          "FireRocketHitTime": 0.75,
+          "FireRocketSpeed": 500,
+          "FireRocketDropSound": "",
+          "FireRocketCount": {
+            "Min": 1,
+            "Max": 1
+          },
+          "FireTargetTilesWeight": 0
+        }
+      },
+      {
+        "objclass": "ZombossSpawnGlacierColumnActionDefinition",
+        "aliases": [
+          "Glacier3"
+        ],
+        "objdata": {
+          "Weight": 5,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFreezingWindRowActionDefinition",
+        "aliases": [
+          "Wind3"
+        ],
+        "objdata": {
+          "Weight": 8,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      },
+      {
+        "objclass": "ZombossFireActionDefinition",
+        "aliases": [
+          "Fire3"
+        ],
+        "objdata": {
+          "Weight": 10,
+          "RepeatMin": 0,
+          "RepeatMax": 0,
+          "FireMinColumn": 0,
+          "FireMaxColumn": 6,
+          "FireRowRange": 3,
+          "FireTargetPlantWeight": 5,
+          "FireTargetEmptyWeight": 1,
+          "FireTargetRailsWeight": 0,
+          "FireRocketHitTime": 0.75,
+          "FireRocketSpeed": 500,
+          "FireRocketDropSound": "",
+          "FireRocketCount": {
+            "Min": 1,
+            "Max": 1
+          },
+          "FireTargetTilesWeight": 0
+        }
+      },
+      {
+        "objclass": "ZombossHelmLostActionDefinition",
+        "aliases": [
+          "IceReveal"
+        ],
+        "objdata": {
+          "Weight": 6,
+          "RepeatMin": 0,
+          "RepeatMax": 0,
+          "IceCrustRevealMinTime": 6
+        }
+      },
+      {
+        "objclass": "ZombossCoverUpActionDefinition",
+        "aliases": [
+          "IceCoverUp"
+        ],
+        "objdata": {
+          "Weight": 6,
+          "RepeatMin": 0,
+          "RepeatMax": 0
+        }
+      }
+    ]
+  }
+  
