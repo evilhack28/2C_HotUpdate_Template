@@ -19,6 +19,7 @@
                 "Modules": [
                     "RTID(StandardIntro@LevelModules)",
                     "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(PVZ1AchievementStats@LevelModules)",
                     "RTID(SeedBank@CurrentLevel)",
                     "RTID(ChallengeModule@CurrentLevel)",
                     "RTID(RiftThemeDemo@CurrentLevel)",

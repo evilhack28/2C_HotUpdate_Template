@@ -5,7 +5,7 @@
       {
         "objclass": "LevelDefinition",
         "objdata": {
-          "Description": "[S34_MEMORY_W7_DESC_9]",
+          "Description": "[S34_MEMORY_LEVEL_NAME_BOSS_8]",
           "LevelNumber": 7,
           "IsArtifactDisabled": false,
           "Loot": "RTID(DefaultLoot@LevelModules)",
@@ -20,7 +20,7 @@
             "RTID(DefaultZombieWinCondition@LevelModules)"
           ],
           "ZombieMaxLevel": 1,
-          "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_7]",
+          "Name": "[S34_MEMORY_LEVEL_NAME_BOSS_8]",
           "NormalPresentTable": "egypt_normal_01",
           "ShinyPresentTable": "egypt_shiny_01",
           "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",

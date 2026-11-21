@@ -19,6 +19,7 @@
                     "RTID(DefaultZombieWinCondition@LevelModules)",
                     "RTID(ZombiesDeadWinCon@LevelModules)",
                     "RTID(Challenges@CurrentLevel)",
+                    "RTID(PVZ1AchievementStats@LevelModules)",
                     "RTID(SeedBank@CurrentLevel)",
                     "RTID(SkySun@CurrentLevel)",
                     "RTID(InitialPlantfood@CurrentLevel)",
