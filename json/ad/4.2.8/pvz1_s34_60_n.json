@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "#comment": "S34 Level 60",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Name": "[S34_MEMORY_LEVEL_NAME_060]",
+        "Description": "[S34_MEMORY_LEVEL_DESC_060]",
+        "LevelNumber": 4,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StartingSun": 0,
+        "ZombieMaxLevel": 1,
+        "IsArtifactDisabled": true,
+        "DisablePeavine": true,
+        "GameOverDialogShowBrain": false,
+        "GameOverDialogTaskFailed": true,
+        "FirstIntroNarrative": "S34_060_KLOTSKI_HINT",
+        "ReplayIntroNarrative": "S34_060_KLOTSKI_HINT",
+        "MusicType": "MiniGame_C",
+        "StageModule": "RTID(SnowModernStage@LevelModules)",
+        "ShowZombies": [],
+        "Modules": [
+          "RTID(Gravestones@CurrentLevel)",
+          "RTID(StandardIntro@CurrentLevel)",
+          "RTID(Challenges@CurrentLevel)",
+          "RTID(PVZ1KlotskiModule@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "objclass": "StandardLevelIntroProperties",
+      "aliases": [
+        "StandardIntro"
+      ],
+      "objdata": {
+        "PanStartOffset": 78,
+        "PanEndOffset": 1468,
+        "PanRightDuration": 2,
+        "PanLeftDuration": 2.5,
+        "SkipShowingStreet": true
+      }
+    },
+    {
+      "objclass": "GravestoneProperties",
+      "aliases": [
+        "Gravestones"
+      ],
+      "objdata": {
+        "GravestoneCount": 0,
+        "ForceSpawnData": [
+          {
+            "TypeName": "vertical_2",
+            "GridX": 0,
+            "GridY": 1
+          },
+          {
+            "TypeName": "vertical_2",
+            "GridX": 2,
+            "GridY": 2
+          },
+          {
+            "TypeName": "vertical_2",
+            "GridX": 4,
+            "GridY": 2
+          },
+          {
+            "TypeName": "vertical_1",
+            "GridX": 6,
+            "GridY": 2
+          },
+          {
+            "TypeName": "vertical_2",
+            "GridX": 8,
+            "GridY": 1
+          },
+          {
+            "TypeName": "parallel_3",
+            "GridX": 0,
+            "GridY": 0
+          },
+          {
+            "TypeName": "parallel_2",
+            "GridX": 0,
+            "GridY": 3
+          },
+          {
+            "TypeName": "parallel_2",
+            "GridX": 2,
+            "GridY": 1
+          },
+          {
+            "TypeName": "parallel_3",
+            "GridX": 5,
+            "GridY": 3
+          },
+          {
+            "TypeName": "parallel_2",
+            "GridX": 6,
+            "GridY": 0
+          },
+          {
+            "TypeName": "vertical_1",
+            "GridX": 3,
+            "GridY": 3
+          },
+          {
+            "TypeName": "parallel_2",
+            "GridX": 3,
+            "GridY": 4
+          },
+          {
+            "TypeName": "vertical_1",
+            "GridX": 7,
+            "GridY": 4
+          },
+          {
+            "TypeName": "parallel_3",
+            "GridX": 0,
+            "GridY": 4
+          },
+          {
+            "TypeName": "vertical_2",
+            "GridX": 1,
+            "GridY": 1
+          },
+          {
+            "TypeName": "barrier",
+            "GridX": 4,
+            "GridY": 1
+          },
+          {
+            "TypeName": "barrier",
+            "GridX": 7,
+            "GridY": 2
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "PVZ1KlotskiModuleMinigameProperties",
+      "aliases": [
+        "PVZ1KlotskiModule"
+      ],
+      "objdata": {
+        "m_rounds": 22
+      }
+    },
+    {
+      "objclass": "StarChallengeModuleProperties",
+      "aliases": [
+        "Challenges"
+      ],
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(SaveMowers@CurrentLevel)",
+            "RTID(Holdout@CurrentLevel)",
+            "RTID(SunUsed@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "objclass": "StarChallengeSaveMowersProps",
+      "aliases": [
+        "SaveMowers"
+      ],
+      "objdata": {}
+    },
+    {
+      "objclass": "StarChallengeSpendSunHoldoutProps",
+      "aliases": [
+        "Holdout"
+      ],
+      "objdata": {
+        "HoldoutSeconds": 5
+      }
+    },
+    {
+      "objclass": "StarChallengeSunUsedProps",
+      "aliases": [
+        "SunUsed"
+      ],
+      "objdata": {
+        "MaximumSun": 0
+      }
+    }
+  ]
+}

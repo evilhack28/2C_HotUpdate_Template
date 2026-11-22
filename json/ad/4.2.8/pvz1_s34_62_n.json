@@ -1,0 +1,1574 @@
+{
+    "version": 1,
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_062_IMPS_NAME]",
+                "Description": "[S34_MEMORY_062_IMPS_NAME]",
+                "LevelNumber": 6,
+                "StartingSun": 4500,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(SnowModernStageLocal@CurrentLevel)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Modules": [
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(Challenges@CurrentLevel)",
+                    "RTID(InitialPlantfood@CurrentLevel)",
+                    "RTID(WaveModule@CurrentLevel)",
+                    "RTID(Gulliver@CurrentLevel)",
+                    "RTID(PowerTiles@CurrentLevel)",
+                    "RTID(CruiserSunDrop@CurrentLevel)"
+                ],
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "ShowZombies": [
+                    "dino_imp",
+                    "future_imp",
+                    "heian_ninja",
+                    "roman_imp",
+                    "childrensday_imp",
+                    "moon_ship5000",
+                    "modern_superfanimp"
+                ]
+            }
+        },
+        {
+            "objclass": "StageModuleProperties",
+            "objdata": {
+                "ResourceGroupNames": [
+                    "DelayLoad_Background_Snow_Modern",
+                    "AudioTutorial",
+                    "ZombieTutorialGroup",
+                    "GulliverTunnelGroup",
+                    "GulliverTunnelAudio",
+                    "HeianSmokeBomb",
+                    "ZombieDinoImpGroup",
+                    "ZombieFutureImpGroup",
+                    "ZombieHeianNinjaGroup",
+                    "ZombieRomanImpGroup",
+                    "ZombieChildrensdayImpGroup",
+                    "PowerTileModule",
+                    "ZombieMoonShip5000Group",
+                    "EMPeachEffects",
+                    "ZombieModernSuperfanImpGroup"
+                ],
+                "GroupsToUnloadForAds": [
+                    "DelayLoad_Background_Snow_Modern"
+                ],
+                "StagePrefix": "snow_modern",
+                "BackgroundResourceGroup": "DelayLoad_Background_Snow_Modern",
+                "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SNOW_MODERN",
+                "LevelPowerupSet": "LevelPowerupsDefault",
+                "BasicZombieTypeName": "tutorial",
+                "FlagZombieTypeName": "tutorial_flag",
+                "Armor1ZombieTypeName": "tutorial_armor1",
+                "Armor2ZombieTypeName": "tutorial_armor2",
+                "MusicSuffix": "Modern",
+                "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+                "RailcartDefaultTypeName": "railcart_tutotial",
+                "GravestoneDefaultTypeName": "gravestone_tutorial",
+                "DisabledStreetCells": [
+                    {
+                        "mX": 0,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 7
+                    }
+                ]
+            },
+            "aliases": [
+                "SnowModernStageLocal"
+            ]
+        },
+        {
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser",
+                "OverrideSeedSlotsCount": 7,
+                "GlobalLevel": 1,
+                "PresetPlantList": [],
+                "PlantBlackList": [],
+                "PlantWhiteList": []
+            },
+            "aliases": [
+                "SeedBank"
+            ]
+        },
+        {
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 2
+            },
+            "aliases": [
+                "InitialPlantfood"
+            ]
+        },
+        {
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "ChallengesAlwaysAvailable": true,
+                "Challenges": [
+                    [
+                        "RTID(PlantLimit@CurrentLevel)",
+                        "RTID(Survivors@CurrentLevel)",
+                        "RTID(SaveMowers@CurrentLevel)"
+                    ]
+                ]
+            },
+            "aliases": [
+                "Challenges"
+            ]
+        },
+        {
+            "objclass": "StarChallengeSimultaneousPlantsProps",
+            "objdata": {
+                "MaximumPlants": 24
+            },
+            "aliases": [
+                "PlantLimit"
+            ]
+        },
+        {
+            "objclass": "StarChallengePlantsSurviveProps",
+            "objdata": {
+                "Count": 12
+            },
+            "aliases": [
+                "Survivors"
+            ]
+        },
+        {
+            "objclass": "StarChallengeSaveMowersProps",
+            "objdata": {},
+            "aliases": [
+                "SaveMowers"
+            ]
+        },
+        {
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerPropsVector": [
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)"
+                ],
+                "ManualStartup": true,
+                "DynamicZombies": []
+            },
+            "aliases": [
+                "WaveModule"
+            ]
+        },
+        {
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 10,
+                "FlagWaveInterval": 5,
+                "SuppressFlagZombie": true,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "MinNextWaveHealthPercentage": 0.1,
+                "MaxNextWaveHealthPercentage": 0.1,
+                "ZombieCountdownFirstWaveSecs": 8,
+                "ZombieCountdownFirstWaveConveyorSecs": 8,
+                "ZombieCountdownHugeWaveDelay": 5,
+                "DescriptionName": "[S34_MEMORY_062_IMPS_MODE]",
+                "Description": "[S34_MEMORY_062_IMPS_RULES]",
+                "Waves": [
+                    [
+                        "RTID(Ground1@CurrentLevel)",
+                        "RTID(ShipRule@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground3@CurrentLevel)",
+                        "RTID(Raid3_heian_ninja@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground4@CurrentLevel)",
+                        "RTID(Raid4_future_imp@CurrentLevel)",
+                        "RTID(Ship4_0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground5@CurrentLevel)",
+                        "RTID(Raid5_heian_ninja@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground6@CurrentLevel)",
+                        "RTID(Raid6_future_imp@CurrentLevel)",
+                        "RTID(Ship6_0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground7@CurrentLevel)",
+                        "RTID(Raid7_heian_ninja@CurrentLevel)",
+                        "RTID(Ship7_0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground8@CurrentLevel)",
+                        "RTID(Raid8_future_imp@CurrentLevel)",
+                        "RTID(Ship8_0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground9@CurrentLevel)",
+                        "RTID(Raid9_heian_ninja@CurrentLevel)",
+                        "RTID(Ship9_0@CurrentLevel)",
+                        "RTID(Ship9_1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Ground10@CurrentLevel)",
+                        "RTID(Raid10_future_imp@CurrentLevel)",
+                        "RTID(Raid10_heian_ninja@CurrentLevel)"
+                    ]
+                ]
+            },
+            "aliases": [
+                "Waves"
+            ]
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingSun": 4500,
+                "StartingPlantfood": 2,
+                "DisablePlantTags": [
+                    "sun_produce"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Gulliver"
+            ],
+            "objclass": "InitialGridItemGulliverTunnelProperties",
+            "objdata": {
+                "TunnelPlacements": [
+                    {
+                        "GridX": 6,
+                        "GridY": 0,
+                        "Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_LEFT"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 1,
+                        "Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_LEFT"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2,
+                        "Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_LEFT"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 3,
+                        "Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_LEFT"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 4,
+                        "Orientation": "GULLIVERTUNNEL_ORIENTATION_BIG_ON_LEFT"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Ground1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 11,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ground2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 17,
+                "AdditionalPlantfood": 1
+            }
+        },
+        {
+            "aliases": [
+                "Ground3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 13,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ground4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 19,
+                "AdditionalPlantfood": 1
+            }
+        },
+        {
+            "aliases": [
+                "Ground5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 11,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ground6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 17,
+                "AdditionalPlantfood": 1
+            }
+        },
+        {
+            "aliases": [
+                "Ground7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 13,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ground8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 11,
+                "AdditionalPlantfood": 1
+            }
+        },
+        {
+            "aliases": [
+                "Ground9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 17,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ground10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(heian_ninja@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(childrensday_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(dino_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(future_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 13,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Raid3_heian_ninja"
+            ],
+            "objclass": "HeianNinjaZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 4,
+                "ColumnEnd": 7,
+                "GroupSize": 2,
+                "SpiderCount": 4,
+                "SpiderZombieName": "heian_ninja",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.9,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid4_future_imp"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 4,
+                "ColumnEnd": 8,
+                "GroupSize": 2,
+                "SpiderCount": 6,
+                "SpiderZombieName": "future_imp",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.65,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid5_heian_ninja"
+            ],
+            "objclass": "HeianNinjaZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 3,
+                "ColumnEnd": 6,
+                "GroupSize": 2,
+                "SpiderCount": 8,
+                "SpiderZombieName": "heian_ninja",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.9,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid6_future_imp"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 4,
+                "ColumnEnd": 8,
+                "GroupSize": 2,
+                "SpiderCount": 8,
+                "SpiderZombieName": "future_imp",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.65,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid7_heian_ninja"
+            ],
+            "objclass": "HeianNinjaZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 3,
+                "ColumnEnd": 6,
+                "GroupSize": 2,
+                "SpiderCount": 8,
+                "SpiderZombieName": "heian_ninja",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.9,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid8_future_imp"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 4,
+                "ColumnEnd": 8,
+                "GroupSize": 2,
+                "SpiderCount": 10,
+                "SpiderZombieName": "future_imp",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.65,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid9_heian_ninja"
+            ],
+            "objclass": "HeianNinjaZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 3,
+                "ColumnEnd": 6,
+                "GroupSize": 2,
+                "SpiderCount": 10,
+                "SpiderZombieName": "heian_ninja",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.9,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid10_future_imp"
+            ],
+            "objclass": "SpiderRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 5,
+                "ColumnEnd": 8,
+                "GroupSize": 2,
+                "SpiderCount": 8,
+                "SpiderZombieName": "future_imp",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.65,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "aliases": [
+                "Raid10_heian_ninja"
+            ],
+            "objclass": "HeianNinjaZombieSpawnerProps",
+            "objdata": {
+                "ColumnStart": 3,
+                "ColumnEnd": 5,
+                "GroupSize": 2,
+                "SpiderCount": 8,
+                "SpiderZombieName": "heian_ninja",
+                "TimeBeforeFullSpawn": 5,
+                "TimeBetweenGroups": 0.9,
+                "ZombieFallTime": 1.5,
+                "WaveStartMessage": ""
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "objdata": {
+                "TypeName": "moon_ship5000",
+                "ZombieClass": "ZombieMoonShip5000",
+                "Properties": "RTID(CruiserProps@CurrentLevel)",
+                "ResourceGroups": [
+                    "ZombieMoonShip5000Group",
+                    "EMPeachEffects"
+                ],
+                "#AudioGroups": [
+                    "ZombieMoonShip5000Audio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_MoonShip5000",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MOON_SHIP5000",
+                "BoardAlmanac": true,
+                "RecommendPlants": [
+                    "empea"
+                ],
+                "HomeWorld": "moon"
+            },
+            "aliases": [
+                "Cruiser"
+            ]
+        },
+        {
+            "objclass": "ZombieMoonShip5000Props",
+            "objdata": {
+                "Speed": 0.185,
+                "SizeType": "big",
+                "NumDamageStates": 2,
+                "JumpTranslationMultiplier": 1,
+                "SoundOnTakeDamage": "Play_Zomb_Moon_Battlecruiser5000_Impact",
+                "Hitpoints": 1600,
+                "EatDPS": 100,
+                "CanSpawnPlantFood": true,
+                "ChillInsteadOfFreeze": true,
+                "CanBeLaunchedByPlants": false,
+                "CanBePlantTossedStrong": false,
+                "CanBePlantTossedWeak": false,
+                "CanBeFlicked": false,
+                "CanBeFlickedOff": false,
+                "AffectedBySliders": false,
+                "IsValidPinchTarget": false,
+                "HeadDropFraction": -1,
+                "ArmDropFraction": -1,
+                "GridExtents": {
+                    "mX": 2,
+                    "mY": 2
+                },
+                "HitRect": {
+                    "mX": 30,
+                    "mY": 0,
+                    "mWidth": 120,
+                    "mHeight": 140
+                },
+                "AttackRect": {
+                    "mX": -15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 95
+                },
+                "Cost": 150,
+                "WavePointCost": 400,
+                "Weight": 0,
+                "ArtCenter": {
+                    "x": 100,
+                    "y": 130
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "GroundTrackName": "ground_swatch",
+                "StopColumn": 7,
+                "MinimumTargetPlantColumn": 9,
+                "MaximumTargetPlantColumn": 9,
+                "FallbackLandingColumn": 3,
+                "SelfDamageReduction": 0.8,
+                "ShieldPulseInterval": 10.0,
+                "EnergyShieldHealthRatio": 0.4,
+                "EnergyShieldArmorType": "CosmicEnergyShield",
+                "FireInterval": 6.0,
+                "FireRoundsPerCycle": 4,
+                "OverheatDuration": 8.0,
+                "CosmicImpType": "modern_superfanimp",
+                "ImpTravelTime": 1.0,
+                "ImpLaunchHeight": 180.0,
+                "ImpSpawnOffset": {
+                    "x": -65.0,
+                    "y": 1.0,
+                    "z": 80.0
+                },
+                "SelfShieldEffectPAM": "POPANIM_EFFECTS_ZOMBIE_MOON_SHIP5000_SHIELD",
+                "SelfShieldOnAnim": "shield_on",
+                "SelfShieldLoopAnim": "shield_loop",
+                "SelfShieldDamageAnim": "shield_hit",
+                "SelfShieldEndAnim": "shield_end",
+                "SelfShieldEffectOffset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 40.0
+                },
+                "AmmoLayerNames": [
+                    "trunk_light_stage1",
+                    "trunk_light_stage2",
+                    "trunk_light_stage3",
+                    "trunk_light_stage4"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ],
+                "ZombieLevelStats": [
+                    {
+                        "AttackLevel": 1,
+                        "HitPointsLevel": 1
+                    },
+                    {
+                        "AttackLevel": 2,
+                        "HitPointsLevel": 2
+                    },
+                    {
+                        "AttackLevel": 3,
+                        "HitPointsLevel": 3
+                    },
+                    {
+                        "AttackLevel": 4.5,
+                        "HitPointsLevel": 4.5
+                    },
+                    {
+                        "AttackLevel": 5,
+                        "HitPointsLevel": 5
+                    }
+                ]
+            },
+            "aliases": [
+                "CruiserProps"
+            ]
+        },
+        {
+            "aliases": [
+                "Ship4_0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ship6_0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ship7_0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ship8_0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ship9_0"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "Ship9_1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(Cruiser@CurrentLevel)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "FixedOffset": 1,
+                "AdditionalPlantfood": 0
+            }
+        },
+        {
+            "aliases": [
+                "PowerTiles"
+            ],
+            "objclass": "PowerTileProperties",
+            "objdata": {
+                "LinkedTiles": [
+                    {
+                        "Group": "alpha",
+                        "Location": {
+                            "mX": 2,
+                            "mY": 1
+                        }
+                    },
+                    {
+                        "Group": "alpha",
+                        "Location": {
+                            "mX": 2,
+                            "mY": 3
+                        }
+                    },
+                    {
+                        "Group": "beta",
+                        "Location": {
+                            "mX": 4,
+                            "mY": 0
+                        }
+                    },
+                    {
+                        "Group": "beta",
+                        "Location": {
+                            "mX": 4,
+                            "mY": 4
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ShipRule"
+            ],
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "Zombies": [],
+                "AdditionalPlantfood": 0,
+                "GridTypes": [],
+                "ZombieSpawnWaitTime": 0,
+                "SuppressActionIfNoGridItemsFound": false,
+                "WaveStartMessage": "[S34_MEMORY_062_CRUISER_SUN_RULE]"
+            }
+        },
+        {
+            "aliases": [
+                "CruiserSunDrop"
+            ],
+            "objclass": "LevelMutatorRiftTimedSunProps",
+            "objdata": {
+                "SunDrops": [
+                    {
+                        "ZombieTypeName": "moon_ship5000",
+                        "SunDropValues": [
+                            150
+                        ]
+                    }
+                ],
+                "InvalidPlantTypes": []
+            }
+        }
+    ]
+}
