@@ -1,0 +1,1623 @@
+{
+    "#comment": "PVZ1 S34 Level 64",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_064_ROMAN_NAME]",
+                "Description": "[S34_MEMORY_064_ROMAN_DESC]",
+                "LevelNumber": 8,
+                "StartingSun": 1000,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "StageModule": "RTID(SnowModernStageLocal@CurrentLevel)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(Challenges@CurrentLevel)",
+                    "RTID(PVZ1AchievementStats@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(SkySun@CurrentLevel)",
+                    "RTID(InitialPlantfood@CurrentLevel)",
+                    "RTID(InitialPlants@CurrentLevel)",
+                    "RTID(GladiatorRow@CurrentLevel)",
+                    "RTID(WaveModule@CurrentLevel)"
+                ],
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "ShowZombies": [
+                    "roman",
+                    "roman_armor1",
+                    "roman_armor2",
+                    "roman_shield_top",
+                    "roman_healer",
+                    "roman_imp",
+                    "elite_roman_ballista_pvz1_normal",
+                    "gladiator_zombie",
+                    "roman_ballista",
+                    "roman_gargantuar"
+                ]
+            }
+        },
+        {
+            "objclass": "StageModuleProperties",
+            "aliases": [
+                "SnowModernStageLocal"
+            ],
+            "objdata": {
+                "ResourceGroupNames": [
+                    "Egypt_Gravestone",
+                    "Game_Tombstones_Dynamic",
+                    "Tombstone_Dark_Effects",
+                    "DelayLoad_Background_Snow_Modern",
+                    "AudioTutorial",
+                    "ZombieTutorialGroup",
+                    "ModernPortalGroup",
+                    "GladiatorRow",
+                    "ZombieRomanBasicResGroup",
+                    "ZombieRomanTopShieldGroup",
+                    "ZombieRomanHealerGroup",
+                    "ZombieRomanImpGroup",
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieRomanBallistaGroup",
+                    "VaseBreakerGroup",
+                    "ZombieWestChickenFarmerGroup",
+                    "ZombieRomanGargantuarGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieGladiatorGroup",
+                    "ZombieGladiatorAudio",
+                    "ZombieRomanShieldGroup"
+                ],
+                "GroupsToUnloadForAds": [
+                    "DelayLoad_Background_Snow_Modern"
+                ],
+                "StagePrefix": "snow_modern",
+                "BackgroundResourceGroup": "DelayLoad_Background_Snow_Modern",
+                "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SNOW_MODERN",
+                "LevelPowerupSet": "LevelPowerupsDefault",
+                "BasicZombieTypeName": "tutorial",
+                "FlagZombieTypeName": "tutorial_flag",
+                "Armor1ZombieTypeName": "tutorial_armor1",
+                "Armor2ZombieTypeName": "tutorial_armor2",
+                "MusicSuffix": "Modern",
+                "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+                "RailcartDefaultTypeName": "railcart_tutotial",
+                "GravestoneDefaultTypeName": "gravestone_tutorial",
+                "DisabledStreetCells": [
+                    {
+                        "mX": 0,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 7
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            },
+            "aliases": [
+                "Challenges"
+            ]
+        },
+        {
+            "objclass": "StarChallengeSunProducedProps",
+            "objdata": {
+                "TargetSun": 1000
+            },
+            "aliases": [
+                "Goal1"
+            ]
+        },
+        {
+            "objclass": "StarChallengeSimultaneousPlantsProps",
+            "objdata": {
+                "MaximumPlants": 35
+            },
+            "aliases": [
+                "Goal2"
+            ]
+        },
+        {
+            "objclass": "StarChallengePlantsSurviveProps",
+            "objdata": {
+                "Count": 10
+            },
+            "aliases": [
+                "Goal3"
+            ]
+        },
+        {
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser",
+                "OverrideSeedSlotsCount": 8,
+                "GlobalLevel": 1,
+                "PresetPlantList": [],
+                "PlantBlackList": []
+            },
+            "aliases": [
+                "SeedBank"
+            ]
+        },
+        {
+            "objclass": "SunDropperProperties",
+            "objdata": {
+                "InitialSunDropDelay": 10,
+                "SunCountdownBase": 10,
+                "SunCountdownRange": 0,
+                "SunCountdownMax": 10,
+                "SunCountdownIncreasePerSun": 0
+            },
+            "aliases": [
+                "SkySun"
+            ]
+        },
+        {
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 2
+            },
+            "aliases": [
+                "InitialPlantfood"
+            ]
+        },
+        {
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerPropsVector": [
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)"
+                ],
+                "ManualStartup": false,
+                "DynamicZombies": []
+            },
+            "aliases": [
+                "WaveModule"
+            ]
+        },
+        {
+            "objclass": "InitialPlantProperties",
+            "aliases": [
+                "InitialPlants"
+            ],
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 0,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 1,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 3,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "sunflower",
+                        "GridX": 0,
+                        "GridY": 4,
+                        "Level": 1
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "GladiatorRowModuleProperties",
+            "aliases": [
+                "ArenaConfig"
+            ],
+            "objdata": {
+                "GameplayVersion": 1,
+                "TrophyGridItemType": "gladiator_trophy",
+                "TrophyHealth": 800.0,
+                "ArenaDuration": 38.0,
+                "SettlementDuration": 1.0,
+                "SettlementVisualDuration": 1.0,
+                "LeftBoundaryX": 0,
+                "PerformerZombieType": "",
+                "PerformerEnterGridX": 8,
+                "PerformerExitOffsetX": 0.0,
+                "PerformerExitOffsetY": -1000.0,
+                "PerformerExitJumpHeight": 600.0,
+                "PerformerExitJumpDuration": 0.8,
+                "PerformerEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_HOT_RODICUS",
+                "PerformerEffectOffsetX": -64.0,
+                "PerformerEffectYOffset": -38.0,
+                "PerformerEffectScale": 1.0,
+                "PerformerEffectRenderLayer": 0,
+                "WallUpPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_UP",
+                "WallDownPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_DOWN",
+                "WallLeftPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_LEFT",
+                "WallRightPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_RIGHT",
+                "LavaEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_LAVA",
+                "DustEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_DUST",
+                "ResultEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_RESULT",
+                "ArenaEffectOffsetX": -64.0,
+                "ArenaEffectYOffset": -38.0,
+                "ArenaEffectScale": 1.0,
+                "ArenaEffectRenderLayer": 0,
+                "WallEffectOffsetY": 12.0,
+                "WallShadowIdleAnimation": "shadow",
+                "HiddenGridItemWhitelist": [
+                    "GridItemPowerTile",
+                    "GridItemGoldTile",
+                    "GridItemProjectileTrap",
+                    "GridItemGridRegionAreaOfEffectTrap",
+                    "GridItemSliderTile",
+                    "GridItemZombieBuffTileShield",
+                    "GridItemZombieBuffTileCondition",
+                    "GridItemTriggerTile",
+                    "GridItemFakeMold",
+                    "GridItemRailcart",
+                    "GridItemCoal",
+                    "GridItemCoalCart",
+                    "GridItemWaterHole",
+                    "GridItemFairyTaleFog",
+                    "GridItemHydraFog",
+                    "PeriplocaCalophyllaFogGrid",
+                    "GridItemPotionPoisonPile",
+                    "GridItemPoisonMist",
+                    "GridItemPoisonGas",
+                    "PoisonGridItem",
+                    "PoisonMistGridItem"
+                ],
+                "CrossRowSkillWhitelist": [
+                    "powerup_tactical_cuke"
+                ],
+                "TriggerUnitBlacklist": [],
+                "PlantTileGridItemType": "",
+                "LavaTileGridItemType": "gladiator_lava_tile",
+                "FencePopAnim": "",
+                "FenceGridItemType": "",
+                "FenceTopGridItemType": "",
+                "FenceBottomGridItemType": "",
+                "FenceEndGridItemType": "",
+                "FenceEnterAnimation": "birth",
+                "FenceLoopAnimation": "loop",
+                "FenceExitAnimation": "over",
+                "FenceRenderLayer": 0,
+                "CageFallDuration": 0.8,
+                "CageStartHeight": 600.0,
+                "CageEffectOffsetX": 0.0,
+                "CageEffectOffsetY": -38.0,
+                "CageCleanupDelay": 1.0,
+                "CagePopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_CAGE",
+                "CageFallAnimation": "LOOP",
+                "CageLandAnimation": "BOOM",
+                "CageRenderLayer": 0,
+                "PlantWinAttackFrequencyMultiplier": 1.3,
+                "PlantLoseAttackFrequencyMultiplier": 0.7,
+                "ZombieWinMoveSpeedMultiplier": 1.3,
+                "ZombieLoseMoveSpeedMultiplier": 0.7,
+                "ResultStatusDuration": 12.0,
+                "ResultStatusImmuneTypes": [],
+                "VictoryEffectPopAnim": "",
+                "DefeatEffectPopAnim": "",
+                "VictoryEffectAnimation": "",
+                "DefeatEffectAnimation": "",
+                "ResultEffectLeftGridX": 1,
+                "ResultEffectRightGridX": 7,
+                "ResultEffectYOffset": -38.0,
+                "ResultEffectScale": 1.0,
+                "ResultEffectRenderLayer": 0,
+                "TrophyResultEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_TROPHY_RESULT",
+                "TrophyResultEffectOffsetX": 0.0,
+                "TrophyResultEffectOffsetY": -38.0,
+                "TrophyResultEffectScale": 1.0,
+                "TrophyResultEffectRenderLayer": 0,
+                "TrophyResultEffectDuration": 3.0,
+                "TrophyResultWinAnimation": "win",
+                "TrophyResultLoseAnimation": "die_03",
+                "TrophyDamageTransitionAnimation": "die",
+                "CageMarkEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_CAGE_MARK",
+                "CageMarkEffectOffsetX": 0.0,
+                "CageMarkEffectOffsetY": -38.0,
+                "CageMarkEffectScale": 1.0,
+                "CageMarkEffectRenderLayer": 0,
+                "CageMarkEnterAnimation": "in",
+                "CageMarkIdleAnimation": "idle",
+                "FieldMaskAlpha": 150,
+                "FieldMaskFadeInDuration": 0.5,
+                "FieldMaskFadeOutDuration": 0.5,
+                "WarningAdviceDuration": 2.0,
+                "ZombieWinPerformerDelayAfterMask": 0.0,
+                "ArenaTimerBarOffsetX": 0.0,
+                "ArenaTimerBarOffsetY": 4.0,
+                "ArenaTimerBarScale": 0.16,
+                "ArenaTimerFillOffsetX": 110.0,
+                "ArenaTimerFillOffsetY": -8.0,
+                "ArenaTimerClockOffsetX": -13.0,
+                "ArenaTimerClockOffsetY": 0.0,
+                "PlantWinPlantfoodCount": 2,
+                "PlantWinPlantfoodInterval": 0.3,
+                "PlantWinPlantfoodLaunchVelocityZ": 250.0,
+                "PlantWinPlantfoodLaunchGravityZ": -600.0,
+                "PlantWinPlantfoodLaunchSpreadX": 80.0,
+                "ZombieWinPunishmentCageCount": 3,
+                "ZombieWinPunishmentDuration": 6.0,
+                "ZombieWinPunishmentZombiePool": [
+                    {
+                        "ZombieTypeName": "roman",
+                        "Weight": 2
+                    },
+                    {
+                        "ZombieTypeName": "roman_armor1",
+                        "Weight": 1
+                    }
+                ],
+                "ZombieWinPunishmentZombieLevel": 1,
+                "ZombieWinShakeX": 14,
+                "ZombieWinShakeY": 10,
+                "ZombieWinShakeDuration": 1.0,
+                "ZombieWinImpactAnimation": "into2"
+            }
+        },
+        {
+            "objclass": "GladiatorRowModuleProperties",
+            "aliases": [
+                "GladiatorRow"
+            ],
+            "objdata": {
+                "ResourceGroupNames": [
+                    "GladiatorRow",
+                    "ZombieRomanTopShieldGroup",
+                    "ZombieRomanBasicResGroup",
+                    "ZombieGladiatorGroup",
+                    "ZombieGladiatorAudio"
+                ],
+                "BaseConfig": "RTID(ArenaConfig@CurrentLevel)",
+                "GameplayVersion": 1,
+                "TrophyHealth": 800.0,
+                "ZombieWinPunishmentZombiePool": [
+                    {
+                        "ZombieTypeName": "roman",
+                        "Weight": 2
+                    },
+                    {
+                        "ZombieTypeName": "roman_armor1",
+                        "Weight": 1
+                    }
+                ],
+                "ZombieWinPunishmentZombieLevel": 1,
+                "Encounters": [
+                    {
+                        "Wave": 3,
+                        "Row": 1,
+                        "WarningDuration": 6.0,
+                        "FirstCageDelay": 0.0,
+                        "Spawns": [
+                            {
+                                "Time": 0.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_shield_top"
+                            },
+                            {
+                                "Time": 5.0,
+                                "GridX": 5,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "Time": 10.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "gladiator_zombie"
+                            },
+                            {
+                                "Time": 16.0,
+                                "GridX": 5,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_shield_top"
+                            },
+                            {
+                                "Time": 22.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "Time": 28.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "gladiator_zombie"
+                            }
+                        ]
+                    },
+                    {
+                        "Wave": 8,
+                        "Row": 3,
+                        "WarningDuration": 6.0,
+                        "FirstCageDelay": 0.0,
+                        "Spawns": [
+                            {
+                                "Time": 0.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "Time": 4.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "gladiator_zombie"
+                            },
+                            {
+                                "Time": 9.0,
+                                "GridX": 5,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_shield_top"
+                            },
+                            {
+                                "Time": 14.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_armor2"
+                            },
+                            {
+                                "Time": 20.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "gladiator_zombie"
+                            },
+                            {
+                                "Time": 26.0,
+                                "GridX": 5,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "roman_shield_top"
+                            },
+                            {
+                                "Time": 32.0,
+                                "GridX": 6,
+                                "Count": 1,
+                                "Interval": 0.0,
+                                "Level": 1,
+                                "ZombieType": "gladiator_zombie"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 15,
+                "FlagWaveInterval": 5,
+                "SuppressFlagZombie": false,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                ],
+                "MinNextWaveHealthPercentage": 0.4,
+                "MaxNextWaveHealthPercentage": 0.4,
+                "ZombieCountdownFirstWaveSecs": 8,
+                "ZombieCountdownHugeWaveDelay": 5,
+                "DescriptionName": "[S34_MEMORY_064_ROMAN_MODE]",
+                "Description": "[S34_MEMORY_064_ROMAN_RULES]",
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)",
+                        "RTID(OpeningNotice@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)",
+                        "RTID(ElitePortal@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)"
+                    ]
+                ]
+            },
+            "aliases": [
+                "Waves"
+            ]
+        },
+        {
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "aliases": [
+                "ElitePortal"
+            ],
+            "objdata": {
+                "PortalColumn": 8,
+                "PortalRow": 2,
+                "PortalType": "pvz1_elite_roman_ballista_normal",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": "",
+                "IgnoreGraveStone": true
+            }
+        },
+        {
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "aliases": [
+                "OpeningNotice"
+            ],
+            "objdata": {
+                "Zombies": [],
+                "GridTypes": [],
+                "SuppressActionIfNoGridItemsFound": false,
+                "ZombieSpawnWaitTime": 0,
+                "WaveStartMessage": "[S34_MEMORY_064_ROMAN_NOTICE]"
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets1"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 0,
+                "ZombieSpawningRandomJitter": 137
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave1"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets1@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets2"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 0,
+                "ZombieSpawningRandomJitter": 173
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave2"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets2@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets3"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 113,
+                "ZombieSpawningRandomJitter": 157
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave3"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets3@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets4"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 101,
+                "ZombieSpawningRandomJitter": 181
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave4"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets4@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets5"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 127,
+                "ZombieSpawningRandomJitter": 167
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave5"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets5@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets6"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 109,
+                "ZombieSpawningRandomJitter": 151
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave6"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_ballista@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets6@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets7"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 191,
+                "ZombieSpawningRandomJitter": 169
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave7"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets7@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets8"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 119,
+                "ZombieSpawningRandomJitter": 179
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave8"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets8@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets9"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 103,
+                "ZombieSpawningRandomJitter": 137
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave9"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets9@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets10"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 193,
+                "ZombieSpawningRandomJitter": 163
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave10"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_healer@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets10@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets11"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 107,
+                "ZombieSpawningRandomJitter": 151
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave11"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_ballista@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets11@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets12"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 113,
+                "ZombieSpawningRandomJitter": 157
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave12"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_gargantuar@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets12@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets13"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 97,
+                "ZombieSpawningRandomJitter": 163
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave13"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets13@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets14"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 0,
+                "ZombieSpawningRandomJitter": 139
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave14"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_shield_top@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets14@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "aliases": [
+                "Offsets15"
+            ],
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 101,
+                "ZombieSpawningRandomJitter": 137
+            }
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "aliases": [
+                "Wave15"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(roman_gargantuar@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(gladiator_zombie@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor2@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(roman_imp@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets15@CurrentLevel)",
+                "FixedOffset": 0
+            }
+        }
+    ],
+    "version": 1
+}

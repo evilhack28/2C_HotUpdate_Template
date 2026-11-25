@@ -1,0 +1,730 @@
+{
+    "version": 1,
+    "#comment": "PVZ1 S34 H1",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_HARD_NAME_001]",
+                "Description": "[S34_MEMORY_HARD_DESC_001]",
+                "LevelNumber": 1,
+                "StartingSun": 900,
+                "ZombieMaxLevel": 1,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(AutumnLateStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "Modules": [
+                    "RTID(LastStand@CurrentLevel)",
+                    "RTID(SunDropper@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(RiftThemeDemo@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(Rails@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "cowboy",
+                    "cowboy_armor1",
+                    "cowboy_armor2",
+                    "piano"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "preset",
+                "OverrideSeedSlotsCount": 5,
+                "GlobalLevel": 1,
+                "PresetPlantList": [
+                    "repeater",
+                    "snowpea",
+                    "wallnut",
+                    "cherry_bomb",
+                    "spikeweed"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SunDropper"
+            ],
+            "objclass": "SunDropperProperties",
+            "objdata": {
+                "InitialSunDropDelay": 15,
+                "SunCountdownBase": 15,
+                "SunCountdownRange": 0,
+                "SunCountdownMax": 15,
+                "SunCountdownIncreasePerSun": 0
+            }
+        },
+        {
+            "aliases": [
+                "RiftThemeDemo"
+            ],
+            "objclass": "RiftThemeDemoModuleProperties",
+            "objdata": {
+                "DemoRiftThemeName": []
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "Goal1"
+            ],
+            "objclass": "StarChallengeSimultaneousPlantsProps",
+            "objdata": {
+                "MaximumPlants": 9
+            }
+        },
+        {
+            "aliases": [
+                "Goal2"
+            ],
+            "objclass": "PlantDefeatZombieChallengeProps",
+            "objdata": {
+                "PlantTypeName": "repeater",
+                "NumZombiesToKill": 24,
+                "Description": "[S34_MEMORY_HARD_REPEATER_KILLS]"
+            }
+        },
+        {
+            "aliases": [
+                "Goal3"
+            ],
+            "objclass": "StarChallengePlantBeforeLineProps",
+            "objdata": {
+                "CannotPlantStartingColumn": 0,
+                "CannotPlantBeforeColumn": 2
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingSun": 900,
+                "StartingPlantfood": 1,
+                "DisablePlantTags": []
+            }
+        },
+        {
+            "aliases": [
+                "Rails"
+            ],
+            "objclass": "RailcartProperties",
+            "objdata": {
+                "RailcartType": "railcart_cowboy",
+                "Rails": [
+                    {
+                        "Column": 2,
+                        "RowStart": 0,
+                        "RowEnd": 2
+                    },
+                    {
+                        "Column": 3,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    },
+                    {
+                        "Column": 4,
+                        "RowStart": 2,
+                        "RowEnd": 4
+                    }
+                ],
+                "Railcarts": [
+                    {
+                        "Column": 2,
+                        "Row": 1
+                    },
+                    {
+                        "Column": 3,
+                        "Row": 2
+                    },
+                    {
+                        "Column": 4,
+                        "Row": 3
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "ManualStartup": true,
+                "DynamicZombies": [],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WaveManagerPropsVector": [
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NormalOffsets"
+            ],
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 45,
+                "ZombieSpawningRandomJitter": 15
+            }
+        },
+        {
+            "aliases": [
+                "Wave01"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave02"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave03"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave04"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(piano@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave05"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave05Bean"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave06"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave07"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(piano@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave08"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave08Bean"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave09"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(piano@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 10,
+                "FlagWaveInterval": 5,
+                "SuppressFlagZombie": true,
+                "SuppressedDynamicZombieWaves": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                ],
+                "MinNextWaveHealthPercentage": 0.15,
+                "MaxNextWaveHealthPercentage": 0.15,
+                "ZombieCountdownFirstWaveSecs": 15,
+                "ZombieCountdownHugeWaveDelay": 5,
+                "DescriptionName": "[S34_MEMORY_HARD_MODE_001]",
+                "Description": "[S34_MEMORY_HARD_MODE_DESC_001]",
+                "Waves": [
+                    [
+                        "RTID(Wave01@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave02@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave03@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave04@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave05@CurrentLevel)",
+                        "RTID(Wave05Bean@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave06@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave07@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave08@CurrentLevel)",
+                        "RTID(Wave08Bean@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave09@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ]
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,858 @@
+{
+    "#comment": "PVZ1 S34 Level 61",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_061_MANGO_NAME]",
+                "Description": "[S34_MEMORY_061_MANGO_NAME]",
+                "LevelNumber": 5,
+                "StartingSun": 2250,
+                "ZombieMaxLevel": 4,
+                "IsArtifactDisabled": false,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "StageModule": "RTID(SnowModernStageLocal@CurrentLevel)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ModernMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(MangoRails@CurrentLevel)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(Challenges@CurrentLevel)",
+                    "RTID(ProtectedMango@CurrentLevel)",
+                    "RTID(InitialPlants@CurrentLevel)",
+                    "RTID(InitialPlantfood@CurrentLevel)",
+                    "RTID(WaveModule@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "dark_armor3",
+                    "tutorial_armor4",
+                    "chicken_farmer",
+                    "modern_newspaper"
+                ]
+            }
+        },
+        {
+            "objclass": "StageModuleProperties",
+            "aliases": [
+                "SnowModernStageLocal"
+            ],
+            "objdata": {
+                "ResourceGroupNames": [
+                    "Egypt_Gravestone",
+                    "Game_Tombstones_Dynamic",
+                    "Tombstone_Dark_Effects",
+                    "DelayLoad_Background_Snow_Modern",
+                    "AudioTutorial",
+                    "ZombieTutorialGroup"
+                ],
+                "GroupsToUnloadForAds": [
+                    "DelayLoad_Background_Snow_Modern"
+                ],
+                "StagePrefix": "snow_modern",
+                "BackgroundResourceGroup": "DelayLoad_Background_Snow_Modern",
+                "BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SNOW_MODERN",
+                "LevelPowerupSet": "LevelPowerupsDefault",
+                "BasicZombieTypeName": "tutorial",
+                "FlagZombieTypeName": "tutorial_flag",
+                "Armor1ZombieTypeName": "tutorial_armor1",
+                "Armor2ZombieTypeName": "tutorial_armor2",
+                "MusicSuffix": "Modern",
+                "AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+                "RailcartDefaultTypeName": "railcart_tutotial",
+                "GravestoneDefaultTypeName": "gravestone_tutorial",
+                "DisabledStreetCells": [
+                    {
+                        "mX": 0,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 0,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 1,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 0
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 4
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 5
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 6
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 3,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 5,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 7,
+                        "mY": 7
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 9
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 8
+                    },
+                    {
+                        "mX": 8,
+                        "mY": 7
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "preset",
+                "OverrideSeedSlotsCount": 4,
+                "PresetPlantList": [
+                    "tallnut",
+                    "stunion",
+                    "hurrikale",
+                    "iceweed"
+                ],
+                "GlobalLevel": 1,
+                "PlantBlackList": [],
+                "PlantWhiteList": []
+            },
+            "aliases": [
+                "SeedBank"
+            ]
+        },
+        {
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "ChallengesAlwaysAvailable": true,
+                "Challenges": [
+                    [
+                        "RTID(ProtectedMango@CurrentLevel)",
+                        "RTID(SunBudget@CurrentLevel)",
+                        "RTID(Survivors@CurrentLevel)"
+                    ]
+                ]
+            },
+            "aliases": [
+                "Challenges"
+            ]
+        },
+        {
+            "objclass": "StarChallengeProtectPlantProps",
+            "objdata": {
+                "Plants": [
+                    {
+                        "PlantType": "mangofier",
+                        "GridX": 0,
+                        "GridY": 0
+                    },
+                    {
+                        "PlantType": "mangofier",
+                        "GridX": 1,
+                        "GridY": 4
+                    },
+                    {
+                        "PlantType": "mangofier",
+                        "GridX": 2,
+                        "GridY": 2
+                    }
+                ]
+            },
+            "aliases": [
+                "ProtectedMango"
+            ]
+        },
+        {
+            "objclass": "StarChallengeSunUsedProps",
+            "objdata": {
+                "MaximumSun": 2000
+            },
+            "aliases": [
+                "SunBudget"
+            ]
+        },
+        {
+            "objclass": "StarChallengePlantsSurviveProps",
+            "objdata": {
+                "Count": 8
+            },
+            "aliases": [
+                "Survivors"
+            ]
+        },
+        {
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "TypeName": "tallnut",
+                        "GridX": 4,
+                        "GridY": 0,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "tallnut",
+                        "GridX": 5,
+                        "GridY": 1,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "tallnut",
+                        "GridX": 6,
+                        "GridY": 2,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "tallnut",
+                        "GridX": 4,
+                        "GridY": 3,
+                        "Level": 1
+                    },
+                    {
+                        "TypeName": "tallnut",
+                        "GridX": 5,
+                        "GridY": 4,
+                        "Level": 1
+                    }
+                ]
+            },
+            "aliases": [
+                "InitialPlants"
+            ]
+        },
+        {
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 1
+            },
+            "aliases": [
+                "InitialPlantfood"
+            ]
+        },
+        {
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "WaveManagerPropsVector": [
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)",
+                    "RTID(Waves@CurrentLevel)"
+                ],
+                "ManualStartup": false,
+                "DynamicZombies": []
+            },
+            "aliases": [
+                "WaveModule"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 79,
+                "ZombieSpawningRandomJitter": 101
+            },
+            "aliases": [
+                "Offsets1"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 3
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 3
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets1@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave1"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 93,
+                "ZombieSpawningRandomJitter": 167
+            },
+            "aliases": [
+                "Offsets2"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets2@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave2"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 137,
+                "ZombieSpawningRandomJitter": 139
+            },
+            "aliases": [
+                "Offsets3"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets3@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave3"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 81,
+                "ZombieSpawningRandomJitter": 179
+            },
+            "aliases": [
+                "Offsets4"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(chicken_farmer@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets4@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave4"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 109,
+                "ZombieSpawningRandomJitter": 193
+            },
+            "aliases": [
+                "Offsets5"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets5@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave5"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 127,
+                "ZombieSpawningRandomJitter": 149
+            },
+            "aliases": [
+                "Offsets6"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets6@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave6"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 89,
+                "ZombieSpawningRandomJitter": 181
+            },
+            "aliases": [
+                "Offsets7"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets7@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave7"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 143,
+                "ZombieSpawningRandomJitter": 157
+            },
+            "aliases": [
+                "Offsets8"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(chicken_farmer@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets8@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave8"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 103,
+                "ZombieSpawningRandomJitter": 191
+            },
+            "aliases": [
+                "Offsets9"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(modern_newspaper@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 2
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets9@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave9"
+            ]
+        },
+        {
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 97,
+                "ZombieSpawningRandomJitter": 199
+            },
+            "aliases": [
+                "Offsets10"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(dark_armor3@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 4
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 4
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "DynamicPlantfood": [],
+                "JitterOffsets": "RTID(Offsets10@CurrentLevel)",
+                "FixedOffset": 0
+            },
+            "aliases": [
+                "Wave10"
+            ]
+        },
+        {
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 10,
+                "FlagWaveInterval": 5,
+                "SuppressFlagZombie": false,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9
+                ],
+                "ZombieCountdownFirstWaveSecs": 8,
+                "ZombieCountdownFirstWaveConveyorSecs": 8,
+                "ZombieCountdownHugeWaveDelay": 5,
+                "MinNextWaveHealthPercentage": 0.4,
+                "MaxNextWaveHealthPercentage": 0.4,
+                "DescriptionName": "[S34_MEMORY_061_MANGO_MODE]",
+                "Description": "[S34_MEMORY_061_MANGO_MODE_DESC]",
+                "Waves": [
+                    [
+                        "RTID(FocusNotice@CurrentLevel)",
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(BudgetNotice@CurrentLevel)",
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ]
+                ]
+            },
+            "aliases": [
+                "Waves"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "Zombies": [],
+                "GridTypes": [],
+                "SuppressActionIfNoGridItemsFound": false,
+                "ZombieSpawnWaitTime": 0,
+                "WaveStartMessage": "[S34_MEMORY_061_MANGO_FOCUS_NOTICE]"
+            },
+            "aliases": [
+                "FocusNotice"
+            ]
+        },
+        {
+            "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+            "objdata": {
+                "Zombies": [],
+                "GridTypes": [],
+                "SuppressActionIfNoGridItemsFound": false,
+                "ZombieSpawnWaitTime": 0,
+                "WaveStartMessage": "[S34_MEMORY_061_MANGO_BUDGET_NOTICE]"
+            },
+            "aliases": [
+                "BudgetNotice"
+            ]
+        },
+        {
+            "aliases": [
+                "MangoRails"
+            ],
+            "objclass": "RailcartProperties",
+            "objdata": {
+                "RailcartType": "railcart_cowboy",
+                "IgnoreType": [],
+                "Rails": [
+                    {
+                        "Column": 0,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    },
+                    {
+                        "Column": 1,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    },
+                    {
+                        "Column": 2,
+                        "RowStart": 0,
+                        "RowEnd": 4
+                    }
+                ],
+                "Railcarts": [
+                    {
+                        "Column": 0,
+                        "Row": 0
+                    },
+                    {
+                        "Column": 1,
+                        "Row": 4
+                    },
+                    {
+                        "Column": 2,
+                        "Row": 2
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

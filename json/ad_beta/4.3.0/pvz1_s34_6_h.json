@@ -1,0 +1,906 @@
+{
+    "version": 1,
+    "#comment": "PVZ1 S34 H6",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Name": "[S34_MEMORY_HARD_NAME_006]",
+                "Description": "[S34_MEMORY_HARD_DESC_006]",
+                "LevelNumber": 6,
+                "StartingSun": 100,
+                "ZombieMaxLevel": 2,
+                "IsArtifactDisabled": false,
+                "StageModule": "RTID(AutumnLateStage@LevelModules)",
+                "VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(RiftThemeDemo@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(StartingPlantfood@CurrentLevel)",
+                    "RTID(SunDropper@CurrentLevel)",
+                    "RTID(FireTraps@CurrentLevel)",
+                    "RTID(GoldTiles@CurrentLevel)"
+                ],
+                "ShowZombies": [
+                    "tutorial",
+                    "tutorial_armor1",
+                    "tutorial_armor2",
+                    "lostcity_excavator",
+                    "lostcity_relichunter",
+                    "football_mech"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser",
+                "OverrideSeedSlotsCount": 8,
+                "GlobalLevel": 1,
+                "PresetPlantList": [
+                    "empea",
+                    "iceburg"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RiftThemeDemo"
+            ],
+            "objclass": "RiftThemeDemoModuleProperties",
+            "objdata": {
+                "DemoRiftThemeName": ["rusher"]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Goal1@CurrentLevel)",
+                        "RTID(Goal2@CurrentLevel)",
+                        "RTID(Goal3@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "Goal1"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 2.0
+            }
+        },
+        {
+            "aliases": [
+                "Goal2"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "MustProtectCount": 5,
+                "Plants": [
+                    {
+                        "GridX": 5,
+                        "GridY": 0,
+                        "PlantType": "redstinger"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 2,
+                        "PlantType": "redstinger"
+                    },
+                    {
+                        "GridX": 5,
+                        "GridY": 4,
+                        "PlantType": "redstinger"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1,
+                        "PlantType": "redstinger"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3,
+                        "PlantType": "redstinger"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Goal3"
+            ],
+            "objclass": "StarChallengeSunProducedProps",
+            "objdata": {
+                "TargetSun": 5500
+            }
+        },
+        {
+            "aliases": [
+                "StartingPlantfood"
+            ],
+            "objclass": "LevelMutatorStartingPlantfoodProps",
+            "objdata": {
+                "StartingPlantfoodOverride": 0
+            }
+        },
+        {
+            "aliases": [
+                "SunDropper"
+            ],
+            "objclass": "SunDropperProperties",
+            "objdata": {
+                "InitialSunDropDelay": 15,
+                "SunCountdownBase": 15,
+                "SunCountdownRange": 0,
+                "SunCountdownMax": 15,
+                "SunCountdownIncreasePerSun": 0
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "ManualStartup": false,
+                "DynamicZombies": [],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "WaveManagerPropsVector": [
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)",
+                    "RTID(WaveManagerProps@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NormalOffsets"
+            ],
+            "objclass": "ZombieJitterOffsets",
+            "objdata": {
+                "ZombieSpawningOffsetIncrement": 55,
+                "ZombieSpawningRandomJitter": 40
+            }
+        },
+        {
+            "aliases": [
+                "OpeningMechs"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "FixedOffset": 240
+            }
+        },
+        {
+            "aliases": [
+                "Wave01"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave02"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave03"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor2@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave04"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave05"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Bean5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 1,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave06"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave07"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave08"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "2",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor2@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "Wave09"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(football_mech@ZombieTypes)",
+                        "Row": "4",
+                        "Level": 2
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "2",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "5",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": "3",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(FireLaneRelicHunter@CurrentLevel)",
+                        "Row": "4",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(tutorial_armor1@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_excavator@ZombieTypes)",
+                        "Row": "1",
+                        "Level": 1
+                    }
+                ],
+                "AdditionalPlantfood": 0,
+                "JitterOffsets": "RTID(NormalOffsets@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "GoldTiles"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 7,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 7,
+                        "GridY": 4,
+                        "TypeName": "goldtile"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "FireTraps"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 3,
+                        "GridY": 1,
+                        "TypeName": "flame_spreader_trap"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 3,
+                        "TypeName": "flame_spreader_trap"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0,
+                        "TypeName": "flame_spreader_trap"
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4,
+                        "TypeName": "flame_spreader_trap"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "WaveCount": 9,
+                "FlagWaveInterval": 5,
+                "SuppressFlagZombie": true,
+                "SuppressedDynamicZombieWaves": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "MinNextWaveHealthPercentage": 0.15,
+                "MaxNextWaveHealthPercentage": 0.15,
+                "ZombieCountdownFirstWaveSecs": 15,
+                "ZombieCountdownHugeWaveDelay": 5,
+                "DescriptionName": "[S34_MEMORY_HARD_MODE_006]",
+                "Description": "[S34_MEMORY_HARD_MODE_DESC_006]",
+                "Waves": [
+                    [
+                        "RTID(OpeningMechs@CurrentLevel)",
+                        "RTID(Wave01@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave02@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave03@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave04@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave05@CurrentLevel)",
+                        "RTID(Bean5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave06@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave07@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave08@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave09@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "FireLaneRelicHunter"
+            ],
+            "objdata": {
+                "TypeName": "s34_h6_relichunter_firelanes",
+                "ZombieClass": "ZombieLostCityRelicHunter",
+                "Properties": "RTID(FireLaneRelicHunterProps@CurrentLevel)",
+                "ResourceGroups": [
+                    "ZombieLostCityRelicHunterGroup"
+                ],
+                "#AudioGroups": [
+                    "ZombiePirateSwashbucklerAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_RelicHunter",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_RELICHUNTER",
+                "BoardAlmanac": false,
+                "RecommendPlants": [
+                    "cherry_bomb"
+                ],
+                "HomeWorld": "lostcity",
+                "HastyOnStart": false,
+                "DisplayTypeName": "lostcity_relichunter"
+            }
+        },
+        {
+            "objclass": "ZombieLostCityRelicHunterProps",
+            "aliases": [
+                "FireLaneRelicHunterProps"
+            ],
+            "objdata": {
+                "Speed": 0.155,
+                "Hitpoints": 1080,
+                "EatDPS": 100,
+                "SizeType": "small",
+                "CanSpawnPlantFood": false,
+                "MinLandingColumn": 5,
+                "MaxLandingColumn": 6,
+                "FallIntoDrinkChance": 0,
+                "HitRect": {
+                    "mX": 5,
+                    "mY": 10,
+                    "mWidth": 32,
+                    "mHeight": 95
+                },
+                "AttackRect": {
+                    "mX": 10,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 95
+                },
+                "Cost": 150,
+                "WavePointCost": 800,
+                "Weight": 3000,
+                "ArtCenter": {
+                    "x": 100,
+                    "y": 130
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "GroundTrackName": "ground_swatch",
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness4"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed1"
+                    }
+                ],
+                "ZombieLevelStats": [
+                    {
+                        "AttackLevel": 1,
+                        "HitPointsLevel": 1
+                    },
+                    {
+                        "AttackLevel": 2,
+                        "HitPointsLevel": 2
+                    },
+                    {
+                        "AttackLevel": 3,
+                        "HitPointsLevel": 3
+                    },
+                    {
+                        "AttackLevel": 4.5,
+                        "HitPointsLevel": 4.5
+                    },
+                    {
+                        "AttackLevel": 5,
+                        "HitPointsLevel": 5
+                    }
+                ]
+            }
+        }
+    ]
+}
